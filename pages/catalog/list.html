@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="header__top__inner">
 				<div class="header__top__block">
-					<a href="/zn-test/index.html" class="header__logo" title="Перейти на главную">
+					<a href="/zn-test/index.html" class="header__logo" aria-label="Главная">
 						<div class="header__logo__desktop">
 							<!-- viewbox брать с используемой картинки -->
 <svg viewBox="0 0 510 122" class="logo" tabindex="-1">
@@ -31,6 +31,7 @@
 						</div>
 					</a>
 				</div>
+				
 				<div class="header__top__block">
 					<a href="" class="header__link">Впервые на сайте?</a>
 					<div class="header__login">
@@ -39,6 +40,7 @@
 						<a href="" class="header__login__item">Вход</a>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -332,22 +334,108 @@
 				</aside>
 				<main class="page__content">
 					<article class="article">
-						<div class="catalog-nav">
-							<div class="accordion-list">
+						<div class="catalog">
+							<div class="catalog__content">
+								<form class="singleform">
+	<div class="singleform__main">
+		<div class="singleform__select">
+			<select name="" id="">
+				<option value="">Весь фонд</option>
+				<option value="">В подписках</option>
+				<option value="">Вне подписок</option>
+			</select>
+		</div>
+		<div class="singleform__main__group">
+			<input type="text" class="singleform__input" placeholder="Поиск по страницам сайта" required>
+			<div class="singleform__controls">
+				<a href="" type="button" class="singleform__controls__item" title="Расширенный поиск">
+					<span class="icon icon--gear">
+					</span>
+				</a>
+				<button type="reset" class="singleform__controls__item" title="Очистить">
+					<span class="icon icon--close">
+					</span>
+				</button>
+			</div>
+		</div>
+		<button type="submit" class="singleform__button">Найти</button>
+	</div>
+	<div class="singleform__suggest" hidden>
+		<label class="singleform__suggest__item ">
+			<input type="radio" name="singleform__suggest" checked value="0" data-placeholder="Поиск по страницам сайта">
+			<span> по сайту </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="1" data-placeholder="Поиск по всем документам каталога">
+			<span> в каталоге </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="2" data-placeholder="Поиск авторов по имени">
+			<span> в авторах </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="3" data-placeholder="Поиск аффилированных учреждений">
+			<span> в аффилиациях </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="4" data-placeholder="Поиск издательств по имени">
+			<span> в издательствах </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="5" data-placeholder="Поиск в наименованиях периодических изданий">
+			<span> в периодике </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="6" data-placeholder="Поиск в наименованиях тематических рубрик">
+			<span> в тематиках </span>
+		</label>
+		<label class="singleform__suggest__item">
+			<input type="radio" name="singleform__suggest" value="7" data-placeholder="Поиск в наименованиях классификатора ОКСО">
+			<span> в ОКСО </span>
+		</label>
+		<div class="singleform__suggest__extra">
+			<div class="singleform__suggest__extra__list">
+				<label class="singleform__suggest__item">
+					<input type="radio" name="singleform__suggest" value="8" data-placeholder="Поиск в наименованиях классификатора ГРНТИ">
+					<span> в ГРНТИ </span>
+				</label>
+				<label class="singleform__suggest__item">
+					<input type="radio" name="singleform__suggest" value="9" data-placeholder="Поиск в наименованиях классификатора УДК">
+					<span> в УДК </span>
+				</label>
+				<label class="singleform__suggest__item">
+					<input type="radio" name="singleform__suggest" value="10" data-placeholder="Поиск в наименованиях классификатора ББК">
+					<span> в ББК</span>
+				</label>
+			</div>
+			<button class="singleform__suggest__extra__opener" type="button" title="Показать дополнительные"> </button>
+		</div>
+	</div>
+</form>
+							</div>
+						</div>
+					</article>
+					<article class="article">
+						<div class="catalog">
+							<hgroup class="catalog__header">
+								<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aut. </h1>
+							</hgroup>
+							<div class="catalog__items">
+								<div class="accordion-list">
 	<div class="accordion-list__header">
 		<button type="button" class="accordion-list__toggler" title="Развернуть/свернуть все"></button>
 	</div>
 	<div class="accordion-list__items">
 		<div class="accordion-list__item">
 			<div class="accordion-list__item__header">
-				<a href="">Привет я баян</a>
+				<a class="accordion-list__item__title" href="">Привет я баян</a>
 			</div>
 		</div>
 		
 		<div class="accordion-list__item" data-accordion>
 			<div class="accordion-list__item__header">
 				<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-				<a href=""> 0 Исторические аспекты формирования и развития торговой деятельности</a>
+				<a class="accordion-list__item__title" href=""> 0 Исторические аспекты формирования и развития торговой деятельности</a>
 			</div>
 			<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 				<div class="accordion-list__item__content" data-accordion-content>
@@ -355,26 +443,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">0.0 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">0.0 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -385,26 +473,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">0.1 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">0.1 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -415,26 +503,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">0.2 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">0.2 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">0.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">0.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -445,19 +533,19 @@
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">0.3 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">0.3 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">0.4 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">0.4 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">0.5 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">0.5 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
@@ -468,7 +556,7 @@
 		<div class="accordion-list__item" data-accordion>
 			<div class="accordion-list__item__header">
 				<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-				<a href=""> 1 Исторические аспекты формирования и развития торговой деятельности</a>
+				<a class="accordion-list__item__title" href=""> 1 Исторические аспекты формирования и развития торговой деятельности</a>
 			</div>
 			<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 				<div class="accordion-list__item__content" data-accordion-content>
@@ -476,26 +564,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">1.0 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">1.0 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -506,26 +594,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">1.1 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">1.1 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -536,26 +624,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">1.2 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">1.2 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">1.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">1.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -566,19 +654,19 @@
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">1.3 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">1.3 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">1.4 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">1.4 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">1.5 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">1.5 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
@@ -589,7 +677,7 @@
 		<div class="accordion-list__item" data-accordion>
 			<div class="accordion-list__item__header">
 				<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-				<a href=""> 2 Исторические аспекты формирования и развития торговой деятельности</a>
+				<a class="accordion-list__item__title" href=""> 2 Исторические аспекты формирования и развития торговой деятельности</a>
 			</div>
 			<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 				<div class="accordion-list__item__content" data-accordion-content>
@@ -597,26 +685,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">2.0 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">2.0 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -627,26 +715,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">2.1 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">2.1 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -657,26 +745,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">2.2 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">2.2 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">2.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">2.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -687,19 +775,19 @@
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">2.3 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">2.3 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">2.4 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">2.4 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">2.5 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">2.5 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
@@ -710,7 +798,7 @@
 		<div class="accordion-list__item" data-accordion>
 			<div class="accordion-list__item__header">
 				<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-				<a href=""> 3 Исторические аспекты формирования и развития торговой деятельности</a>
+				<a class="accordion-list__item__title" href=""> 3 Исторические аспекты формирования и развития торговой деятельности</a>
 			</div>
 			<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 				<div class="accordion-list__item__content" data-accordion-content>
@@ -718,26 +806,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">3.0 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">3.0 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -748,26 +836,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">3.1 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">3.1 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -778,26 +866,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">3.2 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">3.2 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">3.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">3.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -808,19 +896,19 @@
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">3.3 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">3.3 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">3.4 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">3.4 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">3.5 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">3.5 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
@@ -831,7 +919,7 @@
 		<div class="accordion-list__item" data-accordion>
 			<div class="accordion-list__item__header">
 				<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-				<a href=""> 4 Исторические аспекты формирования и развития торговой деятельности</a>
+				<a class="accordion-list__item__title" href=""> 4 Исторические аспекты формирования и развития торговой деятельности</a>
 			</div>
 			<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 				<div class="accordion-list__item__content" data-accordion-content>
@@ -839,26 +927,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">4.0 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">4.0 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.0.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.0.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.0.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -869,26 +957,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">4.1 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">4.1 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.1.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.1.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.1.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -899,26 +987,26 @@
 					<div class="accordion-list__item" data-accordion>
 						<div class="accordion-list__item__header">
 							<button class="accordion-list__item__toggler" title="Развернуть/свернуть" data-accordion-toggler></button>
-							<a href="">4.2 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">4.2 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 						<div class="accordion-list__item__wrapper" data-accordion-wrapper>
 							<div class="accordion-list__item__content" data-accordion-content>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.2.0 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.2.1 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
 								<div class="accordion-list__item">
 									<div class="accordion-list__item__header">
-										<a href="">4.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
+										<a class="accordion-list__item__title" href="">4.2.2 Исторические аспекты формирования и развития торговой деятельности</a>
 									</div>
 								</div>
 								
@@ -929,19 +1017,19 @@
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">4.3 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">4.3 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">4.4 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">4.4 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
 					<div class="accordion-list__item">
 						<div class="accordion-list__item__header">
-							<a href="">4.5 Исторические аспекты формирования и развития торговой деятельности</a>
+							<a class="accordion-list__item__title" href="">4.5 Исторические аспекты формирования и развития торговой деятельности</a>
 						</div>
 					</div>
 					
@@ -951,6 +1039,19 @@
 		
 	</div>
 </div>
+							</div>
+							<div class="catalog__content">
+								<div class="text">
+									<p>Всероссийский классификатор ОКСО разработали, чтобы систематизировать и кодировать специальности и направления подготовки, которые реализуются в образовательных программах вузов и ссузов. Для систематизации используется цифровой код, символы которого последовательно обозначают:</p>
+									<ul>
+										<li>область образования;</li>
+										<li>тип укрупненной группы;</li>
+										<li>образовательный уровень;</li>
+										<li>профессию, специальность, направление подготовки.</li>
+									</ul>
+									<p>Структура и содержание справочника ОКСО регламентированы Министерством образования и науки РФ. В ЭБС Znanium коды используются для систематизации библиотечного фонда. Учебная и научно-популярная литература в зависимости от тематики находится в разных разделах, каждый из которых обозначен набором цифр согласно ОКСО.</p>
+								</div>
+							</div>
 						</div>
 					</article>
 				</main>

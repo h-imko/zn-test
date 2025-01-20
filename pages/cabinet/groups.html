@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="header__top__inner">
 				<div class="header__top__block">
-					<a href="/zn-test/index.html" class="header__logo" title="Перейти на главную">
+					<a href="/zn-test/index.html" class="header__logo" aria-label="Главная">
 						<div class="header__logo__desktop">
 							<!-- viewbox брать с используемой картинки -->
 <svg viewBox="0 0 510 122" class="logo" tabindex="-1">
@@ -31,6 +31,7 @@
 						</div>
 					</a>
 				</div>
+				
 				<div class="header__top__block">
 					<a href="" class="header__link">Впервые на сайте?</a>
 					<div class="header__login">
@@ -39,6 +40,7 @@
 						<a href="" class="header__login__item">Вход</a>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -341,7 +343,7 @@
 								<div class="groups">
 									<div class="groups__item" data-accordion>
 										<div class="groups__item__header">
-											<button type="button" class="groups__item__button" title="Свернуть/развернуть" data-accordion-toggler></button>
+											<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
 											<a href="" class="groups__item__title">Все пользователи (206)</a>
 											<div class="groups__item__controls">
 												<div class="icon-buttons">
@@ -354,11 +356,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="groups__item__content" data-accordion-wrapper>
-											<div class="groups__item__sub" data-accordion-inner>
+										<div class="groups__item__wrapper" data-accordion-wrapper>
+											<div class="groups__item__content" data-accordion-inner>
 												<div class="groups__item" data-accordion>
 													<div class="groups__item__header">
-														<button type="button" class="groups__item__button" title="Свернуть/развернуть" data-accordion-toggler></button>
+														<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
 														<a href="" class="groups__item__title">Все пользователи (206)</a>
 														<div class="groups__item__controls">
 															<div class="icon-buttons">
@@ -377,8 +379,8 @@
 															</div>
 														</div>
 													</div>
-													<div class="groups__item__content" data-accordion-wrapper>
-														<div class="groups__item__sub" data-accordion-inner>
+													<div class="groups__item__wrapper" data-accordion-wrapper>
+														<div class="groups__item__content" data-accordion-inner>
 															<div class="groups__item">
 																<div class="groups__item__header">
 																	<a href="" class="groups__item__title">Все пользователи (206)</a>
@@ -402,7 +404,7 @@
 															</div>
 															<div class="groups__item" data-accordion>
 																<div class="groups__item__header">
-																	<button type="button" class="groups__item__button" title="Свернуть/развернуть" data-accordion-toggler></button>
+																	<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
 																	<a href="" class="groups__item__title">Все пользователи (206)</a>
 																	<div class="groups__item__controls">
 																		<div class="icon-buttons">
@@ -421,11 +423,11 @@
 																		</div>
 																	</div>
 																</div>
-																<div class="groups__item__content" data-accordion-wrapper>
-																	<div class="groups__item__sub" data-accordion-inner>
+																<div class="groups__item__wrapper" data-accordion-wrapper>
+																	<div class="groups__item__content" data-accordion-inner>
 																		<div class="groups__item" data-accordion>
 																			<div class="groups__item__header">
-																				<button type="button" class="groups__item__button" title="Свернуть/развернуть" data-accordion-toggler></button>
+																				<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
 																				<a href="" class="groups__item__title">Все пользователи (206)</a>
 																				<div class="groups__item__controls">
 																					<div class="icon-buttons">
@@ -444,8 +446,170 @@
 																					</div>
 																				</div>
 																			</div>
-																			<div class="groups__item__content" data-accordion-wrapper>
-																				<div class="groups__item__sub" data-accordion-inner>
+																			<div class="groups__item__wrapper" data-accordion-wrapper>
+																				<div class="groups__item__content" data-accordion-inner>
+																					<div class="groups__item">
+																						<div class="groups__item__header">
+																							<a href="" class="groups__item__title">Все пользователи (206)</a>
+																							<div class="groups__item__controls">
+																								<div class="icon-buttons">
+																									<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																										<span class="icon icon--add"></span>
+																									</button>
+																									<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																										<span class="icon icon--edit"></span>
+																									</button>
+																									<button type="button" class="icon-buttons__item" title="Переместить группу">
+																										<span class="icon icon--move-group"></span>
+																									</button>
+																									<button type="button" class="icon-buttons__item" title="Удалить группу">
+																										<span class="icon icon--delete"></span>
+																									</button>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="groups__item">
+																						<div class="groups__item__header">
+																							<a href="" class="groups__item__title">Все пользователи (206)</a>
+																							<div class="groups__item__controls">
+																								<div class="icon-buttons">
+																									<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																										<span class="icon icon--add"></span>
+																									</button>
+																									<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																										<span class="icon icon--edit"></span>
+																									</button>
+																									<button type="button" class="icon-buttons__item" title="Переместить группу">
+																										<span class="icon icon--move-group"></span>
+																									</button>
+																									<button type="button" class="icon-buttons__item" title="Удалить группу">
+																										<span class="icon icon--delete"></span>
+																									</button>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="groups__item">
+																<div class="groups__item__header">
+																	<a href="" class="groups__item__title">Все пользователи (206)</a>
+																	<div class="groups__item__controls">
+																		<div class="icon-buttons">
+																			<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																				<span class="icon icon--add"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																				<span class="icon icon--edit"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Переместить группу">
+																				<span class="icon icon--move-group"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Удалить группу">
+																				<span class="icon icon--delete"></span>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="groups__item" data-accordion>
+													<div class="groups__item__header">
+														<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
+														<a href="" class="groups__item__title">Все пользователи (206)</a>
+														<div class="groups__item__controls">
+															<div class="icon-buttons">
+																<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																	<span class="icon icon--add"></span>
+																</button>
+																<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																	<span class="icon icon--edit"></span>
+																</button>
+																<button type="button" class="icon-buttons__item" title="Переместить группу">
+																	<span class="icon icon--move-group"></span>
+																</button>
+																<button type="button" class="icon-buttons__item" title="Удалить группу">
+																	<span class="icon icon--delete"></span>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="groups__item__wrapper" data-accordion-wrapper>
+														<div class="groups__item__content" data-accordion-inner>
+															<div class="groups__item">
+																<div class="groups__item__header">
+																	<a href="" class="groups__item__title">Все пользователи (206)</a>
+																	<div class="groups__item__controls">
+																		<div class="icon-buttons">
+																			<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																				<span class="icon icon--add"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																				<span class="icon icon--edit"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Переместить группу">
+																				<span class="icon icon--move-group"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Удалить группу">
+																				<span class="icon icon--delete"></span>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="groups__item" data-accordion>
+																<div class="groups__item__header">
+																	<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
+																	<a href="" class="groups__item__title">Все пользователи (206)</a>
+																	<div class="groups__item__controls">
+																		<div class="icon-buttons">
+																			<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																				<span class="icon icon--add"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																				<span class="icon icon--edit"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Переместить группу">
+																				<span class="icon icon--move-group"></span>
+																			</button>
+																			<button type="button" class="icon-buttons__item" title="Удалить группу">
+																				<span class="icon icon--delete"></span>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+																<div class="groups__item__wrapper" data-accordion-wrapper>
+																	<div class="groups__item__content" data-accordion-inner>
+																		<div class="groups__item" data-accordion>
+																			<div class="groups__item__header">
+																				<button type="button" class="groups__item__toggler" title="Свернуть/развернуть" data-accordion-toggler></button>
+																				<a href="" class="groups__item__title">Все пользователи (206)</a>
+																				<div class="groups__item__controls">
+																					<div class="icon-buttons">
+																						<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
+																							<span class="icon icon--add"></span>
+																						</button>
+																						<button type="button" class="icon-buttons__item" title="Переименовать группу">
+																							<span class="icon icon--edit"></span>
+																						</button>
+																						<button type="button" class="icon-buttons__item" title="Переместить группу">
+																							<span class="icon icon--move-group"></span>
+																						</button>
+																						<button type="button" class="icon-buttons__item" title="Удалить группу">
+																							<span class="icon icon--delete"></span>
+																						</button>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="groups__item__wrapper" data-accordion-wrapper>
+																				<div class="groups__item__content" data-accordion-inner>
 																					<div class="groups__item">
 																						<div class="groups__item__header">
 																							<a href="" class="groups__item__title">Все пользователи (206)</a>
