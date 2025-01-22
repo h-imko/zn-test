@@ -33,9 +33,12 @@
 				</div>
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">Впервые на сайте?</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход</a>
+					</div>
 				</div>
 				
 			</div>
@@ -330,24 +333,88 @@
 					</div>
 				</aside>
 				<main class="page__content">
-					<div class="manual">
-						<h1>Работа в разделе «Мой ZNANIUM»</h1>
-						<p></p>
-						<p><a href="/download/manuals/Dlia_chitatelia/out/1-2_Rabota_v_razdele_MOI_KATALOG_ver_2_out.pdf"><u>Версия для печати</u> <span class="icon icon--print"></span></a> &nbsp;&nbsp;&nbsp;&nbsp; <a download="" href="/download/manuals/Dlia_chitatelia/out/1-2_Rabota_v_razdele_MOI_KATALOG_ver_2_out.pdf"><u>Скачать в формате ".pdf"</u><span class="icon icon--pdf"></span></a> </p>
-						<p><img alt="" src="https://znanium.ru/download/manuals/Dlia_chitatelia/website/1-2/1-2_Rabota_v_razdele_MOI_KATALOG_ver_2.png" style="width: 100%; border-width: 1px; border-style: solid;"></p>
-						<p style="margin-left: 40px;"><big><span style="color:#008000;"><strong>Вы можете:</strong></span></big></p>
-						<p style="margin-left: 40px;"><big><span style="color:#FFD700;"><strong>● </strong></span>&nbsp;<a href="https://znanium.ru/help/reader-subscribes"><span style="color:#FFD700;"><strong><u>использовать портальные сервисы</u></strong></span></a> расширенного поиска, фильтрации и&nbsp; сортировки литературы</big></p>
-						<p style="margin-left: 40px;"><big><strong><span style="color:#FF0000;">●</span>&nbsp; </strong>управлять своими <a href="https://znanium.ru/help/reader-shelves"><span style="color:#FF0000;"><strong><u>книжными полками</u></strong></span></a> и размещать на них книги из ЭБС</big></p>
-						<p style="margin-left: 40px;"><big><span style="color:#0000FF;"><strong>●</strong> </span>&nbsp;использовать <a href="https://znanium.ru/help/reader-history"><span style="color:#0000CD;"><strong><u>историю своего чтения</u></strong></span></a> для доступа к прочитанным книгам</big></p>
-						<p style="margin-left: 40px;"><big><strong><span style="color:#800080;">●</span> </strong>&nbsp;работать со списками <a href="https://znanium.ru/help/reader-bookmarks"><span style="color:#A52A2A;"><strong><u>своих закладок</u></strong></span></a> для оперативного доступа к отмеченным в книгах местах</big></p>
-						<p style="margin-left: 40px;"><big><strong><span style="color:#00FF00;">●</span> </strong>&nbsp;выбирать для работы разделы фонда ЭБС <a href="https://znanium.ru/help/reader-preference"><span style="color:#00FF00;"><strong><u>по своим предпочтениям</u></strong></span></a></big></p>
-						<p style="margin-left: 40px;"><big><strong><span style="color:#008000;">●&nbsp;</span> </strong>использовать ресурсы <a href="https://znanium.ru/help/reader-settings"><span style="color:#008000;"><strong><u>свободного доступа</u></strong></span></a> для углубления своих учебных&nbsp; или научных работ</big></p>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-						<p></p>
-					</div>
+					<article class="article">
+						<div class="catalog">
+							<hgroup class="catalog__header">
+								<h1> Книжные полки </h1>
+							</hgroup>
+							<div class="catalog__controls">
+								<div class="controls">
+									<div class="controls__row">
+										<div class="controls__group">
+											<div class="controls__item">
+												<span>Показывать по</span>
+												<label class="select-simple">
+	
+	<div class="select-simple__select">
+		<select>
+			<option value="">Все</option>
+			<option value="">25</option>
+			<option value="">50</option>
+			<option value="">100</option>
+		</select>
+	</div>
+</label>
+											</div>
+											<div class="controls__item">
+												<span>Показано <em>1-10</em> из <em> 10 </em> </span>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<button type="button" class="controls__button">
+													<span class="icon icon--add_box"></span>
+													<span>Создать полку</span>
+												</button>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<button type="button" class="controls__button">
+													<span class="icon icon--download"></span>
+													<span>Экспорт в Excel</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="controls__row">
+										<div class="controls__group">
+											<div class="controls__item">
+												<span>Отображение: </span>
+												<button type="button" class="controls__button" title="Сеткой">
+													<span class="icon icon--view_grid"></span>
+												</button>
+												<button type="button" class="controls__button" title="Списком">
+													<span class="icon icon--view_list"></span>
+												</button>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<span>Сортировка: </span>
+												<button type="button" class="controls__button" title="Пользовательская">
+													<span class="icon icon--tune"></span>
+												</button>
+												<button type="button" class="controls__button" title="По алфавиту">
+													<span class="icon icon--match_case"></span>
+												</button>
+											</div>
+										</div>
+										<div class="controls__group" hidden>
+											<div class="controls__item">
+												<button type="button" class="controls__button controls__button__collapse" title="Свернуть/развернуть все"> </button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__items">
+								<div class="placeholder">
+	<div class="placeholder__text">Здесь пока ничего нет :(</div>
+</div>
+							</div>
+						</div>
+					</article>
 				</main>
 			</div>
 		</div>
