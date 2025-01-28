@@ -24,9 +24,8 @@
 </svg>
 						</div>
 						<div class="header__logo__mobile">
-							<!-- viewbox брать с используемой картинки -->
-<svg viewBox="0 0 24 24" class="logo" tabindex="-1">
-	<use href="/zn-test/assets/static/img/logo-compact.svg#logo" tabindex="-1" />
+							<svg class="logo" tabindex="-1">
+	<use href="/zn-test/assets/static/img/logo-compact.svg#self" tabindex="-1" />
 </svg>
 						</div>
 					</a>
@@ -351,7 +350,7 @@
 							</div>
 							<div class="catalog__items">
 								<div class="table-wrapper">
-									<table class="table table--small">
+									<table class="table">
 										<thead>
 											<tr>
 												<th><a href="/admin/orders?sort=id" data-sort="id" title="Сортировать">№</a></th>
@@ -362,7 +361,6 @@
 												<th><a href="/admin/orders?sort=documents_count" data-sort="documents_count" title="Сортировать">Книг вне коллекций</a></th>
 												<th><a href="/admin/orders?sort=collections_count" data-sort="collections_count" title="Сортировать">Коллекций</a></th>
 												<th><a href="/admin/orders?sort=periodicals_count" data-sort="periodicals_count" title="Сортировать">Подшивок журналов</a></th>
-												<th><a href="/admin/orders?sort=encyclopedia_count" data-sort="encyclopedia_count" title="Сортировать" data-sort-order="asc">Энцикло- педия</a></th>
 												<th><a href="/admin/orders?sort=printed_books_count" data-sort="printed_books_count" title="Сортировать">Печатных книг</a></th>
 											</tr>
 										</thead>
@@ -376,7 +374,6 @@
 												<td><a href="/admin/order-documents?id=15368">6</a></td>
 												<td></td>
 												<td></td>
-												<td><span class="icon icon--check"></span></td>
 												<td></td>
 											</tr>
 											<tr data-key="15335">
@@ -385,7 +382,6 @@
 												<td>Новый</td>
 												<td>0</td>
 												<td>3&nbsp;110&nbsp;₽</td>
-												<td></td>
 												<td></td>
 												<td></td>
 												<td></td>
@@ -400,7 +396,6 @@
 												<td></td>
 												<td></td>
 												<td></td>
-												<td></td>
 												<td><a href="/admin/order-printedbooks?id=15328">2</a></td>
 											</tr>
 											<tr data-key="15327">
@@ -412,7 +407,6 @@
 												<td></td>
 												<td></td>
 												<td></td>
-												<td><span class="icon icon--check"></span></td>
 												<td><a href="/admin/order-printedbooks?id=15327">1</a></td>
 											</tr>
 											<tr data-key="15325">
@@ -424,7 +418,6 @@
 												<td><a href="/admin/order-documents?id=15325">2</a></td>
 												<td></td>
 												<td></td>
-												<td><span class="icon icon--check"></span></td>
 												<td></td>
 											</tr>
 											<tr data-key="15324">
@@ -434,7 +427,6 @@
 												<td>5</td>
 												<td>2&nbsp;000&nbsp;₽</td>
 												<td><a href="/admin/order-documents?id=15324">2</a></td>
-												<td></td>
 												<td></td>
 												<td></td>
 												<td></td>
@@ -449,7 +441,6 @@
 												<td></td>
 												<td></td>
 												<td></td>
-												<td></td>
 											</tr>
 											<tr data-key="15322">
 												<td>15322</td>
@@ -460,7 +451,6 @@
 												<td><a href="/admin/order-documents?id=15322">9</a></td>
 												<td></td>
 												<td></td>
-												<td><i class="fa fa-check" aria-hidden="true"></i></td>
 												<td></td>
 											</tr>
 											<tr data-key="15298">
@@ -470,7 +460,6 @@
 												<td>1</td>
 												<td>5&nbsp;000&nbsp;₽</td>
 												<td><a href="/admin/order-documents?id=15298">1</a></td>
-												<td></td>
 												<td></td>
 												<td></td>
 												<td></td>
@@ -484,7 +473,6 @@
 												<td></td>
 												<td></td>
 												<td></td>
-												<td><i class="fa fa-check" aria-hidden="true"></i></td>
 												<td></td>
 											</tr>
 										</tbody>
