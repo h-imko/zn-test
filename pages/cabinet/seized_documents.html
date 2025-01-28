@@ -32,9 +32,12 @@
 				</div>
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">Впервые на сайте?</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход</a>
+					</div>
 				</div>
 				
 			</div>
@@ -329,22 +332,144 @@
 					</div>
 				</aside>
 				<main class="page__content">
-					<div class="manual">
-						<h1>Поиск документов в ЭБС Znanium</h1>
-						<p></p>
-						<p><a href="/download/manuals/Dlia_chitatelia/out/1-2_Rabota_v_razdele_MOI_KATALOG_ver_2_out.pdf"><u>Версия для печати</u> <span class="icon icon--print"></span></a> &nbsp;&nbsp;&nbsp;&nbsp; <a download="" href="/download/manuals/Dlia_chitatelia/out/1-2_Rabota_v_razdele_MOI_KATALOG_ver_2_out.pdf"><u>Скачать в формате ".pdf"</u><span class="icon icon--pdf"></span></a> </p>
-						<p><big>Для поиска документов в ЭБС Znanium применяются различные алгоритмы, направленные на повышение эффективности Вашей работы:</big></p>
-						<p><big><strong><span style="color:#FF0000;">⁕</span></strong> классическая <a href="https://znanium.ru/help/reader-search-field"><strong><span style="color:#FF0000;">Единая поисковая строка</span></strong></a> предоставляет кластеризацию первичного поискового запроса;</big></p>
-						<p><big><strong><span style="color:#FFA500;">⁕</span></strong> средства <a href="https://znanium.ru/help/reader-search-ext"><span style="color:#FFA500;"><strong>Расширенного поиска</strong></span></a> обеспечивают тонкую настройку Вашего основного поиска;</big></p>
-						<p><big><strong><span style="color:#FFD700;">⁕</span></strong> специализированный <a href="https://znanium.ru/help/reader-search-results"><strong><span style="color:#FFD700;">Поиск книг по классификаторам</span></strong></a> делает для Вас возможным профессиональный подход к поиску необходимой литературы;</big></p>
-						<p><big><span style="color:#40E0D0;"><strong>⁕</strong></span> <a href="https://znanium.ru/help/reader-search-periodicals"><span style="color:#40E0D0;"><strong>Поиск журналов и статей</strong></span></a> предлагает специальные средства для своей реализации;</big></p>
-						<p><big><span style="color:#0000CD;"><strong>⁕</strong></span> для подбора учебной литературы всегда полезен традиционный <a href="https://znanium.ru/help/reader-search-author"><strong><span style="color:#0000CD;">Поиск книг по автору</span></strong></a>;</big></p>
-						<p><big><span style="color:#800080;"><strong>⁕</strong></span> для определения известных Вам научных и образовательных школ используйте <a href="https://znanium.ru/help/reader-search-affiliation"><strong><span style="color:#800080;">Поиск книг по аффилиации авторов</span></strong></a>.</big></p>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-						<p>&nbsp;</p>
-						<p></p>
-					</div>
+					<article class="article">
+						<div class="catalog">
+							<hgroup class="catalog__header">
+								<h1> Изъятые документы </h1>
+							</hgroup>
+							<div class="catalog__controls">
+								<div class="controls">
+									<div class="controls__row">
+										<div class="controls__group">
+											<div class="controls__item">
+												<a href="" class="controls__button is-active">Уже изъяты</a>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<a href="" class="controls__button">Будут изъяты</a>
+											</div>
+										</div>
+										<div class="controls__group"></div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__content">Документы, которые были доступны Вам в прошлых подписках, и отсутствующие на настоящий момент</div>
+							<div class="catalog__controls">
+								<div class="controls">
+									<div class="controls__row">
+										<div class="controls__group">
+											<div class="controls__item">
+												<span>Показывать по: </span>
+												<label class="select-simple">
+	
+	<div class="select-simple__select">
+		<select>
+			<option value="">Все</option>
+			<option value="">25</option>
+			<option value="">50</option>
+			<option value="">100</option>
+		</select>
+	</div>
+</label>
+											</div>
+											<div class="controls__item">
+												<span>Показано <em>1-10</em> из <em> 10 </em>
+												</span>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<button type="button" class="controls__button">
+													<span class="icon icon--download"></span>
+													<span>Экспорт в Excel</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__content">
+								<div class="table-wrapper">
+									<table class="table table--small table--bordered">
+										<thead>
+											<tr>
+												<th>Документ</th>
+												<th>Дата изъятия</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+											<tr>
+												<td><a href="">Биология. 11 класс (углубленный уровень) : учебник / В. Б. Захаров, С. Г. Мамонтов, Н. И. Сонин, Е. Т. Захарова ; под ред. В. Б. Захарова. - 6-е изд., стереотипное - Москва : Просвещение, 2022. - 266 с. - ISBN 978-5-09-099569-6. - Текст : электронный. - URL: https://znanium.ru/catalog/product/1922242</a></td>
+												<td>24&#8209;08&#8209;2024</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="catalog__footer">
+								<nav class="pagination">
+	<a href="" class="pagination__item pagination__item--prev" title="Назад"></a>
+	<a href="" class="pagination__item">1</a>
+	<a href="" class="pagination__item">...</a>
+	<span class="pagination__item is-active">8</span>
+	<a href="" class="pagination__item">9</a>
+	<a href="" class="pagination__item">10</a>
+	<a href="" class="pagination__item">11</a>
+	<a href="" class="pagination__item">...</a>
+	<a href="" class="pagination__item">1021</a>
+	<a href="" class="pagination__item pagination__item--next" title="Вперед"></a>
+</nav>
+							</div>
+						</div>
+					</article>
 				</main>
 			</div>
 		</div>
