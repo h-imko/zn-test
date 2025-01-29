@@ -32,9 +32,12 @@
 				</div>
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">Впервые на сайте?</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход</a>
+					</div>
 				</div>
 				
 			</div>
@@ -332,10 +335,34 @@
 					<article class="article">
 						<div class="catalog">
 							<hgroup class="catalog__header">
-								<h1>Все пользователи</h1>
+								<h1> Заявки преподавателей </h1>
 							</hgroup>
-							<div class="catalog__content">
-								<button type="button" class="button">Выдать ключи всем, учитывая фильтры</button>
+							<div class="catalog__controls">
+								<div class="controls">
+									<div class="controls__row">
+										<div class="controls__group">
+											<div class="controls__item">
+												<a href="" class="controls__button is-active">Новые </a>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<a href="" class="controls__button"> В заказах</a>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<a href="" class="controls__button"> В подписках </a>
+											</div>
+										</div>
+										<div class="controls__group">
+											<div class="controls__item">
+												<a href="" class="controls__button"> Отклонено библиотекой</a>
+											</div>
+										</div>
+										<div class="controls__group"></div>
+									</div>
+								</div>
 							</div>
 							<div class="catalog__filter">
 								<div class="filter">
@@ -376,128 +403,36 @@
 										<form class="form">
 											<div class="form__row">
 												<div class="form__item">
-													<label class="select-simple">
-	
-	<span>Подписки</span>
-	
-	<div class="select-simple__select">
-		<select>
-			<option value="">Все</option>
-			<option value="">25</option>
-			<option value="">50</option>
-			<option value="">100</option>
-		</select>
-	</div>
-</label>
-												</div>
-												<div class="form__item">
 													<div class="custom-input">
-														<label for="input2" class="custom-input__label">ФИО</label>
-														<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
-													</div>
-												</div>
-												<div class="form__item">
-													<label class="select-simple">
-	
-	<span>Пользователи</span>
-	
-	<div class="select-simple__select">
-		<select>
-			<option value="">Все</option>
-			<option value="">25</option>
-			<option value="">50</option>
-			<option value="">100</option>
-		</select>
-	</div>
-</label>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<div class="custom-input">
-														<label for="input5" class="custom-input__label">Дата регистрации от</label>
-														<input type="date" name="" id="input5" placeholder=" ">
-													</div>
-												</div>
-												<div class="form__item">
-													<div class="custom-input">
-														<label for="input5" class="custom-input__label">Дата регистрации до</label>
-														<input type="date" name="" id="input5" placeholder=" ">
-													</div>
-												</div>
-												<div class="form__item">
-													<div class="custom-input">
-														<label for="input6" class="custom-input__label">Эмейл</label>
+														<label for="input6" class="custom-input__label"> Преподаватель </label>
 														<input type="email" name="" id="input6" placeholder="Например: 2020, 2011-2018, 2000">
 													</div>
 												</div>
-											</div>
-											<div class="form__row">
 												<div class="form__item">
 													<div class="custom-input">
-														<label for="input2" class="custom-input__label">Логин</label>
+														<label for="input2" class="custom-input__label">Документ</label>
 														<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
 													</div>
 												</div>
 												<div class="form__item">
 													<div class="custom-input">
-														<label for="input2" class="custom-input__label">Комментарий</label>
-														<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
-													</div>
-												</div>
-												<div class="form__item">
-													<div class="custom-input">
-														<label for="input2" class="custom-input__label">ФИО</label>
+														<label for="input2" class="custom-input__label">Издательство </label>
 														<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
 													</div>
 												</div>
 											</div>
 											<div class="form__row">
 												<div class="form__item">
-													<label class="select-simple">
-	
-	<span>Статус ключа</span>
-	
-	<div class="select-simple__select">
-		<select>
-			<option value="">Все</option>
-			<option value="">25</option>
-			<option value="">50</option>
-			<option value="">100</option>
-		</select>
-	</div>
-</label>
+													<div class="custom-input">
+														<label for="input6" class="custom-input__label"> Год </label>
+														<input type="email" name="" id="input6" placeholder="Например: 2020, 2011-2018, 2000">
+													</div>
 												</div>
 												<div class="form__item">
-													<label class="select-simple">
-	
-	<span>Пачка</span>
-	
-	<div class="select-simple__select">
-		<select>
-			<option value="">Все</option>
-			<option value="">25</option>
-			<option value="">50</option>
-			<option value="">100</option>
-		</select>
-	</div>
-</label>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<fieldset class="form__element-group">
-														<div class="form__element-group__items">
-															<label class="custom-checkbox">
-																<input type="checkbox" name="">
-																<span>Преподаватели</span>
-															</label>
-															<label class="custom-checkbox">
-																<input type="checkbox" name="">
-																<span>Исключить пользователей подгрупп</span>
-															</label>
-														</div>
-													</fieldset>
+													<div class="custom-input">
+														<label for="input2" class="custom-input__label">№ заказа </label>
+														<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
+													</div>
 												</div>
 											</div>
 											<div class="form__row">
@@ -512,217 +447,282 @@
 									</div>
 								</div>
 							</div>
-							<div class="catalog__controls">
-								<div class="controls">
-									<div class="controls__row">
-										<div class="controls__group">
-											<div class="controls__item">
-												<span>Показывать по: </span>
-												<label class="select-simple">
-	
-	<div class="select-simple__select">
-		<select>
-			<option value="">Все</option>
-			<option value="">25</option>
-			<option value="">50</option>
-			<option value="">100</option>
-		</select>
-	</div>
-</label>
-											</div>
-											<div class="controls__item">
-												<span>Показано <em>1-10</em> из <em> 10 </em>
-												</span>
-											</div>
-										</div>
-										<div class="controls__group">
-											<div class="controls__item">
-												<button type="button" class="controls__button">
-													<span class="icon icon--download"></span>
-													<span>Экспорт в Excel</span>
-												</button>
-											</div>
-											<div class="controls__item">
-												<button type="button" class="controls__button">
-													<span class="icon icon--add_box"></span>
-													<span> Добавить читателя</span>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="catalog__items">
+							<div class="catalog__content">
 								<div class="table-wrapper">
-									<table class="table">
+									<table class="table table--small table--bordered">
 										<thead>
 											<tr>
-												<th scope="col" rowspan="2">
-													<div class="custom-checkbox">
-														<input type="checkbox" name="" id="">
-													</div>
+												<th>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</th>
-												<th scope="col">
-													<a href="" data-sort-order="asc" title="Сортировать">Группа / Логин / Email / ФИО / Комментарий</a>
-												</th>
-												<th scope="col">Преп</th>
-												<th scope="col">Ключ</th>
-												<th scope="col">
-													<a href="" data-sort="asdasd" title="Сортировать">Дата рег. </a>
-												</th>
-												<th scope="col"> </th>
+												<th>Дата</th>
+												<th>Преподаватель</th>
+												<th>Документ</th>
+												<th>Издательство</th>
+												<th>Год</th>
 											</tr>
 										</thead>
 										<tbody>
 											
 											<tr>
 												<td>
-													<div class="custom-checkbox">
-														<input type="checkbox" name="" id="">
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
-												<td><a href="/admin/staff-group-members?id=8388">Преподаватели</a><br>-<br>email1@example.ru<br>ФИО 111<br></td>
-												<td>Да</td>
-												<td><button type="button">55139-75478-133 (для КС ИНФРА-М)</button></td>
-												<td>-</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
 												<td>
-													<div class="icon-buttons">
-														<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
-															<span class="icon icon--add"></span>
-														</button>
-														<button type="button" class="icon-buttons__item" title="Удалить группу">
-															<span class="icon icon--delete"></span>
-														</button>
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
 											</tr>
 											
 											<tr>
 												<td>
-													<div class="custom-checkbox">
-														<input type="checkbox" name="" id="">
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
-												<td><a href="/admin/staff-group-members?id=8388">Преподаватели</a><br>-<br>email1@example.ru<br>ФИО 111<br></td>
-												<td>Да</td>
-												<td><button type="button">55139-75478-133 (для КС ИНФРА-М)</button></td>
-												<td>-</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
 												<td>
-													<div class="icon-buttons">
-														<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
-															<span class="icon icon--add"></span>
-														</button>
-														<button type="button" class="icon-buttons__item" title="Удалить группу">
-															<span class="icon icon--delete"></span>
-														</button>
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
 											</tr>
 											
 											<tr>
 												<td>
-													<div class="custom-checkbox">
-														<input type="checkbox" name="" id="">
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
-												<td><a href="/admin/staff-group-members?id=8388">Преподаватели</a><br>-<br>email1@example.ru<br>ФИО 111<br></td>
-												<td>Да</td>
-												<td><button type="button">55139-75478-133 (для КС ИНФРА-М)</button></td>
-												<td>-</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
 												<td>
-													<div class="icon-buttons">
-														<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
-															<span class="icon icon--add"></span>
-														</button>
-														<button type="button" class="icon-buttons__item" title="Удалить группу">
-															<span class="icon icon--delete"></span>
-														</button>
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
 											</tr>
 											
 											<tr>
 												<td>
-													<div class="custom-checkbox">
-														<input type="checkbox" name="" id="">
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
-												<td><a href="/admin/staff-group-members?id=8388">Преподаватели</a><br>-<br>email1@example.ru<br>ФИО 111<br></td>
-												<td>Да</td>
-												<td><button type="button">55139-75478-133 (для КС ИНФРА-М)</button></td>
-												<td>-</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
 												<td>
-													<div class="icon-buttons">
-														<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
-															<span class="icon icon--add"></span>
-														</button>
-														<button type="button" class="icon-buttons__item" title="Удалить группу">
-															<span class="icon icon--delete"></span>
-														</button>
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
 											</tr>
 											
 											<tr>
 												<td>
-													<div class="custom-checkbox">
-														<input type="checkbox" name="" id="">
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
-												<td><a href="/admin/staff-group-members?id=8388">Преподаватели</a><br>-<br>email1@example.ru<br>ФИО 111<br></td>
-												<td>Да</td>
-												<td><button type="button">55139-75478-133 (для КС ИНФРА-М)</button></td>
-												<td>-</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
 												<td>
-													<div class="icon-buttons">
-														<button type="button" class="icon-buttons__item" title="Добавить подгруппу">
-															<span class="icon icon--add"></span>
-														</button>
-														<button type="button" class="icon-buttons__item" title="Удалить группу">
-															<span class="icon icon--delete"></span>
-														</button>
-													</div>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
 												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Основы философии</a></td>
+												<td>ФЛИНТА</td>
+												<td> <time datetime="">2024</time> </td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-checkbox">
+														<input type="checkbox" name="">
+													</label>
+												</td>
+												<td><time datetime="">19.09.2024</time></td>
+												<td> Еманов А. Л.</td>
+												<td> <a href="">Алгоритмическая теория систем управления, основанная на спектральных методах. Том 2. Матрично-вычислительные технологии на базе интегральных уравнений</a></td>
+												<td>Республиканский институт профессионального образования</td>
+												<td> <time datetime="">2024</time> </td>
 											</tr>
 											
 										</tbody>
 									</table>
 								</div>
 								<div class="button-group">
-									<button type="button" class="button" disabled> Выдать ключи </button>
-									<button type="button" class="button" disabled> Отозвать ключи </button>
-									<button type="button" class="button" disabled> Перенести в группу... </button>
-									<button type="button" class="button" disabled> Удалить из группы</button>
-									<button type="button" class="button">Удалить из всех групп </button>
+									<button type="button" class="button" disabled> В корзину </button>
+									<button type="button" class="button" disabled> Отказать </button>
 								</div>
-							</div>
-							<div class="catalog__controls">
-								<div class="controls">
-									<div class="controls__row">
-										<div class="controls__group">
-											<div class="controls__item">
-												<button type="button" class="controls__button">
-													<span> Операции с группой </span>
-													<span class="icon icon--chevron_down"></span>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="catalog__footer">
-								<nav class="pagination">
-	<a href="" class="pagination__item pagination__item--prev" title="Назад"></a>
-	<a href="" class="pagination__item">1</a>
-	<a href="" class="pagination__item">...</a>
-	<span class="pagination__item is-active">8</span>
-	<a href="" class="pagination__item">9</a>
-	<a href="" class="pagination__item">10</a>
-	<a href="" class="pagination__item">11</a>
-	<a href="" class="pagination__item">...</a>
-	<a href="" class="pagination__item">1021</a>
-	<a href="" class="pagination__item pagination__item--next" title="Вперед"></a>
-</nav>
 							</div>
 						</div>
 					</article>
