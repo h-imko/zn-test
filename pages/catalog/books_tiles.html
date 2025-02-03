@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/zn-test/assets/static/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/zn-test/assets/static/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/zn-test/assets/static/favicon/favicon-16x16.png">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -158,7 +161,7 @@
 					<div class="header__actions__item">
 						<a href="" class="header__actions__item__self" title="Корзина">
 							<span class="header__cart">
-								<span class="icon icon--shopping_basket"></span>
+								<span class="icon icon--cart"></span>
 								<span class="header__cart__count">3</span>
 							</span>
 						</a>
@@ -169,7 +172,7 @@
 	</div>
 </header>
 		<nav class="breadcrumbs">
-	<div class="container">
+	<div class="container-fluid">
 		<ul class="breadcrumbs__list">
 			<li class="breadcrumbs__item">
 				<a href="#">
@@ -190,7 +193,7 @@
 	</div>
 </nav>
 		<div class="page">
-			<div class="page__container">
+			<div class="page__inner">
 				<aside class="page__aside">
 					<div class="page__aside__sticky">
 						<nav class="accordion-nav" data-accordion>
@@ -334,7 +337,7 @@
 						<div class="catalog">
 							<div class="catalog__content">
 								<form class="singleform">
-	<div class="singleform__container">
+	<div class="container-fluid">
 		<div class="singleform__innner">
 			<div class="singleform__main">
 				<div class="singleform__select">
@@ -899,59 +902,61 @@
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -959,31 +964,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1001,91 +984,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1093,31 +1102,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1135,91 +1122,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1227,31 +1240,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1269,91 +1260,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1361,31 +1378,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1403,91 +1398,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1495,31 +1516,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1537,91 +1536,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1629,31 +1654,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1671,91 +1674,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1763,31 +1792,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1805,91 +1812,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -1897,31 +1930,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -1939,91 +1950,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -2031,31 +2068,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -2073,91 +2088,117 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									
 									<div class="bookslist__item">
 										<div class="book book--compact">
-	<div class="book__col book__col--main">
-		<a href="" class="book__cover">
-			<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
-		</a>
-		
-		<div class="book__actions">
-			<a href="" class="book__action" title="Ознакомиться">
-				<span class="icon icon--read"></span>
-			</a>
-			<button type="button" class="book__action" title="Рекомендовать для студентов">
-				<span class="icon icon--thumb_up"></span>
-			</button>
-			<button type="button" class="book__action" title="Поместить на полку">
-				<span class="icon icon--newsstand"></span>
-			</button>
-		</div>
-		
-	</div>
-	<div class="book__col book__col--info">
-		
-		<a href="" class="book__header">
-			<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
-			<span class="book__subtitle">Учебное пособие</span>
-		</a>
-		
-		<div class="book__labels">
-			<div class="labels">
-	<div class="label label--buy">
+	<div class="container-fluid">
+		<div class="book__inner">
+			<div class="book__col book__col--main">
+				<a href="" class="book__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+				<div class="book__actions">
+					<a href="" class="book__action" title="Ознакомиться">
+						<span class="icon icon--read"></span>
+					</a>
+					<button type="button" class="book__action" title="Рекомендовать для студентов">
+						<span class="icon icon--thumb_up"></span>
+					</button>
+					<button type="button" class="book__action" title="Поместить на полку">
+						<span class="icon icon--newsstand"></span>
+					</button>
+				</div>
+				
+			</div>
+			<div class="book__col book__col--info">
+				
+				<a href="" class="book__header">
+					<span class="book__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="book__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="book__labels">
+					<div class="labels">
+	<div class="label label--alt1">
 		<span>покупка</span>
 	</div>
 	
-	<div class="label label--new">
+	<div class="label">
 		<span>новинка</span>
 	</div>
-	<div class="label label--perpetual">
+	<div class="label label--primary-alt">
 		<span>бессрочные права</span>
 	</div>
-	<div class="label label--base">
+	<div class="label label--alt2">
 		<span>основная коллекция</span>
 	</div>
-	<div class="label label--free">
+	<div class="label label--alt">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--exclusive">
+	<div class="label label--primary">
 		<span>бесплатно</span>
 	</div>
-	<div class="label label--fpu">
+	<div class="label label--alt3" title="Федеральный перечень учебников">
 		<span>ФПУ</span>
 	</div>
-	<div class="label label--efu">
+	<div class="label label--alt5" title="Электронная форма учебника">
 		<span>ЭФУ</span>
 	</div>
-	<div class="label label--fpup">
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
 		<span>ФПУП</span>
 	</div>
 	<div class="label label--license" title="Creative Commons BY-NC-ND license type" tabindex="0">
@@ -2165,31 +2206,9 @@
 	</div>
 	
 </div>
-		</div>
-		<div class="book__info">
-			<dl class="book__info__main">
-				<div class="book__info__item">
-					<dt>Издательство:</dt>
-					<dd><a href="">СОЛОН-Пресс</a></dd>
 				</div>
-				<div class="book__info__item">
-					<dt>Год издания: </dt>
-					<dd>2023</dd>
-				</div>
-				<div class="book__info__item">
-					<dt>Авторы: </dt>
-					<dd>
-						<a href="">Курушин Александр Александрович, </a>
-						<a href="">Нефедов Евгений Иванович,</a>
-						<a href=""> Смольский Сергей Михайлович</a>
-					</dd>
-				</div>
-			</dl>
-			
-			<div class="book__info__extra book__info__extra--mobile" data-accordion>
-				<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
-				<div class="book__info__extra__wrapper" data-accordion-wrapper>
-					<dl class="book__info__extra__list" data-accordion-content>
+				<div class="book__info">
+					<dl class="book__info__main">
 						<div class="book__info__item">
 							<dt>Издательство:</dt>
 							<dd><a href="">СОЛОН-Пресс</a></dd>
@@ -2207,33 +2226,57 @@
 							</dd>
 						</div>
 					</dl>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="book__col book__col--access">
-		<div class="book__accesses">
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Доступ онлайн</span>
-					<span class="book__offer__price">3 000 ₽</span>
-					<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
-				</div>
-			</div>
-			<div class="book__offer">
-				<div class="book__offer__body">
-					<span class="book__offer__name">Бумажная книга</span>
-					<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
-					<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+					
+					<div class="book__info__extra book__info__extra--mobile" data-accordion>
+						<button type="button" class="book__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="book__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="book__info__extra__list" data-accordion-content>
+								<div class="book__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="book__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
 				</div>
 			</div>
 			
+			<div class="book__col book__col--access">
+				<div class="book__accesses">
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Доступ онлайн</span>
+							<span class="book__offer__price">3 000 ₽</span>
+							<button type="button" class="book__offer__button" title="Добавить в корзину">В корзину</button>
+						</div>
+					</div>
+					<div class="book__offer">
+						<div class="book__offer__body">
+							<span class="book__offer__name">Бумажная книга</span>
+							<span class="book__offer__price">1&nbsp;590&nbsp;₽ <a href="" class="help" title="Смотреть справку"></a></span>
+							<a href="" class="book__offer__button is-active" title="Перейти в корзину">В корзине</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
 		</div>
 	</div>
-	
-	
-	
 </div>
 									</div>
 									

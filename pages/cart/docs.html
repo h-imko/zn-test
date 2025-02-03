@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/zn-test/assets/static/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/zn-test/assets/static/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/zn-test/assets/static/favicon/favicon-16x16.png">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,9 +36,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">234 дня до окончания доступа</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход (IP 172.16.30.9)</a>
+					</div>
 				</div>
 				
 			</div>
@@ -158,7 +164,7 @@
 					<div class="header__actions__item">
 						<a href="" class="header__actions__item__self" title="Корзина">
 							<span class="header__cart">
-								<span class="icon icon--shopping_basket"></span>
+								<span class="icon icon--cart"></span>
 								<span class="header__cart__count">3</span>
 							</span>
 						</a>
@@ -169,7 +175,7 @@
 	</div>
 </header>
 		<nav class="breadcrumbs">
-	<div class="container">
+	<div class="container-fluid">
 		<ul class="breadcrumbs__list">
 			<li class="breadcrumbs__item">
 				<a href="#">
@@ -190,18 +196,19 @@
 	</div>
 </nav>
 		<div class="page">
-			<div class="page__container">
+			<div class="page__inner">
 				<!-- <aside class="page__aside">
 				</aside> -->
 				<main class="page__content">
 					<article class="article">
-						<div class="container">
-							<div class="cart">
-								<div class="cart__header">
-									<h1>Корзина</h1>
-								</div>
-								<div class="cart__main">
-									<div class="cart__tabs">
+						<div class="cart">
+							<div class="container-fluid">
+								<div class="cart__inner">
+									<div class="cart__header">
+										<h1>Корзина</h1>
+									</div>
+									<div class="cart__main">
+										<div class="cart__tabs">
 	<a href="" class="cart__tabs__item is-active">
 		<span>Коллекции (7)</span>
 		<span>3 189 024 ₽</span>
@@ -219,23 +226,23 @@
 		<span>3 189 024 ₽</span>
 	</a>
 </div>
-									<div class="cart__table">
-										<div class="table-wrapper">
-											<table class="table">
-												<thead>
-													<tr>
-														<th> </th>
-														<th><a href="/admin/orders?sort=created_at" data-sort="created_at" data-sort-order="asc" title="Сортировать"> Наименование</a></th>
-														<th>Издательство </th>
-														<th>Тип </th>
-														<th>Цена </th>
-														<th> </th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>
-															<label class="select-simple">
+										<div class="cart__table">
+											<div class="table-wrapper">
+												<table class="table">
+													<thead>
+														<tr>
+															<th> </th>
+															<th><a href="/admin/orders?sort=created_at" data-sort="created_at" data-sort-order="asc" title="Сортировать"> Наименование</a></th>
+															<th>Издательство </th>
+															<th>Тип </th>
+															<th>Цена </th>
+															<th> </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<label class="select-simple">
 	
 	<div class="select-simple__select">
 		<select>
@@ -246,119 +253,119 @@
 		</select>
 	</div>
 </label>
-														</td>
-														<td>
-															<div class="custom-input">
-																<input type="text" name="" id="input5" placeholder="Поиск по наименованию">
-															</div>
-														</td>
-														<td>
-															<div class="custom-input">
-																<input type="text" name="" id="input5" placeholder="Поиск по издательству">
-															</div>
-														</td>
-														<td> </td>
-														<td> </td>
-														<td><button type="button" class="cart__table__button" title="Сбросить фильтры"><span class="icon icon--filter_alt_off"></span></button> </td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-													<tr data-key="15262">
-														<td>1</td>
-														<td><a href="">Полная коллекция по педагогике</a></td>
-														<td>Логос</td>
-														<td> Книга </td>
-														<td>2 544 520 ₽</td>
-														<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
-													</tr>
-													
-												</tbody>
-											</table>
+															</td>
+															<td>
+																<div class="custom-input">
+																	<input type="text" name="" id="input5" placeholder="Поиск по наименованию">
+																</div>
+															</td>
+															<td>
+																<div class="custom-input">
+																	<input type="text" name="" id="input5" placeholder="Поиск по издательству">
+																</div>
+															</td>
+															<td> </td>
+															<td> </td>
+															<td><button type="button" class="cart__table__button" title="Сбросить фильтры"><span class="icon icon--filter_alt_off"></span></button> </td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+														<tr data-key="15262">
+															<td>1</td>
+															<td><a href="">Полная коллекция по педагогике</a></td>
+															<td>Логос</td>
+															<td> Книга </td>
+															<td>2 544 520 ₽</td>
+															<td><button type="button" class="cart__table__button" title="Удалить товар"><span class="icon icon--delete"></span></button></td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+											<button type="button" class="cart__table__clear">Очистить список</button>
 										</div>
-										<button type="button" class="cart__table__clear">Очистить список</button>
 									</div>
-								</div>
-								<div class="cart__aside">
+									<div class="cart__aside">
 	<div class="cart__summary">
 		<div class="cart__summary__title">Состав подписки</div>
 		<div class="cart__summary__item">
@@ -391,6 +398,7 @@
 		<button type="button" class="cart__summary__button">Создать заявку</button>
 	</div>
 </div>
+								</div>
 							</div>
 						</div>
 					</article>
