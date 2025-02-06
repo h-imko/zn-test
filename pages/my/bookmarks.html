@@ -7,8 +7,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/zn-test/assets/style/style.css">
 	<script src="/zn-test/assets/script/script.js" defer></script>
+	<link rel="preload" href="/zn-test/assets/static/font/golos-text_vf.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" as="image" type="image/svg+xml" href="/zn-test/assets/static/img/icon/stack.svg" crossorigin>
+	<link rel="stylesheet" href="/zn-test/assets/style/style.css">
 	<title>Helloworld</title>
 </head>
 
@@ -196,136 +198,132 @@
 			<div class="page__inner">
 				<aside class="page__aside">
 					<nav class="accordion-nav" data-accordion>
-	<button class="accordion-nav__toggler" data-accordion-toggler><span>Каталог</span></button>
+	<button class="accordion-nav__toggler" data-accordion-toggler><span>Текущий раздел</span></button>
 	<div class="accordion-nav__wrapper" data-accordion-wrapper>
-		<ul class="accordion-nav__list" data-accordion-content>
-			
-			<li class="accordion-nav__item">
-				<span class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-				</span>
-			</li>
-			<li class="accordion-nav__item" data-accordion>
-				<div class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-					<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
-				</div>
-				<div class="accordion-nav__item__list" data-accordion-wrapper>
-					<div class="accordion-nav__item__content" data-accordion-content>
-						<ul class="accordion-nav__sub">
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для студента
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для читателя
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для библиотекаря
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для преподавателя
-								</a>
-							</li>
-						</ul>
+		<ul class="accordion-nav__content" data-accordion-content>
+			<div class="accordion-nav__list">
+				
+				<li class="accordion-nav__item">
+					<span class="accordion-nav__item__self">
+						<a href=""> Видеоинструкции </a>
+					</span>
+				</li>
+				<li class="accordion-nav__item" data-accordion>
+					<div class="accordion-nav__item__self">
+						<a href="">
+							Видеоинструкции
+						</a>
+						<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
 					</div>
-				</div>
-			</li>
-			
-			<li class="accordion-nav__item">
-				<span class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-				</span>
-			</li>
-			<li class="accordion-nav__item" data-accordion>
-				<div class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-					<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
-				</div>
-				<div class="accordion-nav__item__list" data-accordion-wrapper>
-					<div class="accordion-nav__item__content" data-accordion-content>
-						<ul class="accordion-nav__sub">
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для студента
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для читателя
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для библиотекаря
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для преподавателя
-								</a>
-							</li>
-						</ul>
+					<div class="accordion-nav__item__list" data-accordion-wrapper>
+						<div class="accordion-nav__item__content" data-accordion-content>
+							<ul class="accordion-nav__sub">
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для студента
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для читателя
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для библиотекаря
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для преподавателя
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</li>
-			
-			<li class="accordion-nav__item">
-				<span class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-				</span>
-			</li>
-			<li class="accordion-nav__item" data-accordion>
-				<div class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-					<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
-				</div>
-				<div class="accordion-nav__item__list" data-accordion-wrapper>
-					<div class="accordion-nav__item__content" data-accordion-content>
-						<ul class="accordion-nav__sub">
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для студента
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для читателя
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для библиотекаря
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для преподавателя
-								</a>
-							</li>
-						</ul>
+				</li>
+				
+				<li class="accordion-nav__item">
+					<span class="accordion-nav__item__self">
+						<a href=""> Видеоинструкции </a>
+					</span>
+				</li>
+				<li class="accordion-nav__item" data-accordion>
+					<div class="accordion-nav__item__self">
+						<a href="">
+							Видеоинструкции
+						</a>
+						<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
 					</div>
-				</div>
-			</li>
-			
+					<div class="accordion-nav__item__list" data-accordion-wrapper>
+						<div class="accordion-nav__item__content" data-accordion-content>
+							<ul class="accordion-nav__sub">
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для студента
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для читателя
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для библиотекаря
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для преподавателя
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				
+				<li class="accordion-nav__item">
+					<span class="accordion-nav__item__self">
+						<a href=""> Видеоинструкции </a>
+					</span>
+				</li>
+				<li class="accordion-nav__item" data-accordion>
+					<div class="accordion-nav__item__self">
+						<a href="">
+							Видеоинструкции
+						</a>
+						<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
+					</div>
+					<div class="accordion-nav__item__list" data-accordion-wrapper>
+						<div class="accordion-nav__item__content" data-accordion-content>
+							<ul class="accordion-nav__sub">
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для студента
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для читателя
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для библиотекаря
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для преподавателя
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				
+			</div>
 		</ul>
 	</div>
 </nav>
@@ -394,29 +392,10 @@
 		
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum dolor sit amet consectetur adipisicin
+				Lorem ipsum dolor sit amet consectetur adipi
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 557 </a>
-				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
-				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
-			</div>
-			<div class="simplebooks__book__bookmark__actions">
-				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
-					<span class="icon icon--edit"></span>
-				</button>
-				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
-					<span class="icon icon--delete"></span>
-				</button>
-			</div>
-		</div>
-		
-		<div class="simplebooks__book__bookmark">
-			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsu
-			</a>
-			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1423 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 562 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -435,7 +414,26 @@
 				Lorem ipsum dolor sit amet co
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 733 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 771 </a>
+				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
+				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
+			</div>
+			<div class="simplebooks__book__bookmark__actions">
+				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
+					<span class="icon icon--edit"></span>
+				</button>
+				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
+					<span class="icon icon--delete"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="simplebooks__book__bookmark">
+			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
+				Lorem ipsum dolor sit amet consectetur adipisicing eli
+			</a>
+			<div class="simplebooks__book__bookmark__info">
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 597 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -452,7 +450,7 @@
 		<!-- <div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem </a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>809</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>1067</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -468,7 +466,7 @@
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero temporibus dolor in aspernatur quos eaque sunt! Possimus architecto esse explicabo ipsum, ea officia quisquam blanditiis optio, eum culpa vel atque ratione! Beatae ipsum accusantium optio? Libero, fuga qui? Excepturi.</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>908</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>827</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -504,10 +502,10 @@
 		
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum dolor sit amet consectetur adipisici
+				Lorem ipsum dolor sit amet consectetur
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 806 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 53 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -523,48 +521,10 @@
 		
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum dolor sit am
+				Lorem ipsum dolor sit amet consecte
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1483 </a>
-				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
-				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
-			</div>
-			<div class="simplebooks__book__bookmark__actions">
-				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
-					<span class="icon icon--edit"></span>
-				</button>
-				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
-					<span class="icon icon--delete"></span>
-				</button>
-			</div>
-		</div>
-		
-		<div class="simplebooks__book__bookmark">
-			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum do
-			</a>
-			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 669 </a>
-				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
-				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
-			</div>
-			<div class="simplebooks__book__bookmark__actions">
-				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
-					<span class="icon icon--edit"></span>
-				</button>
-				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
-					<span class="icon icon--delete"></span>
-				</button>
-			</div>
-		</div>
-		
-		<div class="simplebooks__book__bookmark">
-			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum dolor sit am
-			</a>
-			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1054 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 292 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -581,7 +541,7 @@
 		<!-- <div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem </a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>958</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>1470</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -597,7 +557,7 @@
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero temporibus dolor in aspernatur quos eaque sunt! Possimus architecto esse explicabo ipsum, ea officia quisquam blanditiis optio, eum culpa vel atque ratione! Beatae ipsum accusantium optio? Libero, fuga qui? Excepturi.</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>968</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>1176</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -633,10 +593,10 @@
 		
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum dolor sit amet consectetur adipisicin
+				Lorem
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1084 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1017 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -652,10 +612,48 @@
 		
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsum dolor sit am
+				Lorem ipsum dolor
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 892 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1046 </a>
+				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
+				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
+			</div>
+			<div class="simplebooks__book__bookmark__actions">
+				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
+					<span class="icon icon--edit"></span>
+				</button>
+				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
+					<span class="icon icon--delete"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="simplebooks__book__bookmark">
+			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
+				Lorem ipsum dolor sit amet consectetur adipis
+			</a>
+			<div class="simplebooks__book__bookmark__info">
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 1429 </a>
+				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
+				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
+			</div>
+			<div class="simplebooks__book__bookmark__actions">
+				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
+					<span class="icon icon--edit"></span>
+				</button>
+				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
+					<span class="icon icon--delete"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="simplebooks__book__bookmark">
+			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
+				Lorem ipsum dolor sit amet consectetur adipisicing
+			</a>
+			<div class="simplebooks__book__bookmark__info">
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 894 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -672,7 +670,7 @@
 		<!-- <div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem </a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>322</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>220</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -688,7 +686,7 @@
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero temporibus dolor in aspernatur quos eaque sunt! Possimus architecto esse explicabo ipsum, ea officia quisquam blanditiis optio, eum culpa vel atque ratione! Beatae ipsum accusantium optio? Libero, fuga qui? Excepturi.</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>605</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>789</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -724,10 +722,48 @@
 		
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
-				Lorem ipsu
+				Lorem ipsum d
 			</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 844 </a>
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 672 </a>
+				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
+				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
+			</div>
+			<div class="simplebooks__book__bookmark__actions">
+				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
+					<span class="icon icon--edit"></span>
+				</button>
+				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
+					<span class="icon icon--delete"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="simplebooks__book__bookmark">
+			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
+				Lorem ipsum dolor sit amet consectetur adipis
+			</a>
+			<div class="simplebooks__book__bookmark__info">
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 835 </a>
+				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
+				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
+			</div>
+			<div class="simplebooks__book__bookmark__actions">
+				<button type="button" class="simplebooks__book__bookmark__action" title="Редактировать закладку">
+					<span class="icon icon--edit"></span>
+				</button>
+				<button type="button" class="simplebooks__book__bookmark__action" title="Удалить закладку">
+					<span class="icon icon--delete"></span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="simplebooks__book__bookmark">
+			<a href="" class="simplebooks__book__bookmark__text" title="Перейти к закладке">
+				Lorem ipsum dol
+			</a>
+			<div class="simplebooks__book__bookmark__info">
+				<a href="" class="simplebooks__book__bookmark__page" title="Перейти к странице"> <em> Стр.</em> 866 </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -744,7 +780,7 @@
 		<!-- <div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem </a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>216</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>1232</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -760,7 +796,7 @@
 		<div class="simplebooks__book__bookmark">
 			<a href="" class="simplebooks__book__bookmark__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero temporibus dolor in aspernatur quos eaque sunt! Possimus architecto esse explicabo ipsum, ea officia quisquam blanditiis optio, eum culpa vel atque ratione! Beatae ipsum accusantium optio? Libero, fuga qui? Excepturi.</a>
 			<div class="simplebooks__book__bookmark__info">
-				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>324</em> </a>
+				<a href="" class="simplebooks__book__bookmark__page"> Стр. <em>549</em> </a>
 				<time datetime="" class="simplebooks__book__bookmark__date"> 25 декабря 2024 г.</time>
 				<time datetime="" class="simplebooks__book__bookmark__time">16:17:47</time>
 			</div>
@@ -910,35 +946,43 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
-								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
-							</label>
+	<input type="checkbox" >
+	
+	<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
+	
+</label>
 						</div>
 						<div class="accordion__wrapper">
 							<div class="accordion__content">
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
-											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
-										</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
+	
+</label>
 									</div>
 									<div class="accordion__wrapper">
 										<div class="accordion__content">
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
-														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
-													</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
+	
+</label>
 												</div>
 											</div>
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
-														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
-													</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
+	
+</label>
 												</div>
 											</div>
 										</div>

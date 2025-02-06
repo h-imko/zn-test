@@ -7,8 +7,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/zn-test/assets/style/style.css">
 	<script src="/zn-test/assets/script/script.js" defer></script>
+	<link rel="preload" href="/zn-test/assets/static/font/golos-text_vf.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" as="image" type="image/svg+xml" href="/zn-test/assets/static/img/icon/stack.svg" crossorigin>
+	<link rel="stylesheet" href="/zn-test/assets/style/style.css">
 	<title>Helloworld</title>
 </head>
 
@@ -207,144 +209,133 @@
 		<div class="page">
 			<div class="page__inner">
 				<aside class="page__aside">
-					<div class="warning warning--primary-outlined">
-						<div class="warning__inner">
-							<div class="warning__text">
-								<p> Кабинет библиотекаря </p>
-							</div>
+					<nav class="accordion-nav" data-accordion>
+	<button class="accordion-nav__toggler" data-accordion-toggler><span>Текущий раздел</span></button>
+	<div class="accordion-nav__wrapper" data-accordion-wrapper>
+		<ul class="accordion-nav__content" data-accordion-content>
+			<div class="accordion-nav__list">
+				
+				<li class="accordion-nav__item">
+					<span class="accordion-nav__item__self">
+						<a href=""> Видеоинструкции </a>
+					</span>
+				</li>
+				<li class="accordion-nav__item" data-accordion>
+					<div class="accordion-nav__item__self">
+						<a href="">
+							Видеоинструкции
+						</a>
+						<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
+					</div>
+					<div class="accordion-nav__item__list" data-accordion-wrapper>
+						<div class="accordion-nav__item__content" data-accordion-content>
+							<ul class="accordion-nav__sub">
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для студента
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для читателя
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для библиотекаря
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для преподавателя
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<nav class="accordion-nav" data-accordion>
-	<button class="accordion-nav__toggler" data-accordion-toggler><span>Каталог</span></button>
-	<div class="accordion-nav__wrapper" data-accordion-wrapper>
-		<ul class="accordion-nav__list" data-accordion-content>
-			
-			<li class="accordion-nav__item">
-				<span class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-				</span>
-			</li>
-			<li class="accordion-nav__item" data-accordion>
-				<div class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-					<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
-				</div>
-				<div class="accordion-nav__item__list" data-accordion-wrapper>
-					<div class="accordion-nav__item__content" data-accordion-content>
-						<ul class="accordion-nav__sub">
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для студента
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для читателя
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для библиотекаря
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для преподавателя
-								</a>
-							</li>
-						</ul>
+				</li>
+				
+				<li class="accordion-nav__item">
+					<span class="accordion-nav__item__self">
+						<a href=""> Видеоинструкции </a>
+					</span>
+				</li>
+				<li class="accordion-nav__item" data-accordion>
+					<div class="accordion-nav__item__self">
+						<a href="">
+							Видеоинструкции
+						</a>
+						<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
 					</div>
-				</div>
-			</li>
-			
-			<li class="accordion-nav__item">
-				<span class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-				</span>
-			</li>
-			<li class="accordion-nav__item" data-accordion>
-				<div class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-					<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
-				</div>
-				<div class="accordion-nav__item__list" data-accordion-wrapper>
-					<div class="accordion-nav__item__content" data-accordion-content>
-						<ul class="accordion-nav__sub">
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для студента
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для читателя
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для библиотекаря
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для преподавателя
-								</a>
-							</li>
-						</ul>
+					<div class="accordion-nav__item__list" data-accordion-wrapper>
+						<div class="accordion-nav__item__content" data-accordion-content>
+							<ul class="accordion-nav__sub">
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для студента
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для читателя
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для библиотекаря
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для преподавателя
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</li>
-			
-			<li class="accordion-nav__item">
-				<span class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-				</span>
-			</li>
-			<li class="accordion-nav__item" data-accordion>
-				<div class="accordion-nav__item__self">
-					<a href="">
-						Видеоинструкции
-					</a>
-					<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
-				</div>
-				<div class="accordion-nav__item__list" data-accordion-wrapper>
-					<div class="accordion-nav__item__content" data-accordion-content>
-						<ul class="accordion-nav__sub">
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для студента
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для читателя
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для библиотекаря
-								</a>
-							</li>
-							<li class="accordion-nav__sub__item">
-								<a href="">
-									Для преподавателя
-								</a>
-							</li>
-						</ul>
+				</li>
+				
+				<li class="accordion-nav__item">
+					<span class="accordion-nav__item__self">
+						<a href=""> Видеоинструкции </a>
+					</span>
+				</li>
+				<li class="accordion-nav__item" data-accordion>
+					<div class="accordion-nav__item__self">
+						<a href="">
+							Видеоинструкции
+						</a>
+						<button type="button" class="accordion-nav__item__toggler" data-accordion-toggler title="Скрыть/показать"></button>
 					</div>
-				</div>
-			</li>
-			
+					<div class="accordion-nav__item__list" data-accordion-wrapper>
+						<div class="accordion-nav__item__content" data-accordion-content>
+							<ul class="accordion-nav__sub">
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для студента
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для читателя
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для библиотекаря
+									</a>
+								</li>
+								<li class="accordion-nav__sub__item">
+									<a href="">
+										Для преподавателя
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				
+			</div>
 		</ul>
 	</div>
 </nav>
@@ -368,18 +359,28 @@
 								<form class="form">
 									<div class="form__row">
 										<div class="form__item">
-											<div class="custom-input">
-												<label for="input7" class="custom-input__label">Содержание дисциплины из РПД</label>
-												<textarea id="input7" placeholder="Я плейсхолдер" required></textarea>
-											</div>
+											
+<div class="custom-input">
+	
+	
+	<label for="1738878449199" class="custom-input__label"> Содержание дисциплины из РПД </label>
+	
+	
+	<textarea  type="text"  id="1738878449199"  placeholder=" "  required   ></textarea>
+	
+	
+	
+</div>
 										</div>
 									</div>
 									<div class="form__row">
 										<div class="form__item">
 											<label class="custom-checkbox">
-												<input type="checkbox">
-												<span>Искать в подписках</span>
-											</label>
+	<input type="checkbox" >
+	
+	<span>Искать в подписках</span>
+	
+</label>
 										</div>
 									</div>
 									<div class="form__row">
@@ -553,35 +554,43 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
-								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
-							</label>
+	<input type="checkbox" >
+	
+	<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
+	
+</label>
 						</div>
 						<div class="accordion__wrapper">
 							<div class="accordion__content">
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
-											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
-										</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
+	
+</label>
 									</div>
 									<div class="accordion__wrapper">
 										<div class="accordion__content">
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
-														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
-													</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
+	
+</label>
 												</div>
 											</div>
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
-														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
-													</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
+	
+</label>
 												</div>
 											</div>
 										</div>

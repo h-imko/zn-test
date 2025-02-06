@@ -7,8 +7,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/zn-test/assets/style/style.css">
 	<script src="/zn-test/assets/script/script.js" defer></script>
+	<link rel="preload" href="/zn-test/assets/static/font/golos-text_vf.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" as="image" type="image/svg+xml" href="/zn-test/assets/static/img/icon/stack.svg" crossorigin>
+	<link rel="stylesheet" href="/zn-test/assets/style/style.css">
 	<title>Helloworld</title>
 </head>
 
@@ -176,8 +178,6 @@
 </header>
 		<div class="page">
 			<div class="page__inner">
-				<!-- <aside class="page__aside">
-				</aside> -->
 				<main class="page__content">
 					<div class="container">
 						<style>
@@ -193,7 +193,6 @@
 								margin: 12px 0;
 							}
 						</style>
-						<!-- <div style="width: 800px;"><canvas id="acquisitions1"></canvas></div> -->
 						<a href="/zn-test/pages/main.html">
 							<h2>Главная</h2>
 						</a>
@@ -448,550 +447,6 @@
 							<h2> Рекомендую студентам </h2>
 						</a>
 					</div>
-					<div class="container" hidden>
-						<div class="custom-select" data-list="testlist" data-source="/assets/static/3.json" data-options='[
-						{
-							"id": "9aed8e13-f212-11e8-8985-90b11c31de4c",
-							"text": "Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт"
-						},
-						{
-							"id": "9aed8ec7-f212-11e8-8985-90b11c31de4c",
-							"text": "Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования"
-						},
-						{
-							"id": "9aed8ec9-f212-11e8-8985-90b11c31de4c",
-							"text": "Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования"
-						}
-					]'>
-							<select class="custom-select__select" multiple></select>
-							<div class="custom-select__list">
-								<!-- <div class="custom-select__chosen"></div> -->
-							</div>
-							<div class="custom-select__label">
-								<input type="text" class="custom-select__input">
-							</div>
-							<button type="button" class="custom-select__dialog" data-dialog="list"></button>
-							<div class="custom-select__drop">
-								<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
-								<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
-								<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
-							</div>
-						</div>
-						<form class="form">
-							<div class="form__row">
-								<div class="form__item">
-									<fieldset class="form__element-group">
-										<legend>Содержимое</legend>
-										<div class="form__element-group__items">
-											<label class="custom-radio">
-												<input type="radio" name="test">
-												<span>в названиях</span>
-											</label>
-											<label class="custom-radio">
-												<input type="radio" name="test" disabled>
-												<span>в названиях</span>
-											</label>
-											<label class="custom-radio">
-												<input type="radio" name="test">
-												<span>в названиях</span>
-											</label>
-											<label class="custom-radio">
-												<input type="radio" name="test">
-												<span>в названиях</span>
-											</label>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__item">
-									<fieldset class="form__element-group">
-										<div class="form__element-group__items">
-											<label class="custom-checkbox">
-												<input type="checkbox">
-												<span>Строгий поиск по названию</span>
-											</label>
-											<label class="custom-checkbox">
-												<input type="checkbox" disabled>
-												<span>Строгий поиск по названию</span>
-											</label>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input1" class="custom-input__label">Пароль</label>
-										<input type="password" id="input1" placeholder="Например: 2020, 2011-2018, 2000" required minlength="10">
-										<button type="button" class="custom-input__button custom-input__button--eye" data-input-button="toggleType" title="Показать/скрыть пароль"></button>
-										<div class="custom-input__caption">Пароль должен содержать не менее 10 символов, из которых минимум 2 цифры, 1 строчная и 1 прописная буква (допустимы латиница и кириллица), 1 специальный символ. Пароль не должен совпадать с логином или email.</div>
-									</div>
-								</div>
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input2" class="custom-input__label">Текст</label>
-										<input type="text" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input3" class="custom-input__label">Текст с подписью</label>
-										<input type="text" id="input3" placeholder="Например: 2020, 2011-2018, 2000">
-										<div class="custom-input__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quaerat!</div>
-									</div>
-								</div>
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input4" class="custom-input__label">Эмейл</label>
-										<input type="email" id="input4" placeholder="Например: 2020, 2011-2018, 2000" required>
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input5" class="custom-input__label">Дата</label>
-										<input type="date" id="input5" placeholder=" " required>
-									</div>
-								</div>
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input6" class="custom-input__label">Эмейл</label>
-										<input type="email" id="input6" placeholder="Например: 2020, 2011-2018, 2000" required>
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__item">
-									<div class="custom-input">
-										<label for="input7" class="custom-input__label">Текстареа</label>
-										<textarea id="input7" placeholder="Я плейсхолдер"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="form__row">
-								<div class="form__item">
-									<div class="form__controls">
-										<button type="submit" class="button">Отправить</button>
-										<button type="reset" class="button button--secondary"><span>Очистить</span> </button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div hidden>
-						<div class="con tainer" style="width: 80%;">
-							<div class="table-wrapper">
-								<table class="table table-hover table-admin-orders">
-									<colgroup>
-										<col class="grid-serial-column">
-										<col>
-										<col style="width:80px">
-										<col style="width:95px">
-										<col>
-										<col>
-										<col>
-										<col>
-										<col>
-										<col>
-									</colgroup>
-									<thead>
-										<tr>
-											<th><a class="desc" href="/admin/orders?sort=id" data-sort="id" title="Сортировать">№</a></th>
-											<th><a href="/admin/orders?sort=created_at" data-sort="created_at" title="Сортировать">Дата</a></th>
-											<th>Статус</th>
-											<th><a href="/admin/orders?sort=tickets" data-sort="tickets" title="Сортировать">Кол-во ключей</a></th>
-											<th><a href="/admin/orders?sort=total" data-sort="total" title="Сортировать">Сумма</a></th>
-											<th><a href="/admin/orders?sort=documents_count" data-sort="documents_count" title="Сортировать">Книг вне коллекций</a></th>
-											<th><a href="/admin/orders?sort=collections_count" data-sort="collections_count" title="Сортировать">Коллекций</a></th>
-											<th><a href="/admin/orders?sort=periodicals_count" data-sort="periodicals_count" title="Сортировать">Подшивок журналов</a></th>
-											<th><a href="/admin/orders?sort=encyclopedia_count" data-sort="encyclopedia_count" title="Сортировать" data-sort-order="asc">Энцикло- педия</a></th>
-											<th><a href="/admin/orders?sort=printed_books_count" data-sort="printed_books_count" title="Сортировать">Печатных книг</a></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr data-key="15368">
-											<td>15368</td>
-											<td>11.12.2024</td>
-											<td>Новый</td>
-											<td>0</td>
-											<td>7&nbsp;299&nbsp;₽</td>
-											<td><a href="/admin/order-documents?id=15368">6</a></td>
-											<td></td>
-											<td></td>
-											<td><span class="icon icon--check"></span></td>
-											<td></td>
-										</tr>
-										<tr data-key="15335">
-											<td>15335</td>
-											<td>10.09.2024</td>
-											<td>Новый</td>
-											<td>0</td>
-											<td>3&nbsp;110&nbsp;₽</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><a href="/admin/order-printedbooks?id=15335">2</a></td>
-										</tr>
-										<tr data-key="15328">
-											<td>15328</td>
-											<td>21.08.2024</td>
-											<td>Новый</td>
-											<td>0</td>
-											<td>2&nbsp;250,00&nbsp;₽</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><a href="/admin/order-printedbooks?id=15328">2</a></td>
-										</tr>
-										<tr data-key="15327">
-											<td>15327</td>
-											<td>21.08.2024</td>
-											<td>Новый</td>
-											<td>0</td>
-											<td>990,00&nbsp;₽</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><span class="icon icon--check"></span></td>
-											<td><a href="/admin/order-printedbooks?id=15327">1</a></td>
-										</tr>
-										<tr data-key="15325">
-											<td>15325</td>
-											<td>20.08.2024</td>
-											<td>Новый</td>
-											<td>0</td>
-											<td>2&nbsp;000&nbsp;₽</td>
-											<td><a href="/admin/order-documents?id=15325">2</a></td>
-											<td></td>
-											<td></td>
-											<td><span class="icon icon--check"></span></td>
-											<td></td>
-										</tr>
-										<tr data-key="15324">
-											<td>15324</td>
-											<td>20.08.2024</td>
-											<td>Новый</td>
-											<td>5</td>
-											<td>2&nbsp;000&nbsp;₽</td>
-											<td><a href="/admin/order-documents?id=15324">2</a></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr data-key="15323">
-											<td>15323</td>
-											<td>14.08.2024</td>
-											<td>Новый</td>
-											<td>100</td>
-											<td>2&nbsp;000&nbsp;₽</td>
-											<td><a href="/admin/order-documents?id=15323">2</a></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr data-key="15322">
-											<td>15322</td>
-											<td>14.08.2024</td>
-											<td>Новый</td>
-											<td>1</td>
-											<td>140&nbsp;600&nbsp;₽</td>
-											<td><a href="/admin/order-documents?id=15322">9</a></td>
-											<td></td>
-											<td></td>
-											<td><i class="fa fa-check" aria-hidden="true"></i></td>
-											<td></td>
-										</tr>
-										<tr data-key="15298">
-											<td>15298</td>
-											<td>13.05.2024</td>
-											<td>Новый</td>
-											<td>1</td>
-											<td>5&nbsp;000&nbsp;₽</td>
-											<td><a href="/admin/order-documents?id=15298">1</a></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr data-key="15262">
-											<td>15262</td>
-											<td>29.01.2024</td>
-											<td>Новый</td>
-											<td>1</td>
-											<td>100&nbsp;000&nbsp;₽</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><i class="fa fa-check" aria-hidden="true"></i></td>
-											<td></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="biba">
-							<div class="table-wrapper">
-								<table class="table">
-									<thead>
-										<tr>
-											<!-- <th scope="col" rowspan="2">Name</th> -->
-											<th scope="col" rowspan="2">
-												<div class="custom-checkbox">
-													<input type="checkbox">
-												</div>
-											</th>
-											<th scope="col" colspan="2">Membership Dates</th>
-											<th scope="col" rowspan="2">Balance</th>
-										</tr>
-										<tr>
-											<th scope="col">Joined</th>
-											<th scope="col">
-												<a href="" data-sort-order="asc" title="Сортировать">Canceled</a>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										
-										<tr>
-											<!-- <th scope="row">Margaret Nguyen</th> -->
-											<td>
-												<div class="custom-checkbox">
-													<input type="checkbox">
-												</div>
-											</td>
-											<td><time datetime="2010-06-03">June 3, 2010</time></td>
-											<td>n/a</td>
-											<td>0.00</td>
-										</tr>
-										
-										<tr>
-											<!-- <th scope="row">Margaret Nguyen</th> -->
-											<td>
-												<div class="custom-checkbox">
-													<input type="checkbox">
-												</div>
-											</td>
-											<td><time datetime="2010-06-03">June 3, 2010</time></td>
-											<td>n/a</td>
-											<td>0.00</td>
-										</tr>
-										
-										<tr>
-											<!-- <th scope="row">Margaret Nguyen</th> -->
-											<td>
-												<div class="custom-checkbox">
-													<input type="checkbox">
-												</div>
-											</td>
-											<td><time datetime="2010-06-03">June 3, 2010</time></td>
-											<td>n/a</td>
-											<td>0.00</td>
-										</tr>
-										
-										<tr>
-											<!-- <th scope="row">Margaret Nguyen</th> -->
-											<td>
-												<div class="custom-checkbox">
-													<input type="checkbox">
-												</div>
-											</td>
-											<td><time datetime="2010-06-03">June 3, 2010</time></td>
-											<td>n/a</td>
-											<td>0.00</td>
-										</tr>
-										
-										<tr>
-											<!-- <th scope="row">Margaret Nguyen</th> -->
-											<td>
-												<div class="custom-checkbox">
-													<input type="checkbox">
-												</div>
-											</td>
-											<td><time datetime="2010-06-03">June 3, 2010</time></td>
-											<td>n/a</td>
-											<td>0.00</td>
-										</tr>
-										
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="biba">
-							<table class="table">
-								<thead>
-									<tr>
-										<!-- <th scope="col" rowspan="2">Name</th> -->
-										<th scope="col" rowspan="2">
-											<a href="" title="Сортировать">ID</a>
-										</th>
-										<th scope="col" colspan="2">Membership Dates</th>
-										<th scope="col" rowspan="2">Balance</th>
-									</tr>
-									<tr>
-										<th scope="col">Joined</th>
-										<th scope="col">
-											<a href="" data-sort-order="asc" title="Сортировать">Canceled</a>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<td rowspan="2">427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-								</tbody>
-							</table>
-						</div>
-						<div class="biba" hidden>
-							<table class="table-mega">
-								<thead>
-									<tr>
-										<!-- <th scope="col" rowspan="2">Name</th> -->
-										<th scope="col" rowspan="2">ID</th>
-										<th scope="col" colspan="2">Membership Dates</th>
-										<th scope="col" rowspan="2">Balance</th>
-									</tr>
-									<tr>
-										<th scope="col">Joined</th>
-										<th scope="col">Canceled</th>
-									</tr>
-								</thead>
-								<tbody>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<td rowspan="2">427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									<tr>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-									<tr>
-										<!-- <th scope="row">Margaret Nguyen</th> -->
-										<td>427311</td>
-										<td><time datetime="2010-06-03">June 3, 2010</time></td>
-										<td>n/a</td>
-										<td>0.00</td>
-									</tr>
-									
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="chart-container" hidden>
-						<div class="chart">
-							<canvas id="acquisitions"></canvas>
-						</div>
-					</div>
 				</main>
 			</div>
 		</div>
@@ -1108,35 +563,43 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
-								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
-							</label>
+	<input type="checkbox" >
+	
+	<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
+	
+</label>
 						</div>
 						<div class="accordion__wrapper">
 							<div class="accordion__content">
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
-											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
-										</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
+	
+</label>
 									</div>
 									<div class="accordion__wrapper">
 										<div class="accordion__content">
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
-														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
-													</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
+	
+</label>
 												</div>
 											</div>
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
-														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
-													</label>
+	<input type="checkbox" >
+	
+	<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
+	
+</label>
 												</div>
 											</div>
 										</div>
@@ -1153,72 +616,6 @@
 		</div>
 	</div>
 </dialog>
-		<dialog class="dialog" id="dialog">
-			<div class="dialog__body">
-				<div class="dialog__header">
-					<hgroup class="dialog__hgroup">
-						<h2 class="dialog__title">Привет, я модал!</h2>
-						<p>Пожалуйста, кто-нибудь сделайте что-нибудь</p>
-					</hgroup>
-					<button class="dialog__close" type="button" aria-label="Закрыть окно" data-dialog-selfcloser></button>
-				</div>
-				<div class="dialog__main">
-					<form method="dialog" class="form">
-						<button type="reset">reset</button>
-						<button type="submit">subimt</button>
-						<div class="form__row">
-							<div class="form__item">
-								<fieldset class="form__element-group">
-									<legend>Содержимое</legend>
-									<div class="form__element-group__items">
-										<label class="custom-radio">
-											<input type="radio" name="test">
-											<span>в названиях</span>
-										</label>
-										<label class="custom-radio">
-											<input type="radio" name="test" disabled>
-											<span>в названиях</span>
-										</label>
-										<label class="custom-radio">
-											<input type="radio" name="test">
-											<span>в названиях</span>
-										</label>
-										<label class="custom-radio">
-											<input type="radio" name="test">
-											<span>в названиях</span>
-										</label>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-						<div class="form__row">
-							<div class="form__item">
-								<fieldset class="form__element-group">
-									<div class="form__element-group__items">
-										<label class="custom-checkbox">
-											<input type="checkbox">
-											<span>Строгий поиск по названию</span>
-										</label>
-										<label class="custom-checkbox">
-											<input type="checkbox" disabled>
-											<span>Строгий поиск по названию</span>
-										</label>
-									</div>
-								</fieldset>
-							</div>
-						</div>
-						<div class="form__row">
-							<div class="form__item">
-								<div class="custom-input">
-									<label for="input2" class="custom-input__label">Текст</label>
-									<input type="text" required id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</dialog>
 	</body>
 
 </html>
