@@ -36,9 +36,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">234 дня до окончания доступа</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход (IP 172.16.30.9)</a>
+					</div>
 				</div>
 				
 			</div>
@@ -348,21 +351,18 @@
 				</aside>
 				<main class="page__content">
 					<article class="article">
-						<div class="catalog">
-							<hgroup class="catalog__header">
+						<div class="generic">
+							<hgroup class="generic__header">
 								<h1>Пользователи</h1>
 							</hgroup>
-							<div class="catalog__content">
-								<p>В отчете отображается общее количество уникальных аутентифицированных пользователей (столбец "Итого зарег."), читавших документы за указанный период. </p>
-								<p> По умолчанию учитываются студенты, а также в своих столбцах преподаватели, администраторы и пользователи с портала. Отдельно выведен столбец для анонимных пользователей (заходящих по ip), для которых отображаются сессии. </p>
-								<p>Сумму Анонимных сессий и Зарегистрированных пользователей, которая отображена в столбце "Аноним. + зарег.", можно использовать в параметре "Численность зарегистрированных пользователей библиотеки" отчета ВПО-2.</p>
-								<p>Данные — на текущий момент времени.</p>
-							</div>
-							<div class="catalog__content">
-								<div class="filter">
-									<div class="filter__panel">
-										<button type="button" class="filter__toggler">Фильтры </button>
-										<!-- <div class="filter__applied">
+							<p>В отчете отображается общее количество уникальных аутентифицированных пользователей (столбец "Итого зарег."), читавших документы за указанный период. </p>
+							<p> По умолчанию учитываются студенты, а также в своих столбцах преподаватели, администраторы и пользователи с портала. Отдельно выведен столбец для анонимных пользователей (заходящих по ip), для которых отображаются сессии. </p>
+							<p>Сумму Анонимных сессий и Зарегистрированных пользователей, которая отображена в столбце "Аноним. + зарег.", можно использовать в параметре "Численность зарегистрированных пользователей библиотеки" отчета ВПО-2.</p>
+							<p>Данные — на текущий момент времени.</p>
+							<div class="filter">
+								<div class="filter__panel">
+									<button type="button" class="filter__toggler">Фильтры </button>
+									<!-- <div class="filter__applied">
 										<div class="filter__applied__item">
 											<span class="filter__applied__item__caption">Содержимое: </span>
 											<div class="filter__applied__item__value">
@@ -392,15 +392,15 @@
 											</div>
 										</div>
 									</div> -->
-									</div>
-									<div class="filter__form">
-										<form class="form">
-											<div class="form__row">
-												<div class="form__item">
-													<div class="custom-select">
+								</div>
+								<div class="filter__form">
+									<form class="form">
+										<div class="form__row">
+											<div class="form__item">
+												<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -415,14 +415,14 @@
 		</div>
 	</div>
 </div>
-												</div>
 											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<div class="custom-select">
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -437,125 +437,120 @@
 		</div>
 	</div>
 </div>
-												</div>
 											</div>
-										</form>
-									</div>
+										</div>
+									</form>
 								</div>
 							</div>
-							<div class="catalog__controls">
-								<div class="controls">
-									<div class="controls__row">
-										<div class="controls__group">
-											<div class="controls__item">
-												<span>Год</span>
-												<label class="select-simple">
+							<div class="controls">
+								<div class="controls__row">
+									<div class="controls__group">
+										<div class="controls__item">
+											<span>Год</span>
+											<label class="select-simple">
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
-											</div>
-											<div class="controls__item">
-												<span>Месяц</span>
-												<label class="select-simple">
+										</div>
+										<div class="controls__item">
+											<span>Месяц</span>
+											<label class="select-simple">
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
-											</div>
 										</div>
-										<div class="controls__group">
-											<div class="controls__item">
-												<button type="button" class="controls__button">
-													<span class="icon icon--download"></span>
-													<span>Экспорт в Excel</span>
-												</button>
-											</div>
+									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<button type="button" class="controls__button">
+												<span class="icon icon--download"></span>
+												<span>Экспорт в Excel</span>
+											</button>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="catalog__content">
-								<div class="table-wrapper">
-									<table class="table table--small">
-										<thead>
-											<tr>
-												<th rowspan="2">Период</th>
-												<th colspan="3">Пользователей</th>
-												<th rowspan="2">Сессий</th>
-												<th rowspan="2">Книговыдач</th>
-												<th rowspan="2">Документов</th>
-												<th rowspan="2">Страниц</th>
-											</tr>
-											<tr>
-												<th>Зарег.</th>
-												<th>Аноним.</th>
-												<th>Аноним.+зарег.</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr data-key="0">
-												<td>янв. 2025</td>
-												<td><a href="/admin/statistic-activity?type=activity-readers&amp;cid=590&amp;day=all&amp;month=1&amp;year=2025&amp;with-branches=0">11</a></td>
-												<td>0</td>
-												<td>11</td>
-												<td>17</td>
-												<td><a href="/admin/statistic-activity?type=activity-browsed-docs&amp;cid=590&amp;day=all&amp;month=1&amp;year=2025&amp;with-branches=0">25</a></td>
-												<td><a href="/admin/statistic-activity?type=activity-docs&amp;cid=590&amp;day=all&amp;month=1&amp;year=2025&amp;with-branches=0">25</a></td>
-												<td>108</td>
-											</tr>
-										</tbody>
-									</table>
+							<div class="table-wrapper">
+								<table class="table table--small">
+									<thead>
+										<tr>
+											<th rowspan="2">Период</th>
+											<th colspan="3">Пользователей</th>
+											<th rowspan="2">Сессий</th>
+											<th rowspan="2">Книговыдач</th>
+											<th rowspan="2">Документов</th>
+											<th rowspan="2">Страниц</th>
+										</tr>
+										<tr>
+											<th>Зарег.</th>
+											<th>Аноним.</th>
+											<th>Аноним.+зарег.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-key="0">
+											<td>янв. 2025</td>
+											<td><a href="/admin/statistic-activity?type=activity-readers&amp;cid=590&amp;day=all&amp;month=1&amp;year=2025&amp;with-branches=0">11</a></td>
+											<td>0</td>
+											<td>11</td>
+											<td>17</td>
+											<td><a href="/admin/statistic-activity?type=activity-browsed-docs&amp;cid=590&amp;day=all&amp;month=1&amp;year=2025&amp;with-branches=0">25</a></td>
+											<td><a href="/admin/statistic-activity?type=activity-docs&amp;cid=590&amp;day=all&amp;month=1&amp;year=2025&amp;with-branches=0">25</a></td>
+											<td>108</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="table-wrapper">
+								<table class="table table--small">
+									<thead>
+										<tr>
+											<th>Всего (уник.):</th>
+											<th>Читателей</th>
+											<th>Аноним.</th>
+											<th>Аноним. + Зарег.</th>
+											<th>Сессий</th>
+											<th>Книговыдач</th>
+											<th>Документов</th>
+											<th>Страниц</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-key="0">
+											<td></td>
+											<td><a href="/admin/statistic-activity?type=activity-readers&amp;cid=590&amp;day=all&amp;month=all&amp;year=2025&amp;with-branches=0">11</a></td>
+											<td>0</td>
+											<td>11</td>
+											<td>17</td>
+											<td><a href="/admin/statistic-activity?type=activity-browsed-docs&amp;cid=590&amp;day=all&amp;month=all&amp;year=2025&amp;with-branches=0">25</a></td>
+											<td><a href="/admin/statistic-activity?type=activity-docs&amp;cid=590&amp;day=all&amp;month=all&amp;year=2025&amp;with-branches=0">25</a></td>
+											<td>108</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="chart-container">
+								<div class="chart">
+									<canvas id="chart1"></canvas>
 								</div>
-								<div class="table-wrapper">
-									<table class="table table--small">
-										<thead>
-											<tr>
-												<th>Всего (уник.):</th>
-												<th>Читателей</th>
-												<th>Аноним.</th>
-												<th>Аноним. + Зарег.</th>
-												<th>Сессий</th>
-												<th>Книговыдач</th>
-												<th>Документов</th>
-												<th>Страниц</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr data-key="0">
-												<td></td>
-												<td><a href="/admin/statistic-activity?type=activity-readers&amp;cid=590&amp;day=all&amp;month=all&amp;year=2025&amp;with-branches=0">11</a></td>
-												<td>0</td>
-												<td>11</td>
-												<td>17</td>
-												<td><a href="/admin/statistic-activity?type=activity-browsed-docs&amp;cid=590&amp;day=all&amp;month=all&amp;year=2025&amp;with-branches=0">25</a></td>
-												<td><a href="/admin/statistic-activity?type=activity-docs&amp;cid=590&amp;day=all&amp;month=all&amp;year=2025&amp;with-branches=0">25</a></td>
-												<td>108</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="chart-container">
-									<div class="chart">
-										<canvas id="chart1"></canvas>
-									</div>
-								</div>
-								<div class="chart-container">
-									<div class="chart">
-										<canvas id="chart2"></canvas>
-									</div>
+							</div>
+							<div class="chart-container">
+								<div class="chart">
+									<canvas id="chart2"></canvas>
 								</div>
 							</div>
 						</div>
@@ -676,7 +671,7 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" name="" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
+								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
 								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
 							</label>
 						</div>
@@ -685,7 +680,7 @@
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
+											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
 											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
 										</label>
 									</div>
@@ -694,7 +689,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
 													</label>
 												</div>
@@ -702,7 +697,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
 													</label>
 												</div>

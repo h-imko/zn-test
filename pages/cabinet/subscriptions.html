@@ -36,9 +36,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">Впервые на сайте?</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход </a>
+					</div>
 				</div>
 				
 			</div>
@@ -348,108 +351,102 @@
 				</aside>
 				<main class="page__content">
 					<article class="article">
-						<div class="catalog">
-							<hgroup class="catalog__header">
+						<div class="generic">
+							<hgroup class="generic__header">
 								<h1> Подписки </h1>
 							</hgroup>
-							<div class="catalog__controls">
-								<div class="controls">
-									<div class="controls__row">
-										<div class="controls__group">
-											<div class="controls__item">
-												<a href="" class="controls__button is-active"> Актуальные </a>
-											</div>
+							<div class="controls">
+								<div class="controls__row">
+									<div class="controls__group">
+										<div class="controls__item">
+											<a href="" class="controls__button is-active"> Актуальные </a>
 										</div>
-										<div class="controls__group">
-											<div class="controls__item">
-												<a href="" class="controls__button"> Архив </a>
-											</div>
+									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<a href="" class="controls__button"> Архив </a>
 										</div>
-										<div class="controls__group">
-											<div class="controls__item">
-												<span>Показывать по: </span>
-												<label class="select-simple">
+									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<span>Показывать по: </span>
+											<label class="select-simple">
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
-											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="catalog__content">
-								<div class="table-wrapper">
-									<table class="table">
-										<thead>
-											<tr>
-												<th><a href="/admin/subscribes?sort=id" data-sort="id">№ подписки</a></th>
-												<th>Комментарий</th>
-												<th><a href="/admin/subscribes?sort=subscribe_period_last_day" data-sort="subscribe_period_last_day">Период</a></th>
-												<th><a href="/admin/subscribes?sort=status.status" data-sort="status.status">Статус</a></th>
-												<th style="text-align: right; white-space: nowrap;"><a href="/admin/subscribes?sort=subscribe_total_price" data-sort="subscribe_total_price">Сумма</a></th>
-												<th><a href="/admin/subscribes?sort=tickets_counter" data-sort="tickets_counter">Ключей</a></th>
-												<th><a href="/admin/subscribes?sort=total_docs" data-sort="total_docs">Док-тов</a></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr data-key="86102">
-												<td><a href="/admin/subscribe?sid=86102">86102</a></td>
-												<td></td>
-												<td>01.07.2024<br>30.06.2025<br>Дней&nbsp;ост.:&nbsp;147</td>
-												<td>Подписка</td>
-												<td>3&nbsp;496&nbsp;700&nbsp;₽</td>
-												<td><a href="/admin/subscribe-tickets?sid=86102">95039</a></td>
-												<td><a href="/admin/statistic-fund?type=all&amp;cid=46&amp;sid=86102&amp;month=2">55192</a></td>
-												<td>
-													<div class="icon-buttons">
-														<a href="" class="icon-buttons__item" title="Перейти к статистике">
-															<span class="icon icon--monitoring"></span>
-														</a>
-													</div>
-												</td>
-											</tr>
-											<tr data-key="91149">
-												<td><a href="/admin/subscribe?sid=91149">91149</a></td>
-												<td>Прометей</td>
-												<td>01.10.2024<br>30.06.2025<br>Дней&nbsp;ост.:&nbsp;147</td>
-												<td>Подписка</td>
-												<td>150&nbsp;000&nbsp;₽</td>
-												<td><a href="/admin/subscribe-tickets?sid=91149">95037</a></td>
-												<td><a href="/admin/statistic-fund?type=all&amp;cid=46&amp;sid=91149&amp;month=2">202</a></td>
-												<td>
-													<div class="icon-buttons">
-														<a href="" class="icon-buttons__item" title="Перейти к статистике">
-															<span class="icon icon--monitoring"></span>
-														</a>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th><a href="/admin/subscribes?sort=id" data-sort="id">№ подписки</a></th>
+											<th>Комментарий</th>
+											<th><a href="/admin/subscribes?sort=subscribe_period_last_day" data-sort="subscribe_period_last_day">Период</a></th>
+											<th><a href="/admin/subscribes?sort=status.status" data-sort="status.status">Статус</a></th>
+											<th style="text-align: right; white-space: nowrap;"><a href="/admin/subscribes?sort=subscribe_total_price" data-sort="subscribe_total_price">Сумма</a></th>
+											<th><a href="/admin/subscribes?sort=tickets_counter" data-sort="tickets_counter">Ключей</a></th>
+											<th><a href="/admin/subscribes?sort=total_docs" data-sort="total_docs">Док-тов</a></th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-key="86102">
+											<td><a href="/admin/subscribe?sid=86102">86102</a></td>
+											<td></td>
+											<td>01.07.2024<br>30.06.2025<br>Дней&nbsp;ост.:&nbsp;147</td>
+											<td>Подписка</td>
+											<td>3&nbsp;496&nbsp;700&nbsp;₽</td>
+											<td><a href="/admin/subscribe-tickets?sid=86102">95039</a></td>
+											<td><a href="/admin/statistic-fund?type=all&amp;cid=46&amp;sid=86102&amp;month=2">55192</a></td>
+											<td>
+												<div class="icon-buttons">
+													<a href="" class="icon-buttons__item" title="Перейти к статистике">
+														<span class="icon icon--monitoring"></span>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr data-key="91149">
+											<td><a href="/admin/subscribe?sid=91149">91149</a></td>
+											<td>Прометей</td>
+											<td>01.10.2024<br>30.06.2025<br>Дней&nbsp;ост.:&nbsp;147</td>
+											<td>Подписка</td>
+											<td>150&nbsp;000&nbsp;₽</td>
+											<td><a href="/admin/subscribe-tickets?sid=91149">95037</a></td>
+											<td><a href="/admin/statistic-fund?type=all&amp;cid=46&amp;sid=91149&amp;month=2">202</a></td>
+											<td>
+												<div class="icon-buttons">
+													<a href="" class="icon-buttons__item" title="Перейти к статистике">
+														<span class="icon icon--monitoring"></span>
+													</a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<div class="catalog__content">
-								<div class="text">
-									<p>
-										<img src="https://znanium.ru/uploads/managers/Исагулова_Марианна_Тенгизовна_2-small.jpg" align="left" style="display: inline; width: auto; margin-right: 20px;">
-										Продлить подписку на ЭБС Вы можете у своего менеджера:
-									</p>
-									<p><b>Исагулова Марианна Тенгизовна</b></p>
-									<p>тел. (495) 859-48-60 доб. 210, моб. +7 (929) 984-30-66</p>
-									<p>email: isagulova_mt@infra-m.ru</p>
-									<p>
-										Получить ознакомительный доступ Вы можете через <a href="/site/request-for-connect">форму запроса на тестирование ЭБС</a>.
-										<br>Все способы доступа к ЭБС — <a href="/help/firstvisit">здесь</a>.
-									</p>
-								</div>
+							<div class="text">
+								<p>
+									<img src="https://znanium.ru/uploads/managers/Исагулова_Марианна_Тенгизовна_2-small.jpg" align="left" style="display: inline; width: auto; margin-right: 20px;">
+									Продлить подписку на ЭБС Вы можете у своего менеджера:
+								</p>
+								<p><b>Исагулова Марианна Тенгизовна</b></p>
+								<p>тел. (495) 859-48-60 доб. 210, моб. +7 (929) 984-30-66</p>
+								<p>email: isagulova_mt@infra-m.ru</p>
+								<p>
+									Получить ознакомительный доступ Вы можете через <a href="/site/request-for-connect">форму запроса на тестирование ЭБС</a>.
+									<br>Все способы доступа к ЭБС — <a href="/help/firstvisit">здесь</a>.
+								</p>
 							</div>
 						</div>
 					</article>
@@ -569,7 +566,7 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" name="" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
+								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
 								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
 							</label>
 						</div>
@@ -578,7 +575,7 @@
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
+											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
 											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
 										</label>
 									</div>
@@ -587,7 +584,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
 													</label>
 												</div>
@@ -595,7 +592,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
 													</label>
 												</div>

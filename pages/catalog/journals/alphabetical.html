@@ -36,12 +36,9 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">Впервые на сайте?</a>
-					<div class="header__login">
-						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
-						/
-						<a href="" class="header__login__item">Вход </a>
-					</div>
+					<a href="" class="header__link">234 дня до окончания доступа </a>
+					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
+					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
 				</div>
 				
 			</div>
@@ -198,8 +195,7 @@
 		<div class="page">
 			<div class="page__inner">
 				<aside class="page__aside">
-					<div class="page__aside__sticky">
-						<nav class="accordion-nav" data-accordion>
+					<nav class="accordion-nav" data-accordion>
 	<button class="accordion-nav__toggler" data-accordion-toggler><span>Каталог</span></button>
 	<div class="accordion-nav__wrapper" data-accordion-wrapper>
 		<ul class="accordion-nav__list" data-accordion-content>
@@ -333,17 +329,16 @@
 		</ul>
 	</div>
 </nav>
-					</div>
 				</aside>
 				<main class="page__content">
-					<div class="catalog">
-						<div class="catalog__content">
+					<article class="article">
+						<div class="generic">
 							<form class="singleform">
 	<div class="container-fluid">
 		<div class="singleform__innner">
 			<div class="singleform__main">
 				<div class="singleform__select">
-					<select name="" id="">
+					<select>
 						<option value="">Весь фонд</option>
 						<option value="">В подписках</option>
 						<option value="">Вне подписок</option>
@@ -352,7 +347,7 @@
 				<div class="singleform__main__group">
 					<input type="text" class="singleform__input" placeholder="Поиск по страницам сайта" required>
 					<div class="singleform__controls">
-						<a href="" type="button" class="singleform__controls__item" title="Расширенный поиск">
+						<a href="" class="singleform__controls__item" title="Расширенный поиск">
 							<span class="icon icon--gear">
 							</span>
 						</a>
@@ -418,41 +413,33 @@
 		</div>
 	</div>
 </form>
-						</div>
-						<div class="catalog__content">
 							<div class="filter">
 								<div class="filter__panel">
-									<button type="button" class="filter__toggler">Фильтры </button>
-									<!-- <div class="filter__applied">
-							<div class="filter__applied__item">
-								<span class="filter__applied__item__caption">Содержимое: </span>
-								<div class="filter__applied__item__value">
-									<span>в текстах</span>
-									<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-								</div>
-							</div>
-							<div class="filter__applied__item">
-								<span class="filter__applied__item__caption">Автор(ы) : </span>
-								<div class="filter__applied__item__value">
-									<span>Вандыш-Бубко Василий Васильевич</span>
-									<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-								</div>
-							</div>
-							<div class="filter__applied__item">
-								<span class="filter__applied__item__caption">Собственная литература ГК ИНФРА-М : </span>
-								<div class="filter__applied__item__value">
-									<span> Да </span>
-									<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-								</div>
-							</div>
-							<div class="filter__applied__item">
-								<span class="filter__applied__item__caption">Бесплатные: </span>
-								<div class="filter__applied__item__value">
-									<span>Включить</span>
-									<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-								</div>
-							</div>
-						</div> -->
+									<button type="button" class="filter__toggler">Изменить условия поиска </button>
+									<div class="filter__applied">
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Область поиска: </span>
+											<div class="filter__applied__item__value">
+												<span>В подписках</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
+											</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Содержимое: </span>
+											<div class="filter__applied__item__value">
+												<span>в названиях</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
+											</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">ISSN: </span>
+											<div class="filter__applied__item__value">
+												<span> Введите ISSN
+												</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="filter__form">
 									<form class="form">
@@ -461,7 +448,7 @@
 												<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -483,7 +470,7 @@
 												<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -504,14 +491,13 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</article>
 					<article class="article">
-						<div class="catalog">
-							<div class="catalog__header">
+						<div class="generic">
+							<hgroup class="generic__header">
 								<h1>Алфавитный указатель</h1>
-							</div>
-							<div class="catalog__nav">
-								<nav class="alphabetical">
+							</hgroup>
+							<nav class="alphabetical">
 	<div class="alphabetical__row">
 		<a href="" class="alphabetical__item is-active">Все</a>
 		
@@ -639,169 +625,163 @@
 		
 	</div>
 </nav>
-							</div>
-							<div class="catalog__controls">
-								<div class="controls">
-									<div class="controls__row">
-										<div class="controls__group">
-											<div class="controls__item">
-												<span>Показывать по: </span>
-												<label class="select-simple">
+							<div class="controls">
+								<div class="controls__row">
+									<div class="controls__group">
+										<div class="controls__item">
+											<span>Показывать по: </span>
+											<label class="select-simple">
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
-											</div>
-											<div class="controls__item">
-												<span>Показано <em>1-10</em> из <em> 10 </em>
-												</span>
-											</div>
+										</div>
+										<div class="controls__item">
+											<span>Показано <em>1-10</em> из <em> 10 </em>
+											</span>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="catalog__items">
-								<div class="table-wrapper">
-									<table class="table">
-										<thead>
-											<tr>
-												<th scope="col">Журнал</th>
-												<th scope="col">Издательство</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr data-key="20c40c68-6838-11e5-93f0-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=20c40c68-6838-11e5-93f0-90b11c31de4c" title="Перейти к списку выпусков">Foods and Raw Materials</a>
-												</td>
-												<td>Кемеровский государственный университет</td>
-											</tr>
-											<tr data-key="08d55c2b-a0ca-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=08d55c2b-a0ca-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Агрохимия</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="f3c77bda-239e-11e4-99c7-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=f3c77bda-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Атеросклероз и дислипидемии</a>
-												</td>
-												<td>Национальное общество по изучению атеросклероза</td>
-											</tr>
-											<tr data-key="8196f4cc-a1be-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=8196f4cc-a1be-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биологические мембраны</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="f2bae857-1a3e-11e9-89fb-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=f2bae857-1a3e-11e9-89fb-90b11c31de4c" title="Перейти к списку выпусков">Биология в школе</a>
-												</td>
-												<td>Школьная Пресса</td>
-											</tr>
-											<tr data-key="2c4edc50-a337-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=2c4edc50-a337-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биология внутренних вод</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="139fea03-a329-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=139fea03-a329-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биология моря</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="631fdfc4-a34f-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=631fdfc4-a34f-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биоорганическая химия</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="c317c6ad-a358-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=c317c6ad-a358-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биофизика</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="b1d8564b-a26e-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=b1d8564b-a26e-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биохимия</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="89f1eb42-a73e-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=89f1eb42-a73e-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Ботанический журнал</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="1231e3b6-e231-11e6-86d5-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=1231e3b6-e231-11e6-86d5-90b11c31de4c" title="Перейти к списку выпусков">Бюллетень науки и практики</a>
-												</td>
-												<td>Наука и практика</td>
-											</tr>
-											<tr data-key="f9bfbd0a-239e-11e4-99c7-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=f9bfbd0a-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Вестник новых медицинских технологий</a>
-												</td>
-												<td>Тульский государственный университет</td>
-											</tr>
-											<tr data-key="79644a73-a7f4-11ef-b4b3-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=79644a73-a7f4-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Водные ресурсы</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="3d39bc9f-ab2f-11ef-b4b5-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=3d39bc9f-ab2f-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Вопросы ихтиологии</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="14812cb5-b716-11ef-b4b6-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=14812cb5-b716-11ef-b4b6-a2a0ac98ca0e" title="Перейти к списку выпусков">Доклады Российской академии наук Науки о жизни</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="f3c77b93-239e-11e4-99c7-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=f3c77b93-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Естественные науки</a>
-												</td>
-												<td>Астраханский государственный университет</td>
-											</tr>
-											<tr data-key="75f6adda-b0a6-11ef-b4b5-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=75f6adda-b0a6-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Журнал высшей нервной деятельности имени И П Павлова</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-											<tr data-key="9509661b-cd4a-11e8-bfa5-90b11c31de4c">
-												<td>
-													<a href="/catalog/magazines/issues?ref=9509661b-cd4a-11e8-bfa5-90b11c31de4c" title="Перейти к списку выпусков">Журнал естественнонаучных исследований</a>
-												</td>
-												<td>НИЦ ИНФРА-М</td>
-											</tr>
-											<tr data-key="905079e3-b225-11ef-b4b5-a2a0ac98ca0e">
-												<td>
-													<a href="/catalog/magazines/issues?ref=905079e3-b225-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Журнал общей биологии</a>
-												</td>
-												<td>Наука</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Журнал</th>
+											<th scope="col">Издательство</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-key="20c40c68-6838-11e5-93f0-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=20c40c68-6838-11e5-93f0-90b11c31de4c" title="Перейти к списку выпусков">Foods and Raw Materials</a>
+											</td>
+											<td>Кемеровский государственный университет</td>
+										</tr>
+										<tr data-key="08d55c2b-a0ca-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=08d55c2b-a0ca-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Агрохимия</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="f3c77bda-239e-11e4-99c7-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=f3c77bda-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Атеросклероз и дислипидемии</a>
+											</td>
+											<td>Национальное общество по изучению атеросклероза</td>
+										</tr>
+										<tr data-key="8196f4cc-a1be-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=8196f4cc-a1be-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биологические мембраны</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="f2bae857-1a3e-11e9-89fb-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=f2bae857-1a3e-11e9-89fb-90b11c31de4c" title="Перейти к списку выпусков">Биология в школе</a>
+											</td>
+											<td>Школьная Пресса</td>
+										</tr>
+										<tr data-key="2c4edc50-a337-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=2c4edc50-a337-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биология внутренних вод</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="139fea03-a329-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=139fea03-a329-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биология моря</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="631fdfc4-a34f-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=631fdfc4-a34f-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биоорганическая химия</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="c317c6ad-a358-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=c317c6ad-a358-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биофизика</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="b1d8564b-a26e-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=b1d8564b-a26e-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биохимия</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="89f1eb42-a73e-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=89f1eb42-a73e-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Ботанический журнал</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="1231e3b6-e231-11e6-86d5-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=1231e3b6-e231-11e6-86d5-90b11c31de4c" title="Перейти к списку выпусков">Бюллетень науки и практики</a>
+											</td>
+											<td>Наука и практика</td>
+										</tr>
+										<tr data-key="f9bfbd0a-239e-11e4-99c7-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=f9bfbd0a-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Вестник новых медицинских технологий</a>
+											</td>
+											<td>Тульский государственный университет</td>
+										</tr>
+										<tr data-key="79644a73-a7f4-11ef-b4b3-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=79644a73-a7f4-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Водные ресурсы</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="3d39bc9f-ab2f-11ef-b4b5-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=3d39bc9f-ab2f-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Вопросы ихтиологии</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="14812cb5-b716-11ef-b4b6-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=14812cb5-b716-11ef-b4b6-a2a0ac98ca0e" title="Перейти к списку выпусков">Доклады Российской академии наук Науки о жизни</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="f3c77b93-239e-11e4-99c7-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=f3c77b93-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Естественные науки</a>
+											</td>
+											<td>Астраханский государственный университет</td>
+										</tr>
+										<tr data-key="75f6adda-b0a6-11ef-b4b5-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=75f6adda-b0a6-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Журнал высшей нервной деятельности имени И П Павлова</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+										<tr data-key="9509661b-cd4a-11e8-bfa5-90b11c31de4c">
+											<td>
+												<a href="/catalog/magazines/issues?ref=9509661b-cd4a-11e8-bfa5-90b11c31de4c" title="Перейти к списку выпусков">Журнал естественнонаучных исследований</a>
+											</td>
+											<td>НИЦ ИНФРА-М</td>
+										</tr>
+										<tr data-key="905079e3-b225-11ef-b4b5-a2a0ac98ca0e">
+											<td>
+												<a href="/catalog/magazines/issues?ref=905079e3-b225-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Журнал общей биологии</a>
+											</td>
+											<td>Наука</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<div class="catalog__footer">
-								<nav class="pagination">
+							<nav class="pagination">
 	<a href="" class="pagination__item pagination__item--prev" title="Назад"></a>
 	<a href="" class="pagination__item">1</a>
 	<a href="" class="pagination__item">...</a>
@@ -813,7 +793,6 @@
 	<a href="" class="pagination__item">1021</a>
 	<a href="" class="pagination__item pagination__item--next" title="Вперед"></a>
 </nav>
-							</div>
 						</div>
 					</article>
 				</main>
@@ -932,7 +911,7 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" name="" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
+								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
 								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
 							</label>
 						</div>
@@ -941,7 +920,7 @@
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
+											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
 											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
 										</label>
 									</div>
@@ -950,7 +929,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
 													</label>
 												</div>
@@ -958,7 +937,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
 													</label>
 												</div>

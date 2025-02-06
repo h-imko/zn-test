@@ -351,82 +351,79 @@
 				</aside>
 				<main class="page__content">
 					<article class="article">
-						<div class="catalog">
-							<hgroup class="catalog__header">
+						<div class="generic">
+							<hgroup class="generic__header">
 								<h1> Поиск документов ЭБС по описаниям дисциплин</h1>
 							</hgroup>
-							<div class="catalog__items">
-								<div class="text">
-									<p>Ассистент преподавателя поможет найти документы ЭБС на основе сопоставления их полного текста с описанием дисциплины.</p>
-									<p>Количество результатов поиска зависит от объема фонда ЭБС по дисциплине, которой соответствует фрагмент РПД. Результаты отсортированы по убыванию релевантности, слева направо.</p>
-									<p>Чтобы сформировать перечень книг:</p>
-									<ul>
-										<li>Скопируйте данные из нужной РПД. Описание, как правило, располагается в разделе «Содержание дисциплины».</li>
-										<li>Вставьте данные в поисковое окно и нажмите «Найти».</li>
-										<li>Выгрузите полученные документы в удобном формате для дальнейшей работы.</li>
-									</ul>
-									<p>Для примера мы подготовили текст дисциплины «Философия». Чтобы посмотреть, как работает Ассистент преподавателя, нажмите на ссылку <button type="button" class="hover-type-1">Вставить пример запроса.</button></p>
-									<form class="form">
-										<div class="form__row">
-											<div class="form__item">
-												<div class="custom-input">
-													<label for="input7" class="custom-input__label">Содержание дисциплины из РПД</label>
-													<textarea name="" id="input7" placeholder="Я плейсхолдер" required></textarea>
-												</div>
+							<div class="text">
+								<p>Ассистент преподавателя поможет найти документы ЭБС на основе сопоставления их полного текста с описанием дисциплины.</p>
+								<p>Количество результатов поиска зависит от объема фонда ЭБС по дисциплине, которой соответствует фрагмент РПД. Результаты отсортированы по убыванию релевантности, слева направо.</p>
+								<p>Чтобы сформировать перечень книг:</p>
+								<ul>
+									<li>Скопируйте данные из нужной РПД. Описание, как правило, располагается в разделе «Содержание дисциплины».</li>
+									<li>Вставьте данные в поисковое окно и нажмите «Найти».</li>
+									<li>Выгрузите полученные документы в удобном формате для дальнейшей работы.</li>
+								</ul>
+								<p>Для примера мы подготовили текст дисциплины «Философия». Чтобы посмотреть, как работает Ассистент преподавателя, нажмите на ссылку <button type="button" class="hover-type-1">Вставить пример запроса.</button></p>
+								<form class="form">
+									<div class="form__row">
+										<div class="form__item">
+											<div class="custom-input">
+												<label for="input7" class="custom-input__label">Содержание дисциплины из РПД</label>
+												<textarea id="input7" placeholder="Я плейсхолдер" required></textarea>
 											</div>
 										</div>
-										<div class="form__row">
-											<div class="form__item">
-												<label class="custom-checkbox">
-													<input type="checkbox" name="">
-													<span>Искать в подписках</span>
-												</label>
-											</div>
+									</div>
+									<div class="form__row">
+										<div class="form__item">
+											<label class="custom-checkbox">
+												<input type="checkbox">
+												<span>Искать в подписках</span>
+											</label>
 										</div>
-										<div class="form__row">
-											<div class="form__item">
-												<label class="select-simple">
+									</div>
+									<div class="form__row">
+										<div class="form__item">
+											<label class="select-simple">
 	
 	<span>Период издания</span>
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
-											</div>
-											<div class="form__item">
-												<label class="select-simple">
+										</div>
+										<div class="form__item">
+											<label class="select-simple">
 	
 	<span>Уровень образования</span>
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__item">
+											<div class="form__controls">
+												<button type="submit" class="button">Найти</button>
 											</div>
 										</div>
-										<div class="form__row">
-											<div class="form__item">
-												<div class="form__controls">
-													<button type="submit" class="button">Найти</button>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
+									</div>
+								</form>
 							</div>
-							<div class="catalog__footer">
-								<nav class="pagination">
+							<nav class="pagination">
 	<a href="" class="pagination__item pagination__item--prev" title="Назад"></a>
 	<a href="" class="pagination__item">1</a>
 	<a href="" class="pagination__item">...</a>
@@ -438,7 +435,6 @@
 	<a href="" class="pagination__item">1021</a>
 	<a href="" class="pagination__item pagination__item--next" title="Вперед"></a>
 </nav>
-							</div>
 						</div>
 					</article>
 				</main>
@@ -557,7 +553,7 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" name="" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
+								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
 								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
 							</label>
 						</div>
@@ -566,7 +562,7 @@
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
+											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
 											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
 										</label>
 									</div>
@@ -575,7 +571,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
 													</label>
 												</div>
@@ -583,7 +579,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
 													</label>
 												</div>

@@ -36,9 +36,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">Впервые на сайте?</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход </a>
+					</div>
 				</div>
 				
 			</div>
@@ -460,7 +463,7 @@
 							"text": "Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования"
 						}
 					]'>
-							<select class="custom-select__select" name="" multiple></select>
+							<select class="custom-select__select" multiple></select>
 							<div class="custom-select__list">
 								<!-- <div class="custom-select__chosen"></div> -->
 							</div>
@@ -505,11 +508,11 @@
 									<fieldset class="form__element-group">
 										<div class="form__element-group__items">
 											<label class="custom-checkbox">
-												<input type="checkbox" name="">
+												<input type="checkbox">
 												<span>Строгий поиск по названию</span>
 											</label>
 											<label class="custom-checkbox">
-												<input type="checkbox" name="" disabled>
+												<input type="checkbox" disabled>
 												<span>Строгий поиск по названию</span>
 											</label>
 										</div>
@@ -520,7 +523,7 @@
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input1" class="custom-input__label">Пароль</label>
-										<input type="password" name="" id="input1" placeholder="Например: 2020, 2011-2018, 2000" required minlength="10">
+										<input type="password" id="input1" placeholder="Например: 2020, 2011-2018, 2000" required minlength="10">
 										<button type="button" class="custom-input__button custom-input__button--eye" data-input-button="toggleType" title="Показать/скрыть пароль"></button>
 										<div class="custom-input__caption">Пароль должен содержать не менее 10 символов, из которых минимум 2 цифры, 1 строчная и 1 прописная буква (допустимы латиница и кириллица), 1 специальный символ. Пароль не должен совпадать с логином или email.</div>
 									</div>
@@ -528,7 +531,7 @@
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input2" class="custom-input__label">Текст</label>
-										<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
+										<input type="text" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
 									</div>
 								</div>
 							</div>
@@ -536,14 +539,14 @@
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input3" class="custom-input__label">Текст с подписью</label>
-										<input type="text" name="" id="input3" placeholder="Например: 2020, 2011-2018, 2000">
+										<input type="text" id="input3" placeholder="Например: 2020, 2011-2018, 2000">
 										<div class="custom-input__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quaerat!</div>
 									</div>
 								</div>
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input4" class="custom-input__label">Эмейл</label>
-										<input type="email" name="" id="input4" placeholder="Например: 2020, 2011-2018, 2000" required>
+										<input type="email" id="input4" placeholder="Например: 2020, 2011-2018, 2000" required>
 									</div>
 								</div>
 							</div>
@@ -551,13 +554,13 @@
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input5" class="custom-input__label">Дата</label>
-										<input type="date" name="" id="input5" placeholder=" " required>
+										<input type="date" id="input5" placeholder=" " required>
 									</div>
 								</div>
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input6" class="custom-input__label">Эмейл</label>
-										<input type="email" name="" id="input6" placeholder="Например: 2020, 2011-2018, 2000" required>
+										<input type="email" id="input6" placeholder="Например: 2020, 2011-2018, 2000" required>
 									</div>
 								</div>
 							</div>
@@ -565,7 +568,7 @@
 								<div class="form__item">
 									<div class="custom-input">
 										<label for="input7" class="custom-input__label">Текстареа</label>
-										<textarea name="" id="input7" placeholder="Я плейсхолдер"></textarea>
+										<textarea id="input7" placeholder="Я плейсхолдер"></textarea>
 									</div>
 								</div>
 							</div>
@@ -742,7 +745,7 @@
 											<!-- <th scope="col" rowspan="2">Name</th> -->
 											<th scope="col" rowspan="2">
 												<div class="custom-checkbox">
-													<input type="checkbox" name="" id="">
+													<input type="checkbox">
 												</div>
 											</th>
 											<th scope="col" colspan="2">Membership Dates</th>
@@ -761,7 +764,7 @@
 											<!-- <th scope="row">Margaret Nguyen</th> -->
 											<td>
 												<div class="custom-checkbox">
-													<input type="checkbox" name="" id="">
+													<input type="checkbox">
 												</div>
 											</td>
 											<td><time datetime="2010-06-03">June 3, 2010</time></td>
@@ -773,7 +776,7 @@
 											<!-- <th scope="row">Margaret Nguyen</th> -->
 											<td>
 												<div class="custom-checkbox">
-													<input type="checkbox" name="" id="">
+													<input type="checkbox">
 												</div>
 											</td>
 											<td><time datetime="2010-06-03">June 3, 2010</time></td>
@@ -785,7 +788,7 @@
 											<!-- <th scope="row">Margaret Nguyen</th> -->
 											<td>
 												<div class="custom-checkbox">
-													<input type="checkbox" name="" id="">
+													<input type="checkbox">
 												</div>
 											</td>
 											<td><time datetime="2010-06-03">June 3, 2010</time></td>
@@ -797,7 +800,7 @@
 											<!-- <th scope="row">Margaret Nguyen</th> -->
 											<td>
 												<div class="custom-checkbox">
-													<input type="checkbox" name="" id="">
+													<input type="checkbox">
 												</div>
 											</td>
 											<td><time datetime="2010-06-03">June 3, 2010</time></td>
@@ -809,7 +812,7 @@
 											<!-- <th scope="row">Margaret Nguyen</th> -->
 											<td>
 												<div class="custom-checkbox">
-													<input type="checkbox" name="" id="">
+													<input type="checkbox">
 												</div>
 											</td>
 											<td><time datetime="2010-06-03">June 3, 2010</time></td>
@@ -1105,7 +1108,7 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" name="" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
+								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
 								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
 							</label>
 						</div>
@@ -1114,7 +1117,7 @@
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
+											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
 											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
 										</label>
 									</div>
@@ -1123,7 +1126,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
 													</label>
 												</div>
@@ -1131,7 +1134,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
 													</label>
 												</div>
@@ -1193,11 +1196,11 @@
 								<fieldset class="form__element-group">
 									<div class="form__element-group__items">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="">
+											<input type="checkbox">
 											<span>Строгий поиск по названию</span>
 										</label>
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" disabled>
+											<input type="checkbox" disabled>
 											<span>Строгий поиск по названию</span>
 										</label>
 									</div>
@@ -1208,7 +1211,7 @@
 							<div class="form__item">
 								<div class="custom-input">
 									<label for="input2" class="custom-input__label">Текст</label>
-									<input type="text" required name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
+									<input type="text" required id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
 								</div>
 							</div>
 						</div>

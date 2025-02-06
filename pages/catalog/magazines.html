@@ -198,8 +198,7 @@
 		<div class="page">
 			<div class="page__inner">
 				<aside class="page__aside">
-					<div class="page__aside__sticky">
-						<nav class="accordion-nav" data-accordion>
+					<nav class="accordion-nav" data-accordion>
 	<button class="accordion-nav__toggler" data-accordion-toggler><span>Каталог</span></button>
 	<div class="accordion-nav__wrapper" data-accordion-wrapper>
 		<ul class="accordion-nav__list" data-accordion-content>
@@ -333,18 +332,15 @@
 		</ul>
 	</div>
 </nav>
-					</div>
 				</aside>
 				<main class="page__content">
 					<article class="article">
-						<div class="catalog">
-							<div class="catalog__content">
-								<form class="singleform">
+						<form class="singleform">
 	<div class="container-fluid">
 		<div class="singleform__innner">
 			<div class="singleform__main">
 				<div class="singleform__select">
-					<select name="" id="">
+					<select>
 						<option value="">Весь фонд</option>
 						<option value="">В подписках</option>
 						<option value="">Вне подписок</option>
@@ -353,7 +349,7 @@
 				<div class="singleform__main__group">
 					<input type="text" class="singleform__input" placeholder="Поиск по страницам сайта" required>
 					<div class="singleform__controls">
-						<a href="" type="button" class="singleform__controls__item" title="Расширенный поиск">
+						<a href="" class="singleform__controls__item" title="Расширенный поиск">
 							<span class="icon icon--gear">
 							</span>
 						</a>
@@ -419,109 +415,51 @@
 		</div>
 	</div>
 </form>
-							</div>
-						</div>
 					</article>
 					<article class="article">
-						<div class="catalog">
-							<div class="catalog__filter">
-								<div class="filter">
-									<div class="filter__panel">
-										<button type="button" class="filter__toggler">Изменить условия поиска</button>
-										<div class="filter__applied">
-											<div class="filter__applied__item">
-												<span class="filter__applied__item__caption">Содержимое: </span>
-												<div class="filter__applied__item__value">
-													<span>в текстах</span>
-													<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-												</div>
+						<div class="generic">
+							<div class="filter">
+								<div class="filter__panel">
+									<button type="button" class="filter__toggler">Изменить условия поиска</button>
+									<div class="filter__applied">
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Содержимое: </span>
+											<div class="filter__applied__item__value">
+												<span>в текстах</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
 											</div>
-											<div class="filter__applied__item">
-												<span class="filter__applied__item__caption">Автор(ы) : </span>
-												<div class="filter__applied__item__value">
-													<span>Вандыш-Бубко Василий Васильевич</span>
-													<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-												</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Автор(ы) : </span>
+											<div class="filter__applied__item__value">
+												<span>Вандыш-Бубко Василий Васильевич</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
 											</div>
-											<div class="filter__applied__item">
-												<span class="filter__applied__item__caption">Собственная литература ГК ИНФРА-М : </span>
-												<div class="filter__applied__item__value">
-													<span> Да </span>
-													<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-												</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Собственная литература ГК ИНФРА-М : </span>
+											<div class="filter__applied__item__value">
+												<span> Да </span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
 											</div>
-											<div class="filter__applied__item">
-												<span class="filter__applied__item__caption">Бесплатные: </span>
-												<div class="filter__applied__item__value">
-													<span>Включить</span>
-													<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-												</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Бесплатные: </span>
+											<div class="filter__applied__item__value">
+												<span>Включить</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
 											</div>
 										</div>
 									</div>
-									<div class="filter__form">
-										<form class="form">
-											<div class="form__row">
-												<div class="form__item">
-													<div class="custom-select">
-	<div class="custom-select__label"> Я селект</div>
-	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" ></select>
-		<div class="custom-select__list">
-			<!-- <div class="custom-select__chosen"></div> -->
-		</div>
-		<div class="custom-select__field">
-			<input type="text" class="custom-select__input">
-		</div>
-		
-		<div class="custom-select__drop">
-			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
-			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
-			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
-		</div>
-	</div>
-</div>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<fieldset class="form__element-group">
-														<legend>Содержимое</legend>
-														<div class="form__element-group__items">
-															<label class="custom-radio">
-																<input type="radio" name="test">
-																<span>в названиях</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test">
-																<span>в текстах
-																</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test">
-																<span>в оглавлениях</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test">
-																<span>везде</span>
-															</label>
-														</div>
-													</fieldset>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<label class="custom-checkbox">
-														<input type="checkbox" name="">
-														<span>Строгий поиск по названию</span>
-													</label>
-												</div>
-											</div>
-											<div class="form__row">
+								</div>
+								<div class="filter__form">
+									<form class="form">
+										<div class="form__row">
+											<div class="form__item">
 												<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" ></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -537,47 +475,143 @@
 	</div>
 </div>
 											</div>
-											<div class="form__row">
-												<div class="custom-select">
-	<div class="custom-select__label"> Я селект</div>
-	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
-		<div class="custom-select__list">
-			<!-- <div class="custom-select__chosen"></div> -->
-		</div>
-		<div class="custom-select__field">
-			<input type="text" class="custom-select__input">
-		</div>
-		
-		<div class="custom-select__drop">
-			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
-			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
-			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
-		</div>
-	</div>
-</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<label class="custom-checkbox">
-														<input type="checkbox" name="">
-														<span>Собственная литература ГК ИНФРА-М </span>
-													</label>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<div class="custom-input">
-														<label for="input2" class="custom-input__label">Год выпуска </label>
-														<input type="text" name="" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<fieldset class="form__element-group">
+													<legend>Содержимое</legend>
+													<div class="form__element-group__items">
+														<label class="custom-radio">
+															<input type="radio" name="test">
+															<span>в названиях</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test">
+															<span>в текстах
+															</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test">
+															<span>в оглавлениях</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test">
+															<span>везде</span>
+														</label>
 													</div>
+												</fieldset>
+											</div>
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<label class="custom-checkbox">
+													<input type="checkbox">
+													<span>Строгий поиск по названию</span>
+												</label>
+											</div>
+										</div>
+										<div class="form__row">
+											<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+										</div>
+										<div class="form__row">
+											<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<label class="custom-checkbox">
+													<input type="checkbox">
+													<span>Собственная литература ГК ИНФРА-М </span>
+												</label>
+											</div>
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<div class="custom-input">
+													<label for="input2" class="custom-input__label">Год выпуска </label>
+													<input type="text" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
 												</div>
 											</div>
-											<div class="form__row">
+										</div>
+										<div class="form__row">
+											<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+										</div>
+										<div class="form__row">
+											<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+										</div>
+										<div class="form__row">
+											<div class="form__item">
 												<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -593,11 +627,12 @@
 	</div>
 </div>
 											</div>
-											<div class="form__row">
-												<div class="custom-select">
+										</div>
+										<div class="form__row">
+											<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" ></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -612,13 +647,48 @@
 		</div>
 	</div>
 </div>
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<fieldset class="form__element-group">
+													<legend>Тип издания</legend>
+													<div class="form__element-group__items">
+														<label class="custom-radio">
+															<input type="radio" name="test1">
+															<span>любой</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test1">
+															<span>книги</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test1">
+															<span>журналы</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test1">
+															<span>статьи</span>
+														</label>
+														<label class="custom-radio">
+															<input type="radio" name="test1">
+															<span>ЭФУ</span>
+														</label>
+													</div>
+												</fieldset>
 											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<div class="custom-select">
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<div class="filter__form__extra">
+													<button type="button" class="filter__form__extra__toggler">Специальные условия поиска</button>
+													<div class="filter__form__extra__content">
+														<div class="filter__form">
+															<div class="form">
+																<div class="form__row">
+																	<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -633,90 +703,13 @@
 		</div>
 	</div>
 </div>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="custom-select">
-	<div class="custom-select__label"> Я селект</div>
-	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" ></select>
-		<div class="custom-select__list">
-			<!-- <div class="custom-select__chosen"></div> -->
-		</div>
-		<div class="custom-select__field">
-			<input type="text" class="custom-select__input">
-		</div>
-		
-		<div class="custom-select__drop">
-			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
-			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
-			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
-		</div>
-	</div>
-</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<fieldset class="form__element-group">
-														<legend>Тип издания</legend>
-														<div class="form__element-group__items">
-															<label class="custom-radio">
-																<input type="radio" name="test1">
-																<span>любой</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test1">
-																<span>книги</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test1">
-																<span>журналы</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test1">
-																<span>статьи</span>
-															</label>
-															<label class="custom-radio">
-																<input type="radio" name="test1">
-																<span>ЭФУ</span>
-															</label>
-														</div>
-													</fieldset>
-												</div>
-											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<div class="filter__form__extra">
-														<button type="button" class="filter__form__extra__toggler">Специальные условия поиска</button>
-														<div class="filter__form__extra__content">
-															<div class="filter__form">
-																<div class="form">
-																	<div class="form__row">
+																</div>
+																<div class="form__row">
+																	<div class="form__item">
 																		<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
-		<div class="custom-select__list">
-			<!-- <div class="custom-select__chosen"></div> -->
-		</div>
-		<div class="custom-select__field">
-			<input type="text" class="custom-select__input">
-		</div>
-		
-		<div class="custom-select__drop">
-			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
-			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
-			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
-		</div>
-	</div>
-</div>
-																	</div>
-																	<div class="form__row">
-																		<div class="form__item">
-																			<div class="custom-select">
-	<div class="custom-select__label"> Я селект</div>
-	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" multiple></select>
+		<select class="custom-select__select" multiple></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -733,13 +726,13 @@
 		</div>
 	</div>
 </div>
-																		</div>
 																	</div>
-																	<div class="form__row">
-																		<div class="custom-select">
+																</div>
+																<div class="form__row">
+																	<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
-		<select class="custom-select__select" name="" ></select>
+		<select class="custom-select__select" ></select>
 		<div class="custom-select__list">
 			<!-- <div class="custom-select__chosen"></div> -->
 		</div>
@@ -754,59 +747,58 @@
 		</div>
 	</div>
 </div>
-																	</div>
-																	<div class="form__row">
-																		<div class="form__item">
-																			<fieldset class="form__element-group">
-																				<legend>Тип издания</legend>
-																				<div class="form__element-group__items">
-																					<label class="custom-radio">
-																						<input type="radio" name="test1">
-																						<span>любой</span>
-																					</label>
-																					<label class="custom-radio">
-																						<input type="radio" name="test1">
-																						<span>книги</span>
-																					</label>
-																					<label class="custom-radio">
-																						<input type="radio" name="test1">
-																						<span>журналы</span>
-																					</label>
-																					<label class="custom-radio">
-																						<input type="radio" name="test1">
-																						<span>статьи</span>
-																					</label>
-																					<label class="custom-radio">
-																						<input type="radio" name="test1">
-																						<span>ЭФУ</span>
-																					</label>
-																				</div>
-																			</fieldset>
-																		</div>
-																	</div>
-																	<div class="form__row">
-																		<div class="form__item">
-																			<div class="custom-input">
-																				<label for="input5" class="custom-input__label">Новинки, начиная с </label>
-																				<input type="date" name="" id="input5" placeholder=" " required>
+																</div>
+																<div class="form__row">
+																	<div class="form__item">
+																		<fieldset class="form__element-group">
+																			<legend>Тип издания</legend>
+																			<div class="form__element-group__items">
+																				<label class="custom-radio">
+																					<input type="radio" name="test1">
+																					<span>любой</span>
+																				</label>
+																				<label class="custom-radio">
+																					<input type="radio" name="test1">
+																					<span>книги</span>
+																				</label>
+																				<label class="custom-radio">
+																					<input type="radio" name="test1">
+																					<span>журналы</span>
+																				</label>
+																				<label class="custom-radio">
+																					<input type="radio" name="test1">
+																					<span>статьи</span>
+																				</label>
+																				<label class="custom-radio">
+																					<input type="radio" name="test1">
+																					<span>ЭФУ</span>
+																				</label>
 																			</div>
+																		</fieldset>
+																	</div>
+																</div>
+																<div class="form__row">
+																	<div class="form__item">
+																		<div class="custom-input">
+																			<label for="input5" class="custom-input__label">Новинки, начиная с </label>
+																			<input type="date" id="input5" placeholder=" " required>
 																		</div>
 																	</div>
-																	<div class="form__row">
-																		<div class="form__item">
-																			<fieldset class="form__element-group">
-																				<legend>Права</legend>
-																				<div class="form__element-group__items">
-																					<label class="custom-checkbox">
-																						<input type="checkbox" name="">
-																						<span>Бессрочные</span>
-																					</label><label class="custom-checkbox">
-																						<input type="checkbox" name="">
-																						<span>Эксклюзивные</span>
-																					</label>
-																				</div>
-																			</fieldset>
-																		</div>
+																</div>
+																<div class="form__row">
+																	<div class="form__item">
+																		<fieldset class="form__element-group">
+																			<legend>Права</legend>
+																			<div class="form__element-group__items">
+																				<label class="custom-checkbox">
+																					<input type="checkbox">
+																					<span>Бессрочные</span>
+																				</label><label class="custom-checkbox">
+																					<input type="checkbox">
+																					<span>Эксклюзивные</span>
+																				</label>
+																			</div>
+																		</fieldset>
 																	</div>
 																</div>
 															</div>
@@ -814,71 +806,68 @@
 													</div>
 												</div>
 											</div>
-											<div class="form__row">
-												<div class="form__item">
-													<div class="form__controls">
-														<button type="submit" class="button">Найти</button>
-														<button type="reset" class="button button--secondary"><span>Очистить</span> </button>
-													</div>
+										</div>
+										<div class="form__row">
+											<div class="form__item">
+												<div class="form__controls">
+													<button type="submit" class="button">Найти</button>
+													<button type="reset" class="button button--secondary"><span>Очистить</span> </button>
 												</div>
 											</div>
-										</form>
-									</div>
+										</div>
+									</form>
 								</div>
 							</div>
-							<div class="catalog__header">
+							<hgroup class="generic__header">
 								<h1>Полный перечень</h1>
-							</div>
-							<div class="catalog__controls">
-								<div class="controls">
-									<div class="controls__row">
-										<div class="controls__group">
-											<div class="controls__item">
-												<span>Показывать по</span>
-												<label class="select-simple">
+							</hgroup>
+							<div class="controls">
+								<div class="controls__row">
+									<div class="controls__group">
+										<div class="controls__item">
+											<span>Показывать по</span>
+											<label class="select-simple">
 	
-	<div class="select-simple__select">
+	<span class="select-simple__select">
 		<select>
 			<option value="">Все</option>
 			<option value="">25</option>
 			<option value="">50</option>
 			<option value="">100</option>
 		</select>
-	</div>
+	</span>
 </label>
-											</div>
-											<div class="controls__item">
-												<span>Показано <em>1-10</em> из <em> 10 </em>
-												</span>
-											</div>
 										</div>
-										<div class="controls__group">
-											<div class="controls__item">
-												<span>Отображение: </span>
-												<button type="button" class="controls__button" title="Сеткой">
-													<span class="icon icon--view_grid"></span>
-												</button>
-												<button type="button" class="controls__button" title="Списком">
-													<span class="icon icon--view_list"></span>
-												</button>
-											</div>
+										<div class="controls__item">
+											<span>Показано <em>1-10</em> из <em> 10 </em>
+											</span>
 										</div>
-										<div class="controls__group">
-											<div class="controls__item">
-												<button type="button" class="controls__button">
-													<span class="icon icon--download"></span>
-													<span>Экспорт в Excel</span>
-												</button>
-											</div>
+									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<span>Отображение: </span>
+											<button type="button" class="controls__button" title="Сеткой">
+												<span class="icon icon--view_grid"></span>
+											</button>
+											<button type="button" class="controls__button" title="Списком">
+												<span class="icon icon--view_list"></span>
+											</button>
+										</div>
+									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<button type="button" class="controls__button">
+												<span class="icon icon--download"></span>
+												<span>Экспорт в Excel</span>
+											</button>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="catalog__items">
-								<div class="bookslist">
-									
-									<div class="bookslist__item">
-										<div class="book ">
+							<div class="bookslist">
+								
+								<div class="bookslist__item">
+									<div class="book ">
 	<div class="container-fluid">
 		<div class="book__inner">
 			<div class="book__col book__col--main">
@@ -1002,10 +991,10 @@
 		</div>
 	</div>
 </div>
-									</div>
-									
-									<div class="bookslist__item">
-										<div class="book ">
+								</div>
+								
+								<div class="bookslist__item">
+									<div class="book ">
 	<div class="container-fluid">
 		<div class="book__inner">
 			<div class="book__col book__col--main">
@@ -1129,10 +1118,10 @@
 		</div>
 	</div>
 </div>
-									</div>
-									
-									<div class="bookslist__item">
-										<div class="book ">
+								</div>
+								
+								<div class="bookslist__item">
+									<div class="book ">
 	<div class="container-fluid">
 		<div class="book__inner">
 			<div class="book__col book__col--main">
@@ -1256,12 +1245,10 @@
 		</div>
 	</div>
 </div>
-									</div>
-									
 								</div>
+								
 							</div>
-							<div class="catalog__footer">
-								<nav class="pagination">
+							<nav class="pagination">
 	<a href="" class="pagination__item pagination__item--prev" title="Назад"></a>
 	<a href="" class="pagination__item">1</a>
 	<a href="" class="pagination__item">...</a>
@@ -1273,7 +1260,6 @@
 	<a href="" class="pagination__item">1021</a>
 	<a href="" class="pagination__item pagination__item--next" title="Вперед"></a>
 </nav>
-							</div>
 						</div>
 					</article>
 				</main>
@@ -1392,7 +1378,7 @@
 					<div class="accordion">
 						<div class="accordion__toggler">
 							<label class="custom-checkbox">
-								<input type="checkbox" name="" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
+								<input type="checkbox" value="9aed8e13-f212-11e8-8985-90b11c31de4c">
 								<span>Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</span>
 							</label>
 						</div>
@@ -1401,7 +1387,7 @@
 								<div class="accordion">
 									<div class="accordion__toggler">
 										<label class="custom-checkbox">
-											<input type="checkbox" name="" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
+											<input type="checkbox" value="9aed8ec7-f212-11e8-8985-90b11c31de4c">
 											<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</span>
 										</label>
 									</div>
@@ -1410,7 +1396,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8ec9-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</span>
 													</label>
 												</div>
@@ -1418,7 +1404,7 @@
 											<div class="accordion">
 												<div class="accordion__toggler">
 													<label class="custom-checkbox">
-														<input type="checkbox" name="" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
+														<input type="checkbox" value="9aed8e7e-f212-11e8-8985-90b11c31de4c">
 														<span>Информатика. Вычислительная техника / Базы и банки данных. СУБД / Системы управления базами данных (СУБД)</span>
 													</label>
 												</div>
