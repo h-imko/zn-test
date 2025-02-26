@@ -333,8 +333,7 @@
 				</aside>
 				<main class="page__content">
 					<article class="article">
-						<div class="generic">
-							<form class="singleform">
+						<form class="singleform">
 	<div class="container-fluid">
 		<div class="singleform__innner">
 			<div class="singleform__main">
@@ -414,29 +413,38 @@
 		</div>
 	</div>
 </form>
+					</article>
+					<article class="article">
+						<div class="generic">
 							<div class="filter">
 								<div class="filter__panel">
-									<button type="button" class="filter__toggler">Изменить условия поиска </button>
+									<button type="button" class="filter__toggler">Изменить условия поиска</button>
 									<div class="filter__applied">
-										<div class="filter__applied__item">
-											<span class="filter__applied__item__caption">Область поиска: </span>
-											<div class="filter__applied__item__value">
-												<span>В подписках</span>
-												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
-											</div>
-										</div>
 										<div class="filter__applied__item">
 											<span class="filter__applied__item__caption">Содержимое: </span>
 											<div class="filter__applied__item__value">
-												<span>в названиях</span>
+												<span>в текстах</span>
 												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
 											</div>
 										</div>
 										<div class="filter__applied__item">
-											<span class="filter__applied__item__caption">ISSN: </span>
+											<span class="filter__applied__item__caption">Автор(ы) : </span>
 											<div class="filter__applied__item__value">
-												<span> Введите ISSN
-												</span>
+												<span>Вандыш-Бубко Василий Васильевич</span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
+											</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Собственная литература ГК ИНФРА-М : </span>
+											<div class="filter__applied__item__value">
+												<span> Да </span>
+												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
+											</div>
+										</div>
+										<div class="filter__applied__item">
+											<span class="filter__applied__item__caption">Бесплатные: </span>
+											<div class="filter__applied__item__value">
+												<span>Включить</span>
 												<button type="button" class="filter__applied__item__remove" title="Отменить условие"></button>
 											</div>
 										</div>
@@ -444,9 +452,66 @@
 								</div>
 								<div class="filter__form">
 									<form class="form">
-										<div class="form__row">
-											<div class="form__item">
-												<div class="custom-select">
+	<div class="form__row">
+		<div class="form__item">
+			<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" ></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<fieldset class="form__element-group">
+				<legend>Содержимое</legend>
+				<div class="form__element-group__items">
+					<label class="custom-radio">
+						<input type="radio" name="test">
+						<span>в названиях</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test">
+						<span>в текстах
+						</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test">
+						<span>в оглавлениях</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test">
+						<span>везде</span>
+					</label>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<label class="custom-checkbox">
+	<input type="checkbox" >
+	
+	<span>Строгий поиск по названию</span>
+	
+</label>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
 		<select class="custom-select__select" multiple></select>
@@ -464,11 +529,9 @@
 		</div>
 	</div>
 </div>
-											</div>
-										</div>
-										<div class="form__row">
-											<div class="form__item">
-												<div class="custom-select">
+	</div>
+	<div class="form__row">
+		<div class="custom-select">
 	<div class="custom-select__label"> Я селект</div>
 	<div class="custom-select__inner">
 		<select class="custom-select__select" multiple></select>
@@ -486,15 +549,293 @@
 		</div>
 	</div>
 </div>
-											</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<label class="custom-checkbox">
+	<input type="checkbox" >
+	
+	<span>Собственная литература ГК ИНФРА-М</span>
+	
+</label>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			
+<div class="custom-input">
+	
+	
+	<label for="1740582036238" class="custom-input__label"> Год выпуска </label>
+	
+	 <input  type="text"  id="1740582036238"  placeholder=" "    >
+	
+	
+	
+</div>
+			<div class="custom-input">
+				<label for="input2" class="custom-input__label">Год выпуска </label>
+				<input type="text" id="input2" minlength="4" placeholder="Например: 2020, 2011-2018, 2000">
+			</div>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="form__row">
+		<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" ></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<fieldset class="form__element-group">
+				<legend>Тип издания</legend>
+				<div class="form__element-group__items">
+					<label class="custom-radio">
+						<input type="radio" name="test1">
+						<span>любой</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test1">
+						<span>книги</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test1">
+						<span>журналы</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test1">
+						<span>статьи</span>
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="test1">
+						<span>ЭФУ</span>
+					</label>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<div class="filter__form__extra">
+				<button type="button" class="filter__form__extra__toggler">Специальные условия поиска</button>
+				<div class="filter__form__extra__content">
+					<div class="filter__form">
+						<div class="form">
+							<div class="form__row">
+								<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+							</div>
+							<div class="form__row">
+								<div class="form__item">
+									<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" multiple></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<button type="button" class="custom-select__dialog" data-dialog="list"></button>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="custom-select">
+	<div class="custom-select__label"> Я селект</div>
+	<div class="custom-select__inner">
+		<select class="custom-select__select" ></select>
+		<div class="custom-select__list">
+			<!-- <div class="custom-select__chosen"></div> -->
+		</div>
+		<div class="custom-select__field">
+			<input type="text" class="custom-select__input">
+		</div>
+		
+		<div class="custom-select__drop">
+			<div class="custom-select__option" data-id="9aed8e13-f212-11e8-8985-90b11c31de4c">Военное дело. Оружие. Спецслужбы / Военная техника / Военный автомобильный транспорт</div>
+			<div class="custom-select__option" data-id="9aed8ec7-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического моделирования</div>
+			<div class="custom-select__option" data-id="9aed8ec9-f212-11e8-8985-90b11c31de4c">Информатика. Вычислительная техника / Прикладное программное обеспечение / Системы автоматического проектирования</div>
+		</div>
+	</div>
+</div>
+							</div>
+							<div class="form__row">
+								<div class="form__item">
+									<fieldset class="form__element-group">
+										<legend>Тип издания</legend>
+										<div class="form__element-group__items">
+											<label class="custom-radio">
+												<input type="radio" name="test1">
+												<span>любой</span>
+											</label>
+											<label class="custom-radio">
+												<input type="radio" name="test1">
+												<span>книги</span>
+											</label>
+											<label class="custom-radio">
+												<input type="radio" name="test1">
+												<span>журналы</span>
+											</label>
+											<label class="custom-radio">
+												<input type="radio" name="test1">
+												<span>статьи</span>
+											</label>
+											<label class="custom-radio">
+												<input type="radio" name="test1">
+												<span>ЭФУ</span>
+											</label>
 										</div>
-									</form>
+									</fieldset>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__item">
+									<div class="custom-input">
+										<label for="input5" class="custom-input__label">Новинки, начиная с </label>
+										<input type="date" id="input5" placeholder=" " required>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__item">
+									<fieldset class="form__element-group">
+										<legend>Права</legend>
+										<div class="form__element-group__items">
+											<label class="custom-checkbox">
+	<input type="checkbox" >
+	
+	<span>Бессрочные</span>
+	
+</label>
+											<label class="custom-checkbox">
+	<input type="checkbox" >
+	
+	<span>Эксклюзивные</span>
+	
+</label>
+										</div>
+									</fieldset>
 								</div>
 							</div>
 						</div>
-					</article>
-					<article class="article">
-						<div class="generic">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="form__item">
+			<div class="form__controls">
+				<button type="submit" class="button">Найти</button>
+				<button type="reset" class="button button--secondary"><span>Очистить</span> </button>
+			</div>
+		</div>
+	</div>
+</form>
+								</div>
+							</div>
 							<hgroup class="generic__header">
 								<h1>Алфавитный указатель</h1>
 							</hgroup>
@@ -630,7 +971,7 @@
 								<div class="controls__row">
 									<div class="controls__group">
 										<div class="controls__item">
-											<span>Показывать по: </span>
+											<span>Показывать по</span>
 											<label class="select-simple">
 	
 	<span class="select-simple__select">
@@ -648,140 +989,441 @@
 											</span>
 										</div>
 									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<span>Отображение: </span>
+											<button type="button" class="controls__button" title="Сеткой">
+												<span class="icon icon--view_grid"></span>
+											</button>
+											<button type="button" class="controls__button" title="Списком">
+												<span class="icon icon--view_list"></span>
+											</button>
+										</div>
+									</div>
+									<div class="controls__group">
+										<div class="controls__item">
+											<button type="button" class="controls__button">
+												<span class="icon icon--download"></span>
+												<span>Экспорт в Excel</span>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="table-wrapper">
-								<table class="table">
-									<thead>
-										<tr>
-											<th scope="col">Журнал</th>
-											<th scope="col">Издательство</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr data-key="20c40c68-6838-11e5-93f0-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=20c40c68-6838-11e5-93f0-90b11c31de4c" title="Перейти к списку выпусков">Foods and Raw Materials</a>
-											</td>
-											<td>Кемеровский государственный университет</td>
-										</tr>
-										<tr data-key="08d55c2b-a0ca-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=08d55c2b-a0ca-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Агрохимия</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="f3c77bda-239e-11e4-99c7-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=f3c77bda-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Атеросклероз и дислипидемии</a>
-											</td>
-											<td>Национальное общество по изучению атеросклероза</td>
-										</tr>
-										<tr data-key="8196f4cc-a1be-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=8196f4cc-a1be-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биологические мембраны</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="f2bae857-1a3e-11e9-89fb-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=f2bae857-1a3e-11e9-89fb-90b11c31de4c" title="Перейти к списку выпусков">Биология в школе</a>
-											</td>
-											<td>Школьная Пресса</td>
-										</tr>
-										<tr data-key="2c4edc50-a337-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=2c4edc50-a337-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биология внутренних вод</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="139fea03-a329-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=139fea03-a329-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биология моря</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="631fdfc4-a34f-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=631fdfc4-a34f-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биоорганическая химия</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="c317c6ad-a358-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=c317c6ad-a358-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биофизика</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="b1d8564b-a26e-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=b1d8564b-a26e-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Биохимия</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="89f1eb42-a73e-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=89f1eb42-a73e-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Ботанический журнал</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="1231e3b6-e231-11e6-86d5-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=1231e3b6-e231-11e6-86d5-90b11c31de4c" title="Перейти к списку выпусков">Бюллетень науки и практики</a>
-											</td>
-											<td>Наука и практика</td>
-										</tr>
-										<tr data-key="f9bfbd0a-239e-11e4-99c7-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=f9bfbd0a-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Вестник новых медицинских технологий</a>
-											</td>
-											<td>Тульский государственный университет</td>
-										</tr>
-										<tr data-key="79644a73-a7f4-11ef-b4b3-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=79644a73-a7f4-11ef-b4b3-a2a0ac98ca0e" title="Перейти к списку выпусков">Водные ресурсы</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="3d39bc9f-ab2f-11ef-b4b5-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=3d39bc9f-ab2f-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Вопросы ихтиологии</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="14812cb5-b716-11ef-b4b6-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=14812cb5-b716-11ef-b4b6-a2a0ac98ca0e" title="Перейти к списку выпусков">Доклады Российской академии наук Науки о жизни</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="f3c77b93-239e-11e4-99c7-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=f3c77b93-239e-11e4-99c7-90b11c31de4c" title="Перейти к списку выпусков">Естественные науки</a>
-											</td>
-											<td>Астраханский государственный университет</td>
-										</tr>
-										<tr data-key="75f6adda-b0a6-11ef-b4b5-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=75f6adda-b0a6-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Журнал высшей нервной деятельности имени И П Павлова</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-										<tr data-key="9509661b-cd4a-11e8-bfa5-90b11c31de4c">
-											<td>
-												<a href="/catalog/magazines/issues?ref=9509661b-cd4a-11e8-bfa5-90b11c31de4c" title="Перейти к списку выпусков">Журнал естественнонаучных исследований</a>
-											</td>
-											<td>НИЦ ИНФРА-М</td>
-										</tr>
-										<tr data-key="905079e3-b225-11ef-b4b5-a2a0ac98ca0e">
-											<td>
-												<a href="/catalog/magazines/issues?ref=905079e3-b225-11ef-b4b5-a2a0ac98ca0e" title="Перейти к списку выпусков">Журнал общей биологии</a>
-											</td>
-											<td>Наука</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+							<div class="bookslist">
+	
+	<div class="bookslist__item">
+		<div class="document">
+	<div class="container-fluid">
+		<div class="document__inner">
+			<div class="document__col document__col--main">
+				<a href="" class="document__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+			</div>
+			<div class="document__col document__col--info">
+				
+				<a href="" class="document__header">
+					<span class="document__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="document__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="document__labels">
+					<div class="labels">
+	<div class="label label--alt1">
+		<span>покупка</span>
+	</div>
+	
+	<div class="label">
+		<span>новинка</span>
+	</div>
+	<div class="label label--primary-alt">
+		<span>бессрочные права</span>
+	</div>
+	<div class="label label--alt2">
+		<span>основная коллекция</span>
+	</div>
+	<div class="label label--alt">
+		<span>бесплатно</span>
+	</div>
+	<div class="label label--primary">
+		<span>бесплатно</span>
+	</div>
+	<div class="label label--alt3" title="Федеральный перечень учебников">
+		<span>ФПУ</span>
+	</div>
+	<div class="label label--alt5" title="Электронная форма учебника">
+		<span>ЭФУ</span>
+	</div>
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
+		<span>ФПУП</span>
+	</div>
+	<div class="label" title="Creative Commons BY-NC-ND license type" tabindex="0">
+		<img src="/zn-test/assets/static/img/cc-by-nc-nd.svg" alt="">
+	</div>
+	
+</div>
+				</div>
+				<div class="document__info">
+					<dl class="document__info__main">
+						<div class="document__info__item">
+							<dt>Издательство:</dt>
+							<dd><a href="">СОЛОН-Пресс</a></dd>
+						</div>
+						<div class="document__info__item">
+							<dt>Год издания: </dt>
+							<dd>2023</dd>
+						</div>
+						<div class="document__info__item">
+							<dt>Авторы: </dt>
+							<dd>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<span class="document__info__item__rest-toggler" title="Показать остальные"></span>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+							</dd>
+						</div>
+					</dl>
+					
+					<div class="document__info__extra" data-accordion>
+						<button type="button" class="document__info__extra__toggler" data-accordion-toggler> Номенклатура ВАК </button>
+						<div class="document__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="document__info__extra__list" data-accordion-content>
+								<div class="document__info__item">
+									<dt> </dt>
+									<dd>
+										<p><a href="/catalog/magazines/vak?ref=69df0b2d-84d2-11e8-b668-90b11c31de4c&amp;products=1">Биотехнология (в том числе бионанотехнологии)</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb3-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология обработки, хранения и переработки злаковых, бобовых культур, крупяных продуктов, плодоовощной продукции и виноградарства</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb4-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология мясных, молочных и рыбных продуктов и холодильных производств</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb7-84d2-11e8-b668-90b11c31de4c&amp;products=1">Биотехнология пищевых продуктов и биологических активных веществ</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb8-84d2-11e8-b668-90b11c31de4c&amp;products=1">Процессы и аппараты пищевых производств</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb9-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология и товароведение пищевых продуктов и функционального и специализированного назначения и общественного питания</a></p>
+										<p><a href="/catalog/magazines/vak?ref=6fdec1ea-84d2-11e8-b668-90b11c31de4c&amp;products=1">"Экономика и управление народным хозяйством (по отраслям и сферам деятельности, в т.ч.: экономика, организация и управление предприятиями, отраслями, </a></p>
+										<p><a href="/catalog/magazines/vak?ref=6fdec1ec-84d2-11e8-b668-90b11c31de4c&amp;products=1">Бухгалтерский учет, статистика</a></p>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="document__info__extra document__info__extra--mobile" data-accordion>
+						<button type="button" class="document__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="document__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="document__info__extra__list" data-accordion-content>
+								<div class="document__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="document__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="document__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+</div>
+	</div>
+	
+	<div class="bookslist__item">
+		<div class="document">
+	<div class="container-fluid">
+		<div class="document__inner">
+			<div class="document__col document__col--main">
+				<a href="" class="document__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+			</div>
+			<div class="document__col document__col--info">
+				
+				<a href="" class="document__header">
+					<span class="document__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="document__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="document__labels">
+					<div class="labels">
+	<div class="label label--alt1">
+		<span>покупка</span>
+	</div>
+	
+	<div class="label">
+		<span>новинка</span>
+	</div>
+	<div class="label label--primary-alt">
+		<span>бессрочные права</span>
+	</div>
+	<div class="label label--alt2">
+		<span>основная коллекция</span>
+	</div>
+	<div class="label label--alt">
+		<span>бесплатно</span>
+	</div>
+	<div class="label label--primary">
+		<span>бесплатно</span>
+	</div>
+	<div class="label label--alt3" title="Федеральный перечень учебников">
+		<span>ФПУ</span>
+	</div>
+	<div class="label label--alt5" title="Электронная форма учебника">
+		<span>ЭФУ</span>
+	</div>
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
+		<span>ФПУП</span>
+	</div>
+	<div class="label" title="Creative Commons BY-NC-ND license type" tabindex="0">
+		<img src="/zn-test/assets/static/img/cc-by-nc-nd.svg" alt="">
+	</div>
+	
+</div>
+				</div>
+				<div class="document__info">
+					<dl class="document__info__main">
+						<div class="document__info__item">
+							<dt>Издательство:</dt>
+							<dd><a href="">СОЛОН-Пресс</a></dd>
+						</div>
+						<div class="document__info__item">
+							<dt>Год издания: </dt>
+							<dd>2023</dd>
+						</div>
+						<div class="document__info__item">
+							<dt>Авторы: </dt>
+							<dd>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<span class="document__info__item__rest-toggler" title="Показать остальные"></span>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+							</dd>
+						</div>
+					</dl>
+					
+					<div class="document__info__extra" data-accordion>
+						<button type="button" class="document__info__extra__toggler" data-accordion-toggler> Номенклатура ВАК </button>
+						<div class="document__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="document__info__extra__list" data-accordion-content>
+								<div class="document__info__item">
+									<dt> </dt>
+									<dd>
+										<p><a href="/catalog/magazines/vak?ref=69df0b2d-84d2-11e8-b668-90b11c31de4c&amp;products=1">Биотехнология (в том числе бионанотехнологии)</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb3-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология обработки, хранения и переработки злаковых, бобовых культур, крупяных продуктов, плодоовощной продукции и виноградарства</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb4-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология мясных, молочных и рыбных продуктов и холодильных производств</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb7-84d2-11e8-b668-90b11c31de4c&amp;products=1">Биотехнология пищевых продуктов и биологических активных веществ</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb8-84d2-11e8-b668-90b11c31de4c&amp;products=1">Процессы и аппараты пищевых производств</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb9-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология и товароведение пищевых продуктов и функционального и специализированного назначения и общественного питания</a></p>
+										<p><a href="/catalog/magazines/vak?ref=6fdec1ea-84d2-11e8-b668-90b11c31de4c&amp;products=1">"Экономика и управление народным хозяйством (по отраслям и сферам деятельности, в т.ч.: экономика, организация и управление предприятиями, отраслями, </a></p>
+										<p><a href="/catalog/magazines/vak?ref=6fdec1ec-84d2-11e8-b668-90b11c31de4c&amp;products=1">Бухгалтерский учет, статистика</a></p>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="document__info__extra document__info__extra--mobile" data-accordion>
+						<button type="button" class="document__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="document__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="document__info__extra__list" data-accordion-content>
+								<div class="document__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="document__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="document__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+</div>
+	</div>
+	
+	<div class="bookslist__item">
+		<div class="document">
+	<div class="container-fluid">
+		<div class="document__inner">
+			<div class="document__col document__col--main">
+				<a href="" class="document__cover">
+					<img src="/zn-test/assets/static/img/12.webp" alt="Обложка">
+				</a>
+				
+			</div>
+			<div class="document__col document__col--info">
+				
+				<a href="" class="document__header">
+					<span class="document__title">Современный русский язык. Лексикология. Фразеология</span>
+					<span class="document__subtitle">Учебное пособие</span>
+				</a>
+				
+				<div class="document__labels">
+					<div class="labels">
+	<div class="label label--alt1">
+		<span>покупка</span>
+	</div>
+	
+	<div class="label">
+		<span>новинка</span>
+	</div>
+	<div class="label label--primary-alt">
+		<span>бессрочные права</span>
+	</div>
+	<div class="label label--alt2">
+		<span>основная коллекция</span>
+	</div>
+	<div class="label label--alt">
+		<span>бесплатно</span>
+	</div>
+	<div class="label label--primary">
+		<span>бесплатно</span>
+	</div>
+	<div class="label label--alt3" title="Федеральный перечень учебников">
+		<span>ФПУ</span>
+	</div>
+	<div class="label label--alt5" title="Электронная форма учебника">
+		<span>ЭФУ</span>
+	</div>
+	<div class="label label--alt4" title="Федеральный перечень учебных пособий">
+		<span>ФПУП</span>
+	</div>
+	<div class="label" title="Creative Commons BY-NC-ND license type" tabindex="0">
+		<img src="/zn-test/assets/static/img/cc-by-nc-nd.svg" alt="">
+	</div>
+	
+</div>
+				</div>
+				<div class="document__info">
+					<dl class="document__info__main">
+						<div class="document__info__item">
+							<dt>Издательство:</dt>
+							<dd><a href="">СОЛОН-Пресс</a></dd>
+						</div>
+						<div class="document__info__item">
+							<dt>Год издания: </dt>
+							<dd>2023</dd>
+						</div>
+						<div class="document__info__item">
+							<dt>Авторы: </dt>
+							<dd>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<span class="document__info__item__rest-toggler" title="Показать остальные"></span>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+								<a href="">Курушин Александр Александрович, </a>
+								<a href="">Нефедов Евгений Иванович,</a>
+								<a href=""> Смольский Сергей Михайлович</a>
+							</dd>
+						</div>
+					</dl>
+					
+					<div class="document__info__extra" data-accordion>
+						<button type="button" class="document__info__extra__toggler" data-accordion-toggler> Номенклатура ВАК </button>
+						<div class="document__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="document__info__extra__list" data-accordion-content>
+								<div class="document__info__item">
+									<dt> </dt>
+									<dd>
+										<p><a href="/catalog/magazines/vak?ref=69df0b2d-84d2-11e8-b668-90b11c31de4c&amp;products=1">Биотехнология (в том числе бионанотехнологии)</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb3-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология обработки, хранения и переработки злаковых, бобовых культур, крупяных продуктов, плодоовощной продукции и виноградарства</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb4-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология мясных, молочных и рыбных продуктов и холодильных производств</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb7-84d2-11e8-b668-90b11c31de4c&amp;products=1">Биотехнология пищевых продуктов и биологических активных веществ</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb8-84d2-11e8-b668-90b11c31de4c&amp;products=1">Процессы и аппараты пищевых производств</a></p>
+										<p><a href="/catalog/magazines/vak?ref=69df0bb9-84d2-11e8-b668-90b11c31de4c&amp;products=1">Технология и товароведение пищевых продуктов и функционального и специализированного назначения и общественного питания</a></p>
+										<p><a href="/catalog/magazines/vak?ref=6fdec1ea-84d2-11e8-b668-90b11c31de4c&amp;products=1">"Экономика и управление народным хозяйством (по отраслям и сферам деятельности, в т.ч.: экономика, организация и управление предприятиями, отраслями, </a></p>
+										<p><a href="/catalog/magazines/vak?ref=6fdec1ec-84d2-11e8-b668-90b11c31de4c&amp;products=1">Бухгалтерский учет, статистика</a></p>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="document__info__extra document__info__extra--mobile" data-accordion>
+						<button type="button" class="document__info__extra__toggler" data-accordion-toggler> Дополнительно </button>
+						<div class="document__info__extra__wrapper" data-accordion-wrapper>
+							<dl class="document__info__extra__list" data-accordion-content>
+								<div class="document__info__item">
+									<dt>Издательство:</dt>
+									<dd><a href="">СОЛОН-Пресс</a></dd>
+								</div>
+								<div class="document__info__item">
+									<dt>Год издания: </dt>
+									<dd>2023</dd>
+								</div>
+								<div class="document__info__item">
+									<dt>Авторы: </dt>
+									<dd>
+										<a href="">Курушин Александр Александрович, </a>
+										<a href="">Нефедов Евгений Иванович,</a>
+										<a href=""> Смольский Сергей Михайлович</a>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+</div>
+	</div>
+	
+</div>
 							<nav class="pagination">
 	<a href="" class="pagination__item pagination__item--prev" title="Назад"></a>
 	<a href="" class="pagination__item">1</a>
