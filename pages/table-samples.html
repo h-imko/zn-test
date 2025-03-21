@@ -38,9 +38,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">234 дня до окончания доступа</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход (IP 172.16.30.9)</a>
+					</div>
 				</div>
 				
 			</div>
@@ -199,6 +202,59 @@
 				<main class="page__content">
 					<div class="container">
 						<div class="generic">
+							<h1>таблица с инпутами от виджета</h1>
+							<div class="table-wrapper">
+								<table class="table table--small">
+									<thead>
+										<tr>
+											<th class="sortable"><a href="/admin-v2/index?sort=-email" title="Сортировать" data-sort-order="asc">Email</a></th>
+											<th class="sortable"><a href="/admin-v2/index?sort=login" title="Сортировать">Логин</a></th>
+											<th class="sortable"><a href="/admin-v2/index?sort=name" title="Сортировать">ФИО</a></th>
+											<th class="sortable"><a href="/admin-v2/index?sort=is_registered" title="Сортировать">Зарегистрирован</a></th>
+											<th class="sortable"><a href="/admin-v2/index?sort=books_issued" title="Сортировать">Книговыдач</a></th>
+											<th class="sortable"><a href="/admin-v2/index?sort=pages_read" title="Сортировать">Страниц</a></th>
+										</tr>
+										<tr id="w0-filters" class="filters">
+											<td><input type="text" class="form-control" name="DynamicModel[email]" placeholder=" "></td>
+											<td><input type="text" class="form-control" name="DynamicModel[login]" placeholder=" "></td>
+											<td><input type="text" class="form-control" name="DynamicModel[name]" placeholder=" "></td>
+											<td><select id="dynamicmodel-is_registered" class="form-control" name="DynamicModel[is_registered]">
+													<option value="">Все</option>
+													<option value="Да">Да</option>
+													<option value="Нет">Нет</option>
+												</select></td>
+											<td><input type="text" class="form-control" name="DynamicModel[books_issued]" placeholder=" "></td>
+											<td><input type="text" class="form-control" name="DynamicModel[pages_read]" placeholder=" "></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-key="0">
+											<td>a.kurakova@infra-m.ru</td>
+											<td>a.kurakova</td>
+											<td>Куракова Анна Петровна</td>
+											<td>Нет</td>
+											<td>2</td>
+											<td>6</td>
+										</tr>
+										<tr data-key="1">
+											<td>a.kurakova@infra-m.ru</td>
+											<td>a.kurakova</td>
+											<td>Куракова Анна Петровна</td>
+											<td>Нет</td>
+											<td>2</td>
+											<td>6</td>
+										</tr>
+										<tr data-key="2">
+											<td>a.kurakova@infra-m.ru</td>
+											<td>a.kurakova</td>
+											<td>Куракова Анна Петровна</td>
+											<td>Нет</td>
+											<td>2</td>
+											<td>6</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 							<h1>Сортируемые столбцы таблицы имеют в th ссылку с тайтлом </h1>
 							<h1>если столбец отсортирован то у ссылки добавляется атрибут data-sort-order="asc" или "desc", тип значений столбца цифры или буквы упразднен </h1>
 							<h1>в ячейках может лежать все что угодно, просто текст пишется как есть, ссылка - тег a, списки - ul,ol и так далее</h1>
