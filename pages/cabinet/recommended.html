@@ -38,11 +38,11 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа</a>
+					<a href="" class="header__link">Впервые на сайте?</a>
 					<div class="header__login">
 						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
 						/
-						<a href="" class="header__login__item">Вход (IP 172.16.30.9)</a>
+						<a href="" class="header__login__item">Вход </a>
 					</div>
 				</div>
 				
@@ -744,10 +744,6 @@
 		</div>
 	</div>
 </footer>
-<div class="tooltip">
-	<div class="tooltip__arrow"></div>
-	<div class="tooltip__text">ssssss</div>
-</div>
 <dialog class="dialog" id="list">
 	<div class="dialog__body">
 		<div class="dialog__header">
@@ -818,6 +814,21 @@
 		</div>
 	</div>
 </dialog>
+<div class="toasts">
+	<template id="toast-template">
+		<div class="toasts__item">
+			<div class="toasts__item__header">
+				<div class="toasts__item__title" slot="title">Lorem, ipsum dolor.</div>
+				<button type="button" class="toasts__item__closer">X</button>
+			</div>
+			<div class="toasts__item__body">
+				<div class="toasts__item__text" slot="text">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero saepe doloribus autem voluptates obcaecati dolore quis provident ea tenetur! Expedita ut maxime ad error aut pariatur soluta blanditiis esse libero.
+				</div>
+			</div>
+		</div>
+	</template>
+</div> 
 	</body>
 
 </html>

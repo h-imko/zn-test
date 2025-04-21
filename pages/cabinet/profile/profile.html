@@ -38,9 +38,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">234 дня до окончания доступа</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход (IP 172.16.30.9)</a>
+					</div>
 				</div>
 				
 			</div>
@@ -350,13 +353,13 @@
 <div class="custom-input ">
 	
 	
-	<label for="1744275141644" class="custom-input__label"> Логин </label>
+	<label for="1745250532925" class="custom-input__label"> Логин </label>
 	
-	 <input  type="text"  id="1744275141644"  placeholder=" "    readonly   value="varivodin_nk" >
-	
+	 <input  type="text"  id="1745250532925"  placeholder=" "    readonly   value="varivodin_nk" >
 	
 	
 </div>
+
 									</div>
 								</div>
 								<div class="form__row">
@@ -365,13 +368,13 @@
 <div class="custom-input ">
 	
 	
-	<label for="1744275141644" class="custom-input__label"> Фамилия </label>
+	<label for="1745250532926" class="custom-input__label"> Фамилия </label>
 	
-	 <input  type="text"  id="1744275141644"  placeholder=" "  required     value="Вариводин" >
-	
+	 <input  type="text"  id="1745250532926"  placeholder=" "  required     value="Вариводин" >
 	
 	
 </div>
+
 									</div>
 								</div>
 								<div class="form__row">
@@ -380,13 +383,13 @@
 <div class="custom-input ">
 	
 	
-	<label for="1744275141645" class="custom-input__label"> Имя </label>
+	<label for="1745250532926" class="custom-input__label"> Имя </label>
 	
-	 <input  type="text"  id="1744275141645"  placeholder=" "  required     value="Никита" >
-	
+	 <input  type="text"  id="1745250532926"  placeholder=" "  required     value="Никита" >
 	
 	
 </div>
+
 									</div>
 								</div>
 								<div class="form__row">
@@ -395,13 +398,13 @@
 <div class="custom-input ">
 	
 	
-	<label for="1744275141645" class="custom-input__label"> Отчество </label>
+	<label for="1745250532926" class="custom-input__label"> Отчество </label>
 	
-	 <input  type="text"  id="1744275141645"  placeholder=" "     value="Константинович" >
-	
+	 <input  type="text"  id="1745250532926"  placeholder=" "     value="Константинович" >
 	
 	
 </div>
+
 									</div>
 								</div>
 								<div class="form__row">
@@ -410,17 +413,17 @@
 <div class="custom-input ">
 	
 	
-	<label for="1744275141645" class="custom-input__label"> Email </label>
+	<label for="1745250532926" class="custom-input__label"> Email </label>
 	
-	 <input  type="email"  id="1744275141645"  placeholder=" "    readonly   value="varivodin_nk+bib@znanium.ru" >
+	 <input  type="email"  id="1745250532926"  placeholder=" "    readonly   value="varivodin_nk+bib@znanium.ru" >
 	
 	
 	<a href="" class="custom-input__button">
 		Изменить
 	</a>
 	
-	
 </div>
+
 									</div>
 								</div>
 								<div class="form__row">
@@ -528,10 +531,6 @@
 		</div>
 	</div>
 </footer>
-<div class="tooltip">
-	<div class="tooltip__arrow"></div>
-	<div class="tooltip__text">ssssss</div>
-</div>
 <dialog class="dialog" id="list">
 	<div class="dialog__body">
 		<div class="dialog__header">
@@ -602,6 +601,21 @@
 		</div>
 	</div>
 </dialog>
+<div class="toasts">
+	<template id="toast-template">
+		<div class="toasts__item">
+			<div class="toasts__item__header">
+				<div class="toasts__item__title" slot="title">Lorem, ipsum dolor.</div>
+				<button type="button" class="toasts__item__closer">X</button>
+			</div>
+			<div class="toasts__item__body">
+				<div class="toasts__item__text" slot="text">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero saepe doloribus autem voluptates obcaecati dolore quis provident ea tenetur! Expedita ut maxime ad error aut pariatur soluta blanditiis esse libero.
+				</div>
+			</div>
+		</div>
+	</template>
+</div> 
 	</body>
 
 </html>
