@@ -424,22 +424,9 @@
 <div class="custom-input ">
 	
 	
-	<label for="1745915325915" class="custom-input__label"> Эмейл и ФИО </label>
+	<label for="1746448859720" class="custom-input__label"> Эмейл и ФИО </label>
 	
-	 <input  type="text"  id="1745915325915"  placeholder=" "    >
-	
-	
-</div>
-
-											</div>
-											<div class="form__item">
-												
-<div class="custom-input ">
-	
-	
-	<label for="1745915325916" class="custom-input__label"> Логин </label>
-	
-	 <input  type="text"  id="1745915325916"  placeholder=" "    >
+	 <input  type="text"  id="1746448859720"  placeholder=" "    >
 	
 	
 </div>
@@ -450,9 +437,22 @@
 <div class="custom-input ">
 	
 	
-	<label for="1745915325916" class="custom-input__label"> Комментарий </label>
+	<label for="1746448859720" class="custom-input__label"> Логин </label>
 	
-	 <input  type="text"  id="1745915325916"  placeholder=" "    >
+	 <input  type="text"  id="1746448859720"  placeholder=" "    >
+	
+	
+</div>
+
+											</div>
+											<div class="form__item">
+												
+<div class="custom-input ">
+	
+	
+	<label for="1746448859720" class="custom-input__label"> Комментарий </label>
+	
+	 <input  type="text"  id="1746448859720"  placeholder=" "    >
 	
 	
 </div>
@@ -724,6 +724,7 @@
 					<div class="footer__extra">
 						<a href="">Карта сайта</a>
 						<a href="">Uptime ЭБС</a>
+						<button type="button" class="test-toast">Проверить тосты</button>
 					</div>
 				</div>
 				<div class="footer__bottom__block">
@@ -812,20 +813,22 @@
 	</div>
 </dialog>
 <div class="toasts">
+	<div class="toasts__list">
+	</div>
 	<template id="toast-template">
 		<div class="toasts__item">
-			<div class="toasts__item__header">
-				<div class="toasts__item__title" slot="title">Lorem, ipsum dolor.</div>
-				<button type="button" class="toasts__item__closer">X</button>
-			</div>
-			<div class="toasts__item__body">
-				<div class="toasts__item__text" slot="text">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero saepe doloribus autem voluptates obcaecati dolore quis provident ea tenetur! Expedita ut maxime ad error aut pariatur soluta blanditiis esse libero.
+			<div class="toasts__item__content">
+				<div class="toasts__item__header">
+					<div class="toasts__item__title" data-data="title"></div>
+					<button type="button" class="toasts__item__closer" title="Закрыть"></button>
+				</div>
+				<div class="toasts__item__body">
+					<div class="toasts__item__text" data-data="text"></div>
 				</div>
 			</div>
 		</div>
 	</template>
-</div> 
+</div>
 	</body>
 
 </html>

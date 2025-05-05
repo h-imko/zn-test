@@ -540,6 +540,7 @@
 					<div class="footer__extra">
 						<a href="">Карта сайта</a>
 						<a href="">Uptime ЭБС</a>
+						<button type="button" class="test-toast">Проверить тосты</button>
 					</div>
 				</div>
 				<div class="footer__bottom__block">
@@ -628,20 +629,22 @@
 	</div>
 </dialog>
 <div class="toasts">
+	<div class="toasts__list">
+	</div>
 	<template id="toast-template">
 		<div class="toasts__item">
-			<div class="toasts__item__header">
-				<div class="toasts__item__title" slot="title">Lorem, ipsum dolor.</div>
-				<button type="button" class="toasts__item__closer">X</button>
-			</div>
-			<div class="toasts__item__body">
-				<div class="toasts__item__text" slot="text">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero saepe doloribus autem voluptates obcaecati dolore quis provident ea tenetur! Expedita ut maxime ad error aut pariatur soluta blanditiis esse libero.
+			<div class="toasts__item__content">
+				<div class="toasts__item__header">
+					<div class="toasts__item__title" data-data="title"></div>
+					<button type="button" class="toasts__item__closer" title="Закрыть"></button>
+				</div>
+				<div class="toasts__item__body">
+					<div class="toasts__item__text" data-data="text"></div>
 				</div>
 			</div>
 		</div>
 	</template>
-</div> 
+</div>
 	</body>
 
 </html>
