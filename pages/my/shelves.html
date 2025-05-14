@@ -374,11 +374,9 @@
 								<h1> Книжные полки </h1>
 							</hgroup>
 							<div class="controls">
-								<div class="controls__row">
-									<div class="controls__group">
-										<div class="controls__item">
-											<span>Показывать по</span>
-											<label class="select-simple">
+								<div class="controls__item">
+									<span>Показывать по</span>
+									<label class="select-simple">
 	
 	<span class="select-simple__select">
 		<select>
@@ -389,56 +387,74 @@
 		</select>
 	</span>
 </label>
-										</div>
-										<div class="controls__item">
-											<span>Показано <em>1-10</em> из <em> 10 </em> </span>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<button type="button" class="controls__button">
-												<span class="icon icon--add_box"></span>
-												<span>Создать полку</span>
-											</button>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<button type="button" class="controls__button">
-												<span class="icon icon--download"></span>
-												<span>Экспорт в Excel</span>
-											</button>
-										</div>
+									<span>Показано <em>1-10</em> из <em> 10 </em> </span>
+								</div>
+								<div class="controls__item">
+									<button type="button" class="controls__button">
+										<span class="icon icon--add_box"></span>
+										<span>Создать полку</span>
+									</button>
+								</div>
+								<div class="controls__item">
+									<button type="button" class="controls__button" data-popovertarget="popover-excel">
+										<span class="icon icon--download"></span>
+										<span>Экспорт в Excel</span>
+									</button>
+									<div class="controls__item__popover" data-popover id="popover-excel">
+										<div class="export-list">
+	<div class="export-list__item">
+		<div class="export-list__item__value">
+			<a href="">Excel</a>
+		</div>
+	</div>
+	
+	<div class="export-list__item">
+		<div class="export-list__item__name"><span>RUSMARC .iso</span></div>
+		<div class="export-list__item__value">
+			<a href="">win-1251</a>
+			<a href="">UTF-8</a>
+		</div>
+	</div>
+	
+	<div class="export-list__item">
+		<div class="export-list__item__name"><span>RUSMARC .iso</span></div>
+		<div class="export-list__item__value">
+			<a href="">win-1251</a>
+			<a href="">UTF-8</a>
+		</div>
+	</div>
+	
+	<div class="export-list__item">
+		<div class="export-list__item__name"><span>RUSMARC .iso</span></div>
+		<div class="export-list__item__value">
+			<a href="">win-1251</a>
+			<a href="">UTF-8</a>
+		</div>
+	</div>
+	
+</div>
 									</div>
 								</div>
-								<div class="controls__row">
-									<div class="controls__group">
-										<div class="controls__item">
-											<span>Отображение: </span>
-											<button type="button" class="controls__button" title="Сеткой">
-												<span class="icon icon--view_grid"></span>
-											</button>
-											<button type="button" class="controls__button" title="Списком">
-												<span class="icon icon--view_list"></span>
-											</button>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<span>Сортировка: </span>
-											<button type="button" class="controls__button" title="Пользовательская">
-												<span class="icon icon--tune"></span>
-											</button>
-											<button type="button" class="controls__button" title="По алфавиту">
-												<span class="icon icon--match_case"></span>
-											</button>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<button type="button" class="controls__button controls__button__collapse" title="Свернуть/развернуть все" data-for="shelves"> </button>
-										</div>
-									</div>
+								<div class="controls__item">
+									<span>Отображение: </span>
+									<button type="button" class="controls__button" title="Сеткой">
+										<span class="icon icon--view_grid"></span>
+									</button>
+									<button type="button" class="controls__button" title="Списком">
+										<span class="icon icon--view_list"></span>
+									</button>
+								</div>
+								<div class="controls__item">
+									<span>Сортировка: </span>
+									<button type="button" class="controls__button" title="Пользовательская">
+										<span class="icon icon--tune"></span>
+									</button>
+									<button type="button" class="controls__button" title="По алфавиту">
+										<span class="icon icon--match_case"></span>
+									</button>
+								</div>
+								<div class="controls__item">
+									<button type="button" class="controls__button controls__button__collapse" title="Свернуть/развернуть все" data-for="shelves"> </button>
 								</div>
 							</div>
 							<div class="shelves">
@@ -471,8 +487,72 @@
 	<div class="simplebook__labels">
 		<div class="labels">
 			
+			<div class="label label--alt2">
+				<span>в подписке</span>
+			</div>
+			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
+				<span class="icon icon--cached"> </span>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<a href="#" class="simplebook__bookmark-count">
+		<span class="simplebook__bookmark-count__text"> 54 </span>
+	</a>
+	
+</div>
+													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
+													<!-- <a href="" class="shelf__book__cover" title="Перейти">
+															<img src="/zn-test/assets/static/img/6.webp" alt="">
+														</a>
+														 -->
+												</div>
+												
+												<div class="shelf__book">
+													<div class="simplebook">
+	
+	<a href="" class="simplebook__cover">
+		<img src="/zn-test/assets/static/img/6.webp" alt="">
+	</a>
+	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
+	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
+	<div class="simplebook__labels">
+		<div class="labels">
+			
 			<div class="label label--alt1">
 				<span>покупка</span>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</div>
+													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
+													<!-- <a href="" class="shelf__book__cover" title="Перейти">
+															<img src="/zn-test/assets/static/img/6.webp" alt="">
+														</a>
+														 -->
+												</div>
+												
+												<div class="shelf__book">
+													<div class="simplebook">
+	
+	<a href="" class="simplebook__cover">
+		<img src="/zn-test/assets/static/img/6.webp" alt="">
+	</a>
+	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
+	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
+	<div class="simplebook__labels">
+		<div class="labels">
+			
+			<div class="label label--alt2">
+				<span>в подписке</span>
+			</div>
+			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
+				<span class="icon icon--cached"> </span>
 			</div>
 			
 		</div>
@@ -513,63 +593,9 @@
 	</div>
 	
 	
-</div>
-													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
-													<!-- <a href="" class="shelf__book__cover" title="Перейти">
-															<img src="/zn-test/assets/static/img/6.webp" alt="">
-														</a>
-														 -->
-												</div>
-												
-												<div class="shelf__book">
-													<div class="simplebook">
-	
-	<a href="" class="simplebook__cover">
-		<img src="/zn-test/assets/static/img/6.webp" alt="">
-	</a>
-	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
-	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
-	<div class="simplebook__labels">
-		<div class="labels">
-			
-			<div class="label label--alt1">
-				<span>покупка</span>
-			</div>
-			
-		</div>
-	</div>
-	
-	
 	<a href="#" class="simplebook__bookmark-count">
 		<span class="simplebook__bookmark-count__text"> 54 </span>
 	</a>
-	
-</div>
-													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
-													<!-- <a href="" class="shelf__book__cover" title="Перейти">
-															<img src="/zn-test/assets/static/img/6.webp" alt="">
-														</a>
-														 -->
-												</div>
-												
-												<div class="shelf__book">
-													<div class="simplebook">
-	
-	<a href="" class="simplebook__cover">
-		<img src="/zn-test/assets/static/img/6.webp" alt="">
-	</a>
-	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
-	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
-	<div class="simplebook__labels">
-		<div class="labels">
-			
-			<div class="label label--alt1">
-				<span>покупка</span>
-			</div>
-			
-		</div>
-	</div>
-	
 	
 </div>
 													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
@@ -669,41 +695,8 @@
 	<div class="simplebook__labels">
 		<div class="labels">
 			
-			<div class="label label--alt2">
-				<span>в подписке</span>
-			</div>
-			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
-				<span class="icon icon--cached"> </span>
-			</div>
-			
-		</div>
-	</div>
-	
-	
-</div>
-													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
-													<!-- <a href="" class="shelf__book__cover" title="Перейти">
-															<img src="/zn-test/assets/static/img/6.webp" alt="">
-														</a>
-														 -->
-												</div>
-												
-												<div class="shelf__book">
-													<div class="simplebook">
-	
-	<a href="" class="simplebook__cover">
-		<img src="/zn-test/assets/static/img/6.webp" alt="">
-	</a>
-	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
-	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
-	<div class="simplebook__labels">
-		<div class="labels">
-			
-			<div class="label label--alt2">
-				<span>в подписке</span>
-			</div>
-			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
-				<span class="icon icon--cached"> </span>
+			<div class="label label--alt1">
+				<span>покупка</span>
 			</div>
 			
 		</div>
@@ -761,6 +754,37 @@
 			</div>
 			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
 				<span class="icon icon--cached"> </span>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<a href="#" class="simplebook__bookmark-count">
+		<span class="simplebook__bookmark-count__text"> 54 </span>
+	</a>
+	
+</div>
+													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
+													<!-- <a href="" class="shelf__book__cover" title="Перейти">
+															<img src="/zn-test/assets/static/img/6.webp" alt="">
+														</a>
+														 -->
+												</div>
+												
+												<div class="shelf__book">
+													<div class="simplebook">
+	
+	<a href="" class="simplebook__cover">
+		<img src="/zn-test/assets/static/img/6.webp" alt="">
+	</a>
+	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
+	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
+	<div class="simplebook__labels">
+		<div class="labels">
+			
+			<div class="label label--alt1">
+				<span>покупка</span>
 			</div>
 			
 		</div>
@@ -870,36 +894,6 @@
 	<div class="simplebook__labels">
 		<div class="labels">
 			
-			<div class="label label--alt2">
-				<span>в подписке</span>
-			</div>
-			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
-				<span class="icon icon--cached"> </span>
-			</div>
-			
-		</div>
-	</div>
-	
-	
-</div>
-													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
-													<!-- <a href="" class="shelf__book__cover" title="Перейти">
-															<img src="/zn-test/assets/static/img/6.webp" alt="">
-														</a>
-														 -->
-												</div>
-												
-												<div class="shelf__book">
-													<div class="simplebook">
-	
-	<a href="" class="simplebook__cover">
-		<img src="/zn-test/assets/static/img/6.webp" alt="">
-	</a>
-	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
-	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
-	<div class="simplebook__labels">
-		<div class="labels">
-			
 			<div class="label label--alt1">
 				<span>покупка</span>
 			</div>
@@ -932,60 +926,6 @@
 			</div>
 			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
 				<span class="icon icon--cached"> </span>
-			</div>
-			
-		</div>
-	</div>
-	
-	
-</div>
-													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
-													<!-- <a href="" class="shelf__book__cover" title="Перейти">
-															<img src="/zn-test/assets/static/img/6.webp" alt="">
-														</a>
-														 -->
-												</div>
-												
-												<div class="shelf__book">
-													<div class="simplebook">
-	
-	<a href="" class="simplebook__cover">
-		<img src="/zn-test/assets/static/img/6.webp" alt="">
-	</a>
-	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
-	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
-	<div class="simplebook__labels">
-		<div class="labels">
-			
-			<div class="label label--alt1">
-				<span>покупка</span>
-			</div>
-			
-		</div>
-	</div>
-	
-	
-</div>
-													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
-													<!-- <a href="" class="shelf__book__cover" title="Перейти">
-															<img src="/zn-test/assets/static/img/6.webp" alt="">
-														</a>
-														 -->
-												</div>
-												
-												<div class="shelf__book">
-													<div class="simplebook">
-	
-	<a href="" class="simplebook__cover">
-		<img src="/zn-test/assets/static/img/6.webp" alt="">
-	</a>
-	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
-	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
-	<div class="simplebook__labels">
-		<div class="labels">
-			
-			<div class="label label--alt1">
-				<span>покупка</span>
 			</div>
 			
 		</div>
@@ -995,6 +935,100 @@
 	<a href="#" class="simplebook__bookmark-count">
 		<span class="simplebook__bookmark-count__text"> 54 </span>
 	</a>
+	
+</div>
+													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
+													<!-- <a href="" class="shelf__book__cover" title="Перейти">
+															<img src="/zn-test/assets/static/img/6.webp" alt="">
+														</a>
+														 -->
+												</div>
+												
+												<div class="shelf__book">
+													<div class="simplebook">
+	
+	<a href="" class="simplebook__cover">
+		<img src="/zn-test/assets/static/img/6.webp" alt="">
+	</a>
+	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
+	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
+	<div class="simplebook__labels">
+		<div class="labels">
+			
+			<div class="label label--alt2">
+				<span>в подписке</span>
+			</div>
+			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
+				<span class="icon icon--cached"> </span>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<a href="#" class="simplebook__bookmark-count">
+		<span class="simplebook__bookmark-count__text"> 54 </span>
+	</a>
+	
+</div>
+													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
+													<!-- <a href="" class="shelf__book__cover" title="Перейти">
+															<img src="/zn-test/assets/static/img/6.webp" alt="">
+														</a>
+														 -->
+												</div>
+												
+												<div class="shelf__book">
+													<div class="simplebook">
+	
+	<a href="" class="simplebook__cover">
+		<img src="/zn-test/assets/static/img/6.webp" alt="">
+	</a>
+	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
+	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
+	<div class="simplebook__labels">
+		<div class="labels">
+			
+			<div class="label label--alt2">
+				<span>в подписке</span>
+			</div>
+			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
+				<span class="icon icon--cached"> </span>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</div>
+													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
+													<!-- <a href="" class="shelf__book__cover" title="Перейти">
+															<img src="/zn-test/assets/static/img/6.webp" alt="">
+														</a>
+														 -->
+												</div>
+												
+												<div class="shelf__book">
+													<div class="simplebook">
+	
+	<a href="" class="simplebook__cover">
+		<img src="/zn-test/assets/static/img/6.webp" alt="">
+	</a>
+	<div class="simplebook__author">Дмитриченко Л.И., Дмитриченко Л.А., Головинов О.Н.</div>
+	<a href="" class="simplebook__title">Государственное регулирование торговой деятельности</a>
+	<div class="simplebook__labels">
+		<div class="labels">
+			
+			<div class="label label--alt2">
+				<span>в подписке</span>
+			</div>
+			<div class="label label--accent simplebook__updated" title="Есть обновленный выпуск">
+				<span class="icon icon--cached"> </span>
+			</div>
+			
+		</div>
+	</div>
+	
 	
 </div>
 													<button type="button" class="shelf__book__remove" title="Удалить книгу с полки"></button>
