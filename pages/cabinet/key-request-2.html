@@ -74,9 +74,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">234 дня до окончания доступа</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход (IP 172.16.30.9)</a>
+					</div>
 				</div>
 				
 			</div>
@@ -380,26 +383,11 @@
 								<h1> Заявки на выдачу ключей
 								</h1>
 							</hgroup>
-							<div class="controls">
-								<div class="controls__row">
-									<div class="controls__group">
-										<div class="controls__item">
-											<a href="" class="controls__button">Новые </a>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<a href="" class="controls__button"> Выполненные</a>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<a href="" class="controls__button is-active"> Отклоненные</a>
-										</div>
-									</div>
-									<div class="controls__group"></div>
-								</div>
-							</div>
+							<nav class="links">
+								<a href="" class="links__item is-active">Новые</a>
+								<a href="" class="links__item">Выполненные</a>
+								<a href="" class="links__item">Отклоненные</a>
+							</nav>
 							<div class="filter">
 								<div class="filter__panel">
 									<button type="button" class="filter__toggler">Фильтры </button>
@@ -442,9 +430,9 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747241095034" class="custom-input__label"> ФИО </label>
+	<label for="1747342914826" class="custom-input__label"> ФИО </label>
 	
-	 <input  type="text"  id="1747241095034"  placeholder=" "    >
+	 <input  type="text"  id="1747342914826"  placeholder=" "    >
 	
 	
 	
@@ -456,9 +444,9 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747241095034" class="custom-input__label"> Сообщение </label>
+	<label for="1747342914826" class="custom-input__label"> Сообщение </label>
 	
-	 <input  type="text"  id="1747241095034"  placeholder=" "    >
+	 <input  type="text"  id="1747342914826"  placeholder=" "    >
 	
 	
 	
@@ -478,11 +466,9 @@
 								</div>
 							</div>
 							<div class="controls">
-								<div class="controls__row">
-									<div class="controls__group">
-										<div class="controls__item">
-											<span>Показывать по: </span>
-											<label class="select-simple">
+								<div class="controls__item">
+									<span>Показывать по</span>
+									<label class="select-simple">
 	
 	<span class="select-simple__select">
 		<select  aria-label="Какой-то селект" >
@@ -493,20 +479,13 @@
 		</select>
 	</span>
 </label>
-										</div>
-										<div class="controls__item">
-											<span>Показано <em>1-10</em> из <em> 10 </em>
-											</span>
-										</div>
-									</div>
-									<div class="controls__group">
-										<div class="controls__item">
-											<button type="button" class="controls__button">
-												<span class="icon icon--download"></span>
-												<span>Экспорт в Excel</span>
-											</button>
-										</div>
-									</div>
+									<span>Показано <em>1-10</em> из <em> 10 </em> </span>
+								</div>
+								<div class="controls__item">
+									<button type="button" class="controls__button">
+										<span class="icon icon--download"></span>
+										<span>Экспорт в Excel</span>
+									</button>
 								</div>
 							</div>
 							<div class="table-wrapper">
