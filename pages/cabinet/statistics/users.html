@@ -74,9 +74,12 @@
 				
 				
 				<div class="header__top__block">
-					<a href="" class="header__link">234 дня до окончания доступа </a>
-					<a href="" class="header__link">varivodin_nk <span class="icon icon--person"></span></a>
-					<a href="" class="header__link" title="Выйти"> <span class="icon icon--logout"></span></a>
+					<a href="" class="header__link">Впервые на сайте?</a>
+					<div class="header__login">
+						<a href="" class="header__login__item header__login__item--registration"> <span class="icon icon--person"></span> Регистрация</a>
+						/
+						<a href="" class="header__login__item">Вход </a>
+					</div>
 				</div>
 				
 			</div>
@@ -561,14 +564,10 @@
 									</tbody>
 								</table>
 							</div>
-							<div class="chart-container">
-								<div class="chart">
-									<canvas id="chart1"></canvas>
-								</div>
-							</div>
-							<div class="chart-container">
-								<div class="chart">
-									<canvas id="chart2"></canvas>
+							<div class="chart" data-data="JTdCJTIyZGF0YXNldHMlMjIlM0ElNUIlN0IlMjJkYXRhJTIyJTNBJTVCJTIyMTclMjIlMkMlMjIxOCUyMiUyQyUyMjE5JTIyJTJDJTIyMTYlMjIlMkMlMjIxMyUyMiUyQyUyMjEzJTIyJTJDJTIyMTAlMjIlMkMlMjIxMiUyMiUyQyUyMjEwJTIyJTJDJTIyMTElMjIlMkMlMjIxOSUyMiUyQyUyMjE3JTIyJTVEJTJDJTIybGFiZWwlMjIlM0ElMjIlNUN1MDQxNyU1Q3UwNDMwJTVDdTA0NDAlNUN1MDQzNSU1Q3UwNDMzJTVDdTA0MzglNUN1MDQ0MSU1Q3UwNDQyJTVDdTA0NDAlNUN1MDQzOCU1Q3UwNDQwJTVDdTA0M2UlNUN1MDQzMiU1Q3UwNDMwJTVDdTA0M2QlNUN1MDQzZCU1Q3UwNDRiJTVDdTA0MzUrMjAyNCUyMiUyQyUyMnN0YWNrJTIyJTNBJTIyMjAyNCUyMiU3RCUyQyU3QiUyMmRhdGElMjIlM0ElNUIlMjIxMSUyMiUyQyUyMjAlMjIlMkMlMjI2JTIyJTJDJTIyMCUyMiUyQyUyMjAlMjIlMkMlMjIwJTIyJTJDJTIyMCUyMiUyQyUyMjAlMjIlMkMlMjIwJTIyJTJDJTIyMCUyMiUyQyUyMjIlMjIlMkMlMjIwJTIyJTVEJTJDJTIybGFiZWwlMjIlM0ElMjIlNUN1MDQxMCU1Q3UwNDNkJTVDdTA0M2UlNUN1MDQzZCU1Q3UwNDM4JTVDdTA0M2MlNUN1MDQzZCU1Q3UwNDRiJTVDdTA0MzUyMDI0JTIyJTJDJTIyc3RhY2slMjIlM0ElMjIyMDI0JTIyJTdEJTJDJTdCJTIyZGF0YSUyMiUzQSU1QiUyMjEzJTIyJTJDJTIyMTIlMjIlMkMlMjIxMSUyMiUyQyUyMjE2JTIyJTJDJTIyMTIlMjIlMkMlMjIxNyUyMiUyQyUyMjglMjIlMkMlMjIxMSUyMiUyQyUyMjE0JTIyJTJDJTIyMjIlMjIlMkMlMjIxMiUyMiUyQyUyMjEwJTIyJTVEJTJDJTIybGFiZWwlMjIlM0ElMjIlNUN1MDQxNyU1Q3UwNDMwJTVDdTA0NDAlNUN1MDQzNSU1Q3UwNDMzJTVDdTA0MzglNUN1MDQ0MSU1Q3UwNDQyJTVDdTA0NDAlNUN1MDQzOCU1Q3UwNDQwJTVDdTA0M2UlNUN1MDQzMiU1Q3UwNDMwJTVDdTA0M2QlNUN1MDQzZCU1Q3UwNDRiJTVDdTA0MzUrMjAyMyUyMiUyQyUyMnN0YWNrJTIyJTNBJTIyMjAyMyUyMiU3RCUyQyU3QiUyMmRhdGElMjIlM0ElNUIlMjIwJTIyJTJDJTIyMCUyMiUyQyUyMjAlMjIlMkMlMjIwJTIyJTJDJTIyMCUyMiUyQyUyMjAlMjIlMkMlMjIwJTIyJTJDJTIyMCUyMiUyQyUyMjAlMjIlMkMlMjIwJTIyJTJDJTIyMSUyMiUyQyUyMjElMjIlNUQlMkMlMjJsYWJlbCUyMiUzQSUyMiU1Q3UwNDEwJTVDdTA0M2QlNUN1MDQzZSU1Q3UwNDNkJTVDdTA0MzglNUN1MDQzYyU1Q3UwNDNkJTVDdTA0NGIlNUN1MDQzNSsyMDIzJTIyJTJDJTIyc3RhY2slMjIlM0ElMjIyMDIzJTIyJTdEJTVEJTJDJTIybGFiZWxzJTIyJTNBJTVCMCUyQzElMkMyJTJDMyUyQzQlMkM1JTJDNiUyQzclMkM4JTJDOSUyQzEwJTJDMTElNUQlN0Q=" data-options="JTdCJTIyc2NhbGVzJTIyJTNBJTVCJTVEJTdE" data-type="line">
+								<h5 class="chart__title"> Пользователи </h5>
+								<div class="chart__inner">
+									<canvas></canvas>
 								</div>
 							</div>
 						</div>

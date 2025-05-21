@@ -440,9 +440,9 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747342914807" class="custom-input__label"> ФИО </label>
+	<label for="1747839773314" class="custom-input__label"> ФИО </label>
 	
-	 <input  type="text"  id="1747342914807"  placeholder=" "    >
+	 <input  type="text"  id="1747839773314"  placeholder=" "    >
 	
 	
 	
@@ -471,23 +471,9 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747342914807" class="custom-input__label"> Дата регистрации от </label>
+	<label for="1747839773314" class="custom-input__label"> Дата регистрации от </label>
 	
-	 <input  type="date"  id="1747342914807"  placeholder=" "    >
-	
-	
-	
-</div>
-
-											</div>
-											<div class="form__item">
-												
-<div class="custom-input ">
-	
-	
-	<label for="1747342914808" class="custom-input__label"> Дата регистрации до </label>
-	
-	 <input  type="date"  id="1747342914808"  placeholder=" "    >
+	 <input  type="date"  id="1747839773314"  placeholder=" "    >
 	
 	
 	
@@ -499,9 +485,23 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747342914808" class="custom-input__label"> Email </label>
+	<label for="1747839773314" class="custom-input__label"> Дата регистрации до </label>
 	
-	 <input  type="email"  id="1747342914808"  placeholder=" "    >
+	 <input  type="date"  id="1747839773314"  placeholder=" "    >
+	
+	
+	
+</div>
+
+											</div>
+											<div class="form__item">
+												
+<div class="custom-input ">
+	
+	
+	<label for="1747839773315" class="custom-input__label"> Email </label>
+	
+	 <input  type="email"  id="1747839773315"  placeholder=" "    >
 	
 	
 	
@@ -515,23 +515,9 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747342914808" class="custom-input__label"> Логин </label>
+	<label for="1747839773315" class="custom-input__label"> Логин </label>
 	
-	 <input  type="text"  id="1747342914808"  placeholder=" "    >
-	
-	
-	
-</div>
-
-											</div>
-											<div class="form__item">
-												
-<div class="custom-input ">
-	
-	
-	<label for="1747342914809" class="custom-input__label"> Комментарий </label>
-	
-	 <input  type="text"  id="1747342914809"  placeholder=" "    >
+	 <input  type="text"  id="1747839773315"  placeholder=" "    >
 	
 	
 	
@@ -543,9 +529,23 @@
 <div class="custom-input ">
 	
 	
-	<label for="1747342914809" class="custom-input__label"> ФИО </label>
+	<label for="1747839773315" class="custom-input__label"> Комментарий </label>
 	
-	 <input  type="text"  id="1747342914809"  placeholder=" "    >
+	 <input  type="text"  id="1747839773315"  placeholder=" "    >
+	
+	
+	
+</div>
+
+											</div>
+											<div class="form__item">
+												
+<div class="custom-input ">
+	
+	
+	<label for="1747839773315" class="custom-input__label"> ФИО </label>
+	
+	 <input  type="text"  id="1747839773315"  placeholder=" "    >
 	
 	
 	
@@ -795,10 +795,42 @@
 							</div>
 							<div class="controls">
 								<div class="controls__item">
-									<button type="button" class="controls__button">
+									<button type="button" class="controls__button" data-popovertarget="popover-actions">
 										<span> Операции с группой </span>
-										<span class="icon icon--chevron_down"></span>
 									</button>
+									<div class="controls__item__popover" data-popover id="popover-actions">
+										<div class="export-list">
+											<div class="export-list__item">
+												<div class="export-list__item__name"><span>Заполнить студентов из файла .csv</span></div>
+												<div class="export-list__item__value">
+													<a href="">Скачать образец файла</a>
+													<label>
+														<span class="icon icon--upload"></span>
+														<span>Выбрать файл</span>
+														<input type="file" name="" id="">
+													</label>
+												</div>
+											</div>
+											<div class="export-list__item">
+												<div class="export-list__item__name"><span>Генератор учетных записей</span></div>
+												<div class="export-list__item__value">
+													<a href=""> Скачать не активированные логины </a>
+													<button type="button">Создать новые логины списком</button>
+												</div>
+											</div>
+											<div class="export-list__item">
+												<div class="export-list__item__name"><span>Заполнить преподавателей из файла .csv</span></div>
+												<div class="export-list__item__value">
+													<a href="">Скачать образец файла</a>
+													<label>
+														<span class="icon icon--upload"></span>
+														<span>Выбрать файл</span>
+														<input type="file" name="" id="">
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<nav class="pagination">
